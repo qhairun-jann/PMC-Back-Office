@@ -1,19 +1,32 @@
 /* Global Classes */
-body {
-    padding-top: 5rem;
-    font-size: .875rem;
-  }
-  
-.h-100 {
-    height: 100vh !important;
+
+* {
+  box-sizing: border-box;
 }
+
+body {
+  padding-top: 5rem;
+  font-size: .875rem;
+}
+
 .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  * {
-    box-sizing: border-box;
-  }
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.bg-gray {
+  background: #f0f0f0;
+}
+
+.h-100 {
+  height: 100vh !important;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
