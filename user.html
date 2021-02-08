@@ -37,9 +37,127 @@
                     <div class="col-sm-10">
                         <h1 class="h1 text-white text-center">Users</h1>
                         <hr />
-                        <div class="row mt-5">
-                            <div class="col text-end">
-                                <a href="newuser.html" class="btn btn-primary">+ Create New User</a>
+                        <div class="row mt-5 mb-4 text-end">
+                            <div class="col-12">
+                                <a href="#" class="btn btn-primary me-2" style="width: 200px;">Sign Up Link</a>
+                                <a href="newuser.html" class="btn btn-primary" style="width: 200px;">+ Create New User</a>
+                            </div>
+                        </div>
+                        <div class="row my-3 justify-content-center">
+                            <div class="col-2 dropdown ">
+                                <button class="dropbtn btn btn-primary">Role</button>
+                                <div id="FilterContainer" class="dropdown-content" style="width: 87%;">
+                                    <div class="widthfitcontent p-0">
+                                        <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
+                                    </div>
+                                    <div class="widthfitcontent p-0">
+                                        <a class="btnfiltermain btnfilter" value="cat1" onclick="filterSelection('cat1')">
+                                            Item 1</a>
+                                    </div>
+                                    <div class="widthfitcontent p-0">
+                                        <a class="btnfiltermain btnfilter" value="cat2"
+                                            onclick="filterSelection('cat2')">
+                                            Item 2</a>
+                                    </div>
+                                    <div class="widthfitcontent p-0">
+                                        <a class="btnfiltermain btnfilter current" value="cat3"
+                                            onclick="filterSelection('cat3')">
+                                            Item 3
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 dropdown">
+                                <button class="dropbtn btn btn-primary"">User name</button>
+                                <div id="FilterContainer" class="dropdown-content" style="width: 87%;">
+                                    <div class="widthfitcontent p-0">
+                                        <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
+                                    </div>
+                                    <div class="widthfitcontent p-0">
+                                        <a class="btnfiltermain btnfilter" value="date1" onclick="filterSelection('date1')">
+                                            Item 1</a>
+                                    </div>
+                                    <div class="widthfitcontent p-0">
+                                        <a class="btnfiltermain btnfilter" value="date2"
+                                            onclick="filterSelection('date2')">
+                                            Item 2</a>
+                                    </div>
+                                    <div class="widthfitcontent p-0 ">
+                                        <a class="btnfiltermain btnfilter current" value="date3"
+                                            onclick="filterSelection('date2')">
+                                            Item 3
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 dropdown">
+                                <button class="dropbtn btn btn-primary"">Email id</button>
+                                <div id="FilterContainer" class="dropdown-content" style="width: 87%;">
+                                    <div class="widthfitcontent p-0">
+                                        <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
+                                    </div>
+                                    <div class="widthfitcontent p-0">
+                                        <a class="btnfiltermain btnfilter" value="bldng1" onclick="filterSelection('bldng1')">
+                                            Item 1</a>
+                                    </div>
+                                    <div class="widthfitcontent p-0">
+                                        <a class="btnfiltermain btnfilter" value="bldng2"
+                                            onclick="filterSelection('bldng2')">
+                                            Item 2</a>
+                                    </div>
+                                    <div class="widthfitcontent p-0 ">
+                                        <a class="btnfiltermain btnfilter current" value="bldng3"
+                                            onclick="filterSelection('bldng3')">
+                                            Item 3
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 dropdown">
+                                <button class="dropbtn btn btn-primary"">Phone</button>
+                                <div id="FilterContainer" class="dropdown-content" style="width: 87%;">
+                                    <div class="widthfitcontent p-0">
+                                        <input class="form-control form-control-dark " type="text" placeholder="Search" aria-label="Search">
+                                    </div>
+                                    <div class="widthfitcontent p-0">
+                                        <a class="btnfiltermain btnfilter" value="unit1" onclick="filterSelection('unit1')">
+                                            Item 1</a>
+                                    </div>
+                                    <div class="widthfitcontent p-0">
+                                        <a class="btnfiltermain btnfilter" value="unit2"
+                                            onclick="filterSelection('unit2')">
+                                            Item 2</a>
+                                    </div>
+                                    <div class="widthfitcontent p-0">
+                                        <a class="btnfiltermain btnfilter current" value="unit3"
+                                            onclick="filterSelection('unit3')">
+                                            Item 3
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 dropdown">
+                                <button class="dropbtn btn btn-primary"">Verified</button>
+                                <div id="FilterContainer" class="dropdown-content" style="width: 87%;">
+                                    <div class="widthfitcontent p-0">
+                                        <input class="form-control form-control-dark " type="text" placeholder="Search" aria-label="Search">
+                                    </div>
+                                    <div class="widthfitcontent p-0">
+                                        <a class="btnfiltermain btnfilter" value="unit1" onclick="filterSelection('unit1')">
+                                            Item 1</a>
+                                    </div>
+                                    <div class="widthfitcontent p-0">
+                                        <a class="btnfiltermain btnfilter" value="unit2"
+                                            onclick="filterSelection('unit2')">
+                                            Item 2</a>
+                                    </div>
+                                    <div class="widthfitcontent p-0">
+                                        <a class="btnfiltermain btnfilter current" value="unit3"
+                                            onclick="filterSelection('unit3')">
+                                            Item 3
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row mt-5">
