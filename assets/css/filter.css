@@ -1,11 +1,9 @@
 /* Dropdown Button */
 .dropbtn {
-    background-color: #ff9f55;
-    color: white;
-    padding: 16px;
+    padding: 10px;
     font-size: 16px;
     border: none;
-    width: 75%;
+    width: 100%;
   }
 
   .btnfiltermain:hover {
@@ -16,6 +14,7 @@
   .dropdown {
     position: relative;
     display: inline-block;
+    z-index: 998;
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -23,7 +22,7 @@
     display: none;
     position: absolute;
     background-color: #727272;
-    width: 69.5%;
+    width: 92.5%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -44,6 +43,8 @@
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #8e5e3e;}
+
+  #FilterContainer {
+    text-align: center;
+    justify-content: center;
+  }
