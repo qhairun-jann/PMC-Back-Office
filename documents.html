@@ -43,7 +43,7 @@
     </header>
     <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <section class="mb-5">
-            <div class="container mt-5">
+            <div class="container mt-5 mb-5">
                 <div class="row justify-content-center">
                     <div class="col-sm-10">
                         <h1 class="h1 text-white text-center">Documents Checklist</h1>
@@ -51,7 +51,8 @@
                         <form class="needs-validation text-start" action="documents.html" novalidate>
                             <div class="row">
                                 <div class="col-6">
-                                    <img src="assets/img/avatar.svg" class="img-circle p-1 me-3" width="70px" style="cursor: pointer;" />
+                                    <img src="assets/img/avatar.svg" class="img-circle p-1 me-3" width="70px"
+                                        style="cursor: pointer;" />
                                     <button class="btn btn-primary btn-md px-1" type="button">Edit Photo</button>
                                 </div>
                                 <div class="col-6">
@@ -88,10 +89,12 @@
                             </div>
                             <div class="row">
                                 <div class="col-2 dropdown ">
-                                    <button class="btn btn-outline-info w-100" type="button" onclick="location.href='newuser.html';">Personal Details</button>
+                                    <button class="btn btn-outline-info w-100" type="button"
+                                        onclick="location.href='newuser.html';">Personal Details</button>
                                 </div>
                                 <div class="col-2 dropdown">
-                                    <button class="btn btn-outline-info w-100" type="button" onclick="location.href='requirement.html';">Requirements</button>
+                                    <button class="btn btn-outline-info w-100" type="button"
+                                        onclick="location.href='requirement.html';">Requirements</button>
                                 </div>
                                 <div class="col-2 dropdown">
                                     <button class="btn btn-primary w-100" type="button">Documents</button>
@@ -122,36 +125,159 @@
                             <div class="row g-3">
                                 <div class="col-sm-6">
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" id="same-address">
-                                        <label class="form-check-label" for="same-address">Passport copy</label><br />
+                                        <input type="checkbox" checked class="form-check-input" id="passportcheck">
+                                        <label class="form-check-label" for="passportcheck">Passport copy</label><br />
 
-                                        <img id="myid" src="assets/img/avatar8.jpg" alt="new image" width="300px" />
+                                        <img id="passportImg" src="assets/img/passport-sample.jpg" class="rounded mt-3"
+                                            alt="Passport" width="300px" />
                                         <br />
-                                            <label for="file-upload" class="custom-file-upload btn btn-primary w-300px">
-                                                <i class="fas fa-cloud-upload-alt"></i> Upload Image
-                                            </label>
-                                            <input type='file' id="file-upload" style="display:none;" />
+                                        <label for="passportCopy"
+                                            class="custom-file-upload btn btn-primary w-300px mt-3">
+                                            <i class="fas fa-cloud-upload-alt"></i> Update
+                                        </label>
+                                        <input type='file' id="passportCopy" style="display:none;" />
                                     </div>
 
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" id="same-address">
-                                        <label class="form-check-label" for="same-address">Student Visa</label><br />
+                                        <input type="checkbox" checked class="form-check-input" id="studentcheck">
+                                        <label class="form-check-label" for="studentcheck">Student Visa</label><br />
 
-                                        <img id="myid" src="assets/img/avatar8.jpg" alt="new image" width="300px" />
+                                        <img id="studentVisaImg" src="assets/img/visa-sample-canada.jpg"
+                                            class="rounded mt-3" alt="Student Visa" width="300px" />
                                         <br />
-                                            <label for="file-upload" class="custom-file-upload btn btn-primary ">
-                                                <i class="fas fa-cloud-upload-alt"></i> Upload Image
-                                            </label>
-                                            <input type='file' id="file-upload" style="display:none;" />
+                                        <label for="studentVisa"
+                                            class="custom-file-upload btn btn-primary w-300px mt-3">
+                                            <i class="fas fa-cloud-upload-alt"></i> Upload
+                                        </label>
+                                        <input type='file' id="studentVisa" style="display:none;" />
                                     </div>
 
                                 </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="same-address">
+                                        <label class="form-check-label" for="same-address">Student ID</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="save-info">
+                                        <label class="form-check-label" for="save-info">University Offer Letter</label>
+                                    </div>
+                                </div>
 
                             </div>
+
                             <hr class="my-4">
-                            <div class="row justify-content-center">
+                            <div class="row g-3 mt-3">
+                                <div class="col-12">
+                                    <h4>Employee</h4>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="same-address">
+                                        <label class="form-check-label" for="same-address">Passport Copy</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="save-info">
+                                        <label class="form-check-label" for="save-info">Employment Letter
+                                            </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="save-info">
+                                        <label class="form-check-label" for="save-info">Work Permit</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="save-info">
+                                        <label class="form-check-label" for="save-info">Employee ID</label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <hr class="my-4">
+
+                            <div class="row g-3 mt-3">
+                                <div class="col-12">
+                                    <h4>Self Employed(freelancer)</h4>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="same-address">
+                                        <label class="form-check-label" for="same-address">IC Copy</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="save-info">
+                                        <label class="form-check-label" for="save-info">Passport Copy
+                                            </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="save-info">
+                                        <label class="form-check-label" for="save-info">Business Card</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <div class="row g-3 mt-3">
+                                <div class="col-12">
+                                    <h4>Self Employed(business)</h4>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="same-address">
+                                        <label class="form-check-label" for="same-address">IC Copy</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="save-info">
+                                        <label class="form-check-label" for="save-info">Passport Copy
+                                            </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="save-info">
+                                        <label class="form-check-label" >Business Card</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="save-info">
+                                        <label class="form-check-label" >Company Registration Form</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <div class="row g-3 mt-3">
+                                <div class="col-12">
+                                    <h4>Company</h4>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="same-address">
+                                        <label class="form-check-label">Company Registration form</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="save-info">
+                                        <label class="form-check-label" >List of Directors
+                                            </label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <hr class="my-4">
+
+                            <div class="row g-3 justify-content-center">
                                 <div class="col-4">
                                     <button class="w-100 btn btn-outline-info" onclick="goBack()">
                                         <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
@@ -251,18 +377,33 @@
         });
     </script>
     <script>
-        function display(input) {
+        function passportDisplay(input) {
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
                 reader.onload = function (event) {
-                    $('#myid').attr('src', event.target.result);
+                    $('#passportImg').attr('src', event.target.result);
                 }
                 reader.readAsDataURL(input.files[0]);
             }
         }
+        $("#passportCopy").change(function () {
+            passportDisplay(this);
+        });
 
-        $("#file-upload").change(function () {
-            display(this);
+
+    </script>
+    <script>
+        function visaDisplay(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (event) {
+                    $('#studentVisaImg').attr('src', event.target.result);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#studentVisa").change(function () {
+            visaDisplay(this);
         });
     </script>
 </body>
