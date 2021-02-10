@@ -15,7 +15,7 @@
 
 </head>
 
-<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
+<body class="p-0 bg-dark h-100 text-white bg-dark">
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="activities.html">Activities</a>
@@ -28,15 +28,15 @@
             <li>
                 <a href="#">
                     <span class="fa-stack fa-lg" data-count="28">
-                    <i class="fa fa-bell fa-stack-1x "></i>
-                  </span>
+                        <i class="fa fa-bell fa-stack-1x "></i>
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <span class="fa-stack fa-lg">
-                    <i class="fas fa-user fa-stack-1x "></i>
-                  </span>
+                        <i class="fas fa-user fa-stack-1x "></i>
+                    </span>
                 </a>
             </li>
         </ul>
@@ -58,116 +58,156 @@
                         <div class="row my-5 justify-content-center">
                             <div class="col dropdown ">
                                 <button class="dropbtn btn btn-primary">Role</button>
-                                <div id="FilterContainer" class="dropdown-content" style="width: 89%;">
-                                    <div class="widthfitcontent p-0">
-                                        <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
+                                <div class="dropdown-content multiple-items">
+
+                                    <div class="widthfitcontent p-2">
+                                        <input class="form-control " type="text" placeholder="Search"
+                                            aria-label="Search">
                                     </div>
-                                    <div class="widthfitcontent p-0">
-                                        <a class="btnfiltermain btnfilter" value="cat1" onclick="filterSelection('cat1')">
-                                            Item 1</a>
+                                    <div class="widthfitcontent p-2">
+                                        <input type="checkbox" class="form-check-input" id="item1">
+                                        <label class="form-check-label text-white" for="item1">Item 1</label>
+
+                                        <!-- <a class="btnfiltermain btnfilter" value="cat1" onclick="filterSelection('cat1')">
+                                            Item 1
+                                        </a> -->
                                     </div>
-                                    <div class="widthfitcontent p-0">
-                                        <a class="btnfiltermain btnfilter" value="cat2"
+                                    <div class="widthfitcontent p-2">
+                                        <input type="checkbox" class="form-check-input" id="item2">
+                                        <label class="form-check-label text-white" for="item2">Item 2</label>
+                                        <!-- <a class="btnfiltermain btnfilter" value="cat2"
                                             onclick="filterSelection('cat2')">
-                                            Item 2</a>
+                                            Item 2</a> -->
                                     </div>
-                                    <div class="widthfitcontent p-0">
-                                        <a class="btnfiltermain btnfilter current" value="cat3"
+                                    <div class="widthfitcontent p-2">
+                                        <input type="checkbox" class="form-check-input" id="item3">
+                                        <label class="form-check-label text-white" for="item3">Item 3</label>
+                                        <!-- <a class="btnfiltermain btnfilter current" value="cat3"
                                             onclick="filterSelection('cat3')">
                                             Item 3
-                                        </a>
+                                        </a> -->
                                     </div>
                                 </div>
                             </div>
                             <div class="col dropdown">
-                                <button class="dropbtn btn btn-primary">User name</button>
-                                <div id="FilterContainer" class="dropdown-content" style="width: 89%;">
-                                    <div class="widthfitcontent p-0">
-                                        <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
-                                    </div>
-                                    <div class="widthfitcontent p-0">
-                                        <a class="btnfiltermain btnfilter" value="date1" onclick="filterSelection('date1')">
-                                            Item 1</a>
-                                    </div>
-                                    <div class="widthfitcontent p-0">
-                                        <a class="btnfiltermain btnfilter" value="date2"
-                                            onclick="filterSelection('date2')">
-                                            Item 2</a>
-                                    </div>
-                                    <div class="widthfitcontent p-0 ">
-                                        <a class="btnfiltermain btnfilter current" value="date3"
-                                            onclick="filterSelection('date2')">
-                                            Item 3
-                                        </a>
+                                <button class="dropbtn btn btn-primary w-100">User name</button>
+                                <div class="dropdown-content" style="width: 98%;">
+                                    <div id="FilterContainer" class="dropdown-content">
+                                        <div class="widthfitcontent p-2">
+                                            <input class="form-control " type="text" placeholder="Search"
+                                                aria-label="Search">
+                                        </div>
+                                        <div class="widthfitcontent p-2">
+                                            <input type="checkbox" class="form-check-input" id="dateitem1">
+                                            <label class="form-check-label text-white" for="dateitem1">Item 1</label>
+                                            <!-- <a class="btnfiltermain btnfilter" value="date1" onclick="filterSelection('date1')">
+                                                Item 1</a> -->
+                                        </div>
+                                        <div class="widthfitcontent p-2">
+                                            <input type="checkbox" class="form-check-input" id="dateitem2">
+                                            <label class="form-check-label text-white" for="dateitem2">Item 2</label>
+                                            <!-- <a class="btnfiltermain btnfilter" value="date2"
+                                                onclick="filterSelection('date2')">
+                                                Item 2</a> -->
+                                        </div>
+                                        <div class="widthfitcontent p-2 ">
+                                            <input type="checkbox" class="form-check-input" id="dateitem3">
+                                            <label class="form-check-label text-white" for="dateitem3">Item 3</label>
+                                            <!-- <a class="btnfiltermain btnfilter current" value="date3"
+                                                onclick="filterSelection('date2')">
+                                                Item 3
+                                            </a> -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col dropdown">
-                                <button class="dropbtn btn btn-primary">Email id</button>
-                                <div id="FilterContainer" class="dropdown-content" style="width: 89%;">
-                                    <div class="widthfitcontent p-0">
-                                        <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
+                                <button class="dropbtn btn btn-primary w-100">Email id</button>
+                                <div class="dropdown-content" style="width: 89%;">
+                                    <div class="widthfitcontent p-2">
+                                        <input class="form-control " type="text" placeholder="Search"
+                                            aria-label="Search">
                                     </div>
-                                    <div class="widthfitcontent p-0">
-                                        <a class="btnfiltermain btnfilter" value="bldng1" onclick="filterSelection('bldng1')">
-                                            Item 1</a>
+                                    <div class="widthfitcontent p-2">
+                                        <input type="checkbox" class="form-check-input" id="buildingitem1">
+                                        <label class="form-check-label text-white" for="buildingitem1">Item 1</label>
+                                        <!-- <a class="btnfiltermain btnfilter" value="bldng1" onclick="filterSelection('bldng1')">
+                                        Item 1</a> -->
                                     </div>
-                                    <div class="widthfitcontent p-0">
-                                        <a class="btnfiltermain btnfilter" value="bldng2"
-                                            onclick="filterSelection('bldng2')">
-                                            Item 2</a>
+                                    <div class="widthfitcontent p-2">
+                                        <input type="checkbox" class="form-check-input" id="buildingitem2">
+                                        <label class="form-check-label text-white" for="buildingitem2">Item 2</label>
+                                        <!-- <a class="btnfiltermain btnfilter" value="bldng2"
+                                        onclick="filterSelection('bldng2')">
+                                        Item 2</a> -->
                                     </div>
-                                    <div class="widthfitcontent p-0 ">
-                                        <a class="btnfiltermain btnfilter current" value="bldng3"
-                                            onclick="filterSelection('bldng3')">
-                                            Item 3
-                                        </a>
+                                    <div class="widthfitcontent p-2 ">
+                                        <input type="checkbox" class="form-check-input" id="buildingitem3">
+                                        <label class="form-check-label text-white" for="buildingitem3">Item 3</label>
+                                        <!-- <a class="btnfiltermain btnfilter current" value="bldng3"
+                                        onclick="filterSelection('bldng3')">
+                                        Item 3
+                                    </a> -->
                                     </div>
                                 </div>
                             </div>
                             <div class="col dropdown">
                                 <button class="dropbtn btn btn-primary">Phone</button>
-                                <div id="FilterContainer" class="dropdown-content" style="width: 89%;">
-                                    <div class="widthfitcontent p-0">
-                                        <input class="form-control form-control-dark " type="text" placeholder="Search" aria-label="Search">
+                                <div class="dropdown-content" style="width: 89%;">
+                                    <div class="widthfitcontent p-2">
+                                        <input class="form-control  " type="text" placeholder="Search"
+                                            aria-label="Search">
                                     </div>
-                                    <div class="widthfitcontent p-0">
-                                        <a class="btnfiltermain btnfilter" value="unit1" onclick="filterSelection('unit1')">
-                                            Item 1</a>
+                                    <div class="widthfitcontent p-2">
+                                        <input type="checkbox" class="form-check-input" id="unititem1">
+                                        <label class="form-check-label text-white" for="unititem1">Item 1</label>
+                                        <!-- <a class="btnfiltermain btnfilter" value="unit1" onclick="filterSelection('unit1')">
+                                            Item 1</a> -->
                                     </div>
-                                    <div class="widthfitcontent p-0">
-                                        <a class="btnfiltermain btnfilter" value="unit2"
+                                    <div class="widthfitcontent p-2">
+                                        <input type="checkbox" class="form-check-input" id="unititem2">
+                                        <label class="form-check-label text-white" for="unititem2">Item 2</label>
+                                        <!-- <a class="btnfiltermain btnfilter" value="unit2"
                                             onclick="filterSelection('unit2')">
-                                            Item 2</a>
+                                            Item 2</a> -->
                                     </div>
-                                    <div class="widthfitcontent p-0">
-                                        <a class="btnfiltermain btnfilter current" value="unit3"
+                                    <div class="widthfitcontent p-2">
+                                        <input type="checkbox" class="form-check-input" id="unititem3">
+                                        <label class="form-check-label text-white" for="unititem3">Item 3</label>
+                                        <!-- <a class="btnfiltermain btnfilter current" value="unit3"
                                             onclick="filterSelection('unit3')">
                                             Item 3
-                                        </a>
+                                        </a> -->
                                     </div>
                                 </div>
                             </div>
                             <div class="col dropdown">
                                 <button class="dropbtn btn btn-primary">Verified</button>
-                                <div id="FilterContainer" class="dropdown-content" style="width: 89%;">
-                                    <div class="widthfitcontent p-0">
-                                        <input class="form-control form-control-dark " type="text" placeholder="Search" aria-label="Search">
+                                <div class="dropdown-content" style="width: 89%;">
+                                    <div class="widthfitcontent p-2">
+                                        <input class="form-control  " type="text" placeholder="Search"
+                                            aria-label="Search">
                                     </div>
-                                    <div class="widthfitcontent p-0">
-                                        <a class="btnfiltermain btnfilter" value="unit1" onclick="filterSelection('unit1')">
-                                            Item 1</a>
+                                    <div class="widthfitcontent p-2">
+                                        <input type="checkbox" class="form-check-input" id="verifyitem1">
+                                        <label class="form-check-label text-white" for="verifyitem1">Item 1</label>
+                                        <!-- <a class="btnfiltermain btnfilter" value="verify1" onclick="filterSelection('verify1')">
+                                            Item 1</a> -->
                                     </div>
-                                    <div class="widthfitcontent p-0">
-                                        <a class="btnfiltermain btnfilter" value="unit2"
-                                            onclick="filterSelection('unit2')">
-                                            Item 2</a>
+                                    <div class="widthfitcontent p-2">
+                                        <input type="checkbox" class="form-check-input" id="verifyitem2">
+                                        <label class="form-check-label text-white" for="verifyitem2">Item 2</label>
+                                        <!-- <a class="btnfiltermain btnfilter" value="verify2"
+                                            onclick="filterSelection('verify2')">
+                                            Item 2</a> -->
                                     </div>
-                                    <div class="widthfitcontent p-0">
-                                        <a class="btnfiltermain btnfilter current" value="unit3"
+                                    <div class="widthfitcontent p-2">
+                                        <input type="checkbox" class="form-check-input" id="verifyitem3">
+                                        <label class="form-check-label text-white" for="verifyitem3">Item 3</label>
+                                        <!-- <a class="btnfiltermain btnfilter current" value="unit3"
                                             onclick="filterSelection('unit3')">
                                             Item 3
-                                        </a>
+                                        </a> -->
                                     </div>
                                 </div>
                             </div>
@@ -178,7 +218,9 @@
                                     <table class="table table-dark table-striped table-hover">
                                         <thead>
                                             <tr>
-                                                <th colspan="7"><h4>All Roles</h4></th>
+                                                <th colspan="7">
+                                                    <h4>All Roles</h4>
+                                                </th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -188,7 +230,8 @@
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td>Verified</td>
-                                                <td><button class="btn btn-outline-info btn-sm w-100">Copy Link</button>
+                                                <td><button class="btn btn-outline-info btn-sm w-100">Copy
+                                                        Link</button>
                                                 </td>
                                                 <td><button class="btn btn-primary btn-sm w-100">View</button></td>
                                             </tr>
@@ -198,7 +241,8 @@
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td>Verified</td>
-                                                <td><button class="btn btn-outline-info btn-sm w-100">Copy Link</button>
+                                                <td><button class="btn btn-outline-info btn-sm w-100">Copy
+                                                        Link</button>
                                                 </td>
                                                 <td><button class="btn btn-primary btn-sm w-100">View</button></td>
                                             </tr>
@@ -208,7 +252,8 @@
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td>Verified</td>
-                                                <td><button class="btn btn-outline-info btn-sm w-100">Copy Link</button>
+                                                <td><button class="btn btn-outline-info btn-sm w-100">Copy
+                                                        Link</button>
                                                 </td>
                                                 <td><button class="btn btn-primary btn-sm w-100">View</button></td>
                                             </tr>
@@ -218,7 +263,8 @@
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td>Verified</td>
-                                                <td><button class="btn btn-outline-info btn-sm w-100">Copy Link</button>
+                                                <td><button class="btn btn-outline-info btn-sm w-100">Copy
+                                                        Link</button>
                                                 </td>
                                                 <td><button class="btn btn-primary btn-sm w-100">View</button></td>
                                             </tr>
@@ -228,7 +274,8 @@
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td>Verified</td>
-                                                <td><button class="btn btn-outline-info btn-sm w-100">Copy Link</button>
+                                                <td><button class="btn btn-outline-info btn-sm w-100">Copy
+                                                        Link</button>
                                                 </td>
                                                 <td><button class="btn btn-primary btn-sm w-100">View</button></td>
                                             </tr>
@@ -238,19 +285,20 @@
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td>Verified</td>
-                                                <td><button class="btn btn-outline-info btn-sm w-100">Copy Link</button>
+                                                <td><button class="btn btn-outline-info btn-sm w-100">Copy
+                                                        Link</button>
                                                 </td>
                                                 <td><button class="btn btn-primary btn-sm w-100">View</button></td>
                                             </tr>
-                                            <tfoot class="table-active">
-                                                <td><b>Total Count</b></td>
-                                                <td><b>xx</b></td>
-                                                <td><b>xx</b></td>
-                                                <td><b>xx</b></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                              </tfoot>
+                                        <tfoot class="table-active">
+                                            <td><b>Total Count</b></td>
+                                            <td><b>xx</b></td>
+                                            <td><b>xx</b></td>
+                                            <td><b>xx</b></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tfoot>
 
                                         </tbody>
                                     </table>
@@ -261,7 +309,7 @@
                 </div>
             </div>
         </section>
-        <footer class="mt-auto text-white-50">
+        <footer class="mt-auto text-center text-white-50">
             <p>&copy; <span id="year"></span>
                 Copyright by Jann Properties</p>
         </footer>
