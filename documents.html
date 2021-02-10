@@ -84,9 +84,10 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <p>Account created on 12-12-2020 by (name)</p>
-                                <p class="mt-2" style="display: none;">Last edited 21-12-2020, 12:12 PM by (name) </p>
+                                <p class="m-0 text-muted">Account created on 12-12-2020 by (name)</p>
+                                <p class="text-muted" >Last edited 21-12-2020, 12:12 PM by (name) </p>
                             </div>
+                            <hr />
                             <div class="row">
                                 <div class="col-2 dropdown ">
                                     <button class="btn btn-outline-info w-100" type="button"
@@ -125,7 +126,7 @@
                             <div class="row g-3">
                                 <div class="col-sm-6">
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" id="passportcheck">
+                                        <input type="checkbox" checked class="form-check-input" id="passportcheck" >
                                         <label class="form-check-label" for="passportcheck">Passport copy</label><br />
 
                                         <img id="passportImg" src="assets/img/passport-sample.jpg" class="rounded mt-3"
@@ -155,15 +156,15 @@
                                     </div>
 
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 mt-3">
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="same-address">
-                                        <label class="form-check-label" for="same-address">Student ID</label>
+                                        <input type="checkbox" class="form-check-input" id="studentId">
+                                        <label class="form-check-label" for="studentId">Student ID</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="save-info">
-                                        <label class="form-check-label" for="save-info">University Offer Letter</label>
+                                        <input type="checkbox" class="form-check-input" id="uniOffer">
+                                        <label class="form-check-label" for="uniOffer">University Offer Letter</label>
                                     </div>
                                 </div>
 
@@ -171,29 +172,45 @@
 
                             <hr class="my-4">
                             <div class="row g-3 mt-3">
-                                <div class="col-12">
-                                    <h4>Employee</h4>
-                                </div>
-                                <div class="col-12">
+                                <div class="col-6">
+                                    <h4 class="mb-3">Employee</h4>
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="same-address">
-                                        <label class="form-check-label" for="same-address">Passport Copy</label>
+                                        <input type="checkbox" class="form-check-input" id="employeePassport">
+                                        <label class="form-check-label" for="employeePassport">Passport Copy</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="save-info">
-                                        <label class="form-check-label" for="save-info">Employment Letter
+                                        <input type="checkbox" class="form-check-input" id="employmentLetter">
+                                        <label class="form-check-label" for="employmentLetter">Employment Letter
                                             </label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="save-info">
-                                        <label class="form-check-label" for="save-info">Work Permit</label>
+                                        <input type="checkbox" class="form-check-input" id="workPermit">
+                                        <label class="form-check-label" for="workPermit">Work Permit</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="save-info">
-                                        <label class="form-check-label" for="save-info">Employee ID</label>
+                                        <input type="checkbox" class="form-check-input" id="employeeId">
+                                        <label class="form-check-label" for="employeeId">Employee ID</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <h4 class="mb-3">Self Employed(freelancer)</h4>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="freelancerIc">
+                                        <label class="form-check-label" for="freelancerIc">IC Copy</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="frelancerPassport">
+                                        <label class="form-check-label" for="frelancerPassport">Passport Copy
+                                            </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="freelancerBizCard">
+                                        <label class="form-check-label" for="freelancerBizCard">Business Card</label>
                                     </div>
                                 </div>
                             </div>
@@ -203,77 +220,44 @@
                             <hr class="my-4">
 
                             <div class="row g-3 mt-3">
-                                <div class="col-12">
-                                    <h4>Self Employed(freelancer)</h4>
-                                </div>
-                                <div class="col-12">
+                                <div class="col-6">
+                                    
+                                    <h4 class="mb-3">Self Employed(business)</h4>
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="same-address">
-                                        <label class="form-check-label" for="same-address">IC Copy</label>
+                                        <input type="checkbox" class="form-check-input" id="bizIc">
+                                        <label class="form-check-label" for="bizIc">IC Copy</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="save-info">
-                                        <label class="form-check-label" for="save-info">Passport Copy
-                                            </label>
+                                        <input type="checkbox" class="form-check-input" id="bizPassport">
+                                        <label class="form-check-label" for="bizPassport">Passport Copy</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="save-info">
-                                        <label class="form-check-label" for="save-info">Business Card</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <hr class="my-4">
-
-                            <div class="row g-3 mt-3">
-                                <div class="col-12">
-                                    <h4>Self Employed(business)</h4>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="same-address">
-                                        <label class="form-check-label" for="same-address">IC Copy</label>
+                                        <input type="checkbox" class="form-check-input" id="bizCard">
+                                        <label class="form-check-label" for="bizCard">Business Card</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="save-info">
-                                        <label class="form-check-label" for="save-info">Passport Copy
-                                            </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="save-info">
-                                        <label class="form-check-label" >Business Card</label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="save-info">
-                                        <label class="form-check-label" >Company Registration Form</label>
+                                        <input type="checkbox" class="form-check-input" id="compRegForm">
+                                        <label class="form-check-label" for="compRegForm">Company Registration Form</label>
                                     </div>
                                 </div>
-                            </div>
-
-                            <hr class="my-4">
-
-                            <div class="row g-3 mt-3">
-                                <div class="col-12">
-                                    <h4>Company</h4>
-                                </div>
-                                <div class="col-12">
+                                <div class="col-6">
+                                    <h4 class="mb-3">Company</h4>
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="same-address">
-                                        <label class="form-check-label">Company Registration form</label>
+                                        <input type="checkbox" class="form-check-input" id="bizcompRegForm">
+                                        <label class="form-check-label" for="bizcompRegForm">Company Registration form</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="save-info">
-                                        <label class="form-check-label" >List of Directors
+                                        <input type="checkbox" class="form-check-input" id="bizListDirector">
+                                        <label class="form-check-label" for="bizListDirector">List of Directors
                                             </label>
                                     </div>
                                 </div>
                             </div>
+
                             
                             <hr class="my-4">
 
