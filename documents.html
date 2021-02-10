@@ -51,9 +51,16 @@
                         <form class="needs-validation text-start" action="documents.html" novalidate>
                             <div class="row">
                                 <div class="col-6">
-                                    <img src="assets/img/avatar.svg" class="img-circle p-1 me-3" width="70px"
-                                        style="cursor: pointer;" />
-                                    <button class="btn btn-primary btn-md px-1" type="button">Edit Photo</button>
+                                    <div class="avatar-upload">
+                                        <div class="avatar-edit">
+                                            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                            <label for="imageUpload"></label>
+                                        </div>
+                                        <div class="avatar-preview">
+                                            <div id="imagePreview" style="background-image: url(assets/img/avatar.svg);">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="row">

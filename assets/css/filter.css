@@ -45,6 +45,5 @@
   .dropdown:hover .dropdown-content {display: block;}
 
   #FilterContainer {
-    text-align: center;
     justify-content: center;
   }

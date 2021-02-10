@@ -1,8 +1,15 @@
+
+/* Global */
+/* ========================================== */
+
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
 }
+
+/* Sidebar */
+/* ========================================== */
 
 @media screen and (max-height: 450px) {
   .sidebar {
@@ -10,5 +17,31 @@
   }
   .sidebar a {
     font-size: 18px;
+  }
+}
+
+/* timeline */
+/* ========================================== */
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+  .timelinecontainer {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .timelinecontainer::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  .left::after, .right::after {
+    left: 15px;
+  }
+  .right {
+    left: 0%;
   }
 }
