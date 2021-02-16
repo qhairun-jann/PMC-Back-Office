@@ -2,316 +2,621 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>App Library | Rizurf Back Office</title>
-    <meta name="description" content="A description.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>App Library | Rizurf Back Office</title>
+  <meta name="description" content="A description.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
 
 </head>
 
 <body class="p-0 bg-dark h-100 bg-dark">
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="activities.html">Activities</a>
-        <a href="app-drawer.html">App Library</a>
-    </div>
-    <header id="main" class="navbar navbar-dark sticky-top bg-dark flex-nowrap p-0 shadow">
-        <button class="openbtn" onclick="openNav()">☰</button>
-        <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
-        <ul class="navicon px-3 d-flex m-0">
-            <li>
-                <a href="#">
-                    <span class="fa-stack fa-lg" data-count="28">
-                    <i class="fa fa-bell fa-stack-1x "></i>
-                  </span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="fa-stack fa-lg">
-                    <i class="fas fa-user fa-stack-1x "></i>
-                  </span>
-                </a>
-            </li>
-        </ul>
-    </header>
-    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <section class="mb-5">
-            <div class="container mt-5">
-                <div class="row justify-content-center ">
-                    <div class="col-sm-10">
-                        
-                        <h1 class="h1 text-white text-center">Activities</h1>
-                        <hr class="text-white" />
-                        <div class="row my-5">
-                            <div class="col-3 dropdown">
-                                <button class="dropbtn btn btn-primary">Category</button>
-                                <div id="FilterContainer" class="dropdown-content multiple-items">
-                                    
-                                    <div class="widthfitcontent p-2">
-                                        <input class="form-control " type="text" placeholder="Search" aria-label="Search">
-                                    </div>
-                                    <div class="widthfitcontent p-2">
-                                            <input type="checkbox" class="form-check-input" id="item1">
-                                            <label class="form-check-label text-white" for="item1">Item 1</label>
-                                        
-                                        <!-- <a class="btnfiltermain btnfilter" value="cat1" onclick="filterSelection('cat1')">
-                                            Item 1
-                                        </a> -->
-                                    </div>
-                                    <div class="widthfitcontent p-2">
-                                        <input type="checkbox" class="form-check-input" id="item2">
-                                            <label class="form-check-label text-white" for="item2">Item 2</label>
-                                        <a class="btnfiltermain btnfilter" value="cat2"
-                                            onclick="filterSelection('cat2')">
-                                            Item 2</a>
-                                    </div>
-                                    <div class="widthfitcontent p-2">
-                                        <input type="checkbox" class="form-check-input" id="item3">
-                                            <label class="form-check-label text-white" for="item3">Item 3</label>
-                                        <!-- <a class="btnfiltermain btnfilter current" value="cat3"
-                                            onclick="filterSelection('cat3')">
-                                            Item 3
-                                        </a> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 dropdown">
-                                <button class="dropbtn btn btn-primary">Select date</button>
-                                <div id="FilterContainer" class="dropdown-content">
-                                    <div class="widthfitcontent p-2">
-                                        <input class="form-control " type="text" placeholder="Search" aria-label="Search">
-                                    </div>
-                                    <div class="widthfitcontent p-2">
-                                        <input type="checkbox" class="form-check-input" id="dateitem1">
-                                            <label class="form-check-label text-white" for="dateitem1">Item 1</label>
-                                        <!-- <a class="btnfiltermain btnfilter" value="date1" onclick="filterSelection('date1')">
-                                            Item 1</a> -->
-                                    </div>
-                                    <div class="widthfitcontent p-2">
-                                        <input type="checkbox" class="form-check-input" id="dateitem2">
-                                            <label class="form-check-label text-white" for="dateitem2">Item 2</label>
-                                        <!-- <a class="btnfiltermain btnfilter" value="date2"
-                                            onclick="filterSelection('date2')">
-                                            Item 2</a> -->
-                                    </div>
-                                    <div class="widthfitcontent p-2 ">
-                                        <input type="checkbox" class="form-check-input" id="dateitem3">
-                                            <label class="form-check-label text-white" for="dateitem3">Item 3</label>
-                                        <!-- <a class="btnfiltermain btnfilter current" value="date3"
-                                            onclick="filterSelection('date2')">
-                                            Item 3
-                                        </a> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 dropdown">
-                                <button class="dropbtn btn btn-primary">Select building</button>
-                                <div id="FilterContainer" class="dropdown-content">
-                                    <div class="widthfitcontent p-2">
-                                        <input class="form-control " type="text" placeholder="Search" aria-label="Search">
-                                    </div>
-                                    <div class="widthfitcontent p-2">
-                                        <input type="checkbox" class="form-check-input" id="buildingitem1">
-                                            <label class="form-check-label text-white" for="buildingitem1">Item 1</label>
-                                        <!-- <a class="btnfiltermain btnfilter" value="bldng1" onclick="filterSelection('bldng1')">
-                                            Item 1</a> -->
-                                    </div>
-                                    <div class="widthfitcontent p-2">
-                                        <input type="checkbox" class="form-check-input" id="buildingitem2">
-                                            <label class="form-check-label text-white" for="buildingitem2">Item 2</label>
-                                        <!-- <a class="btnfiltermain btnfilter" value="bldng2"
-                                            onclick="filterSelection('bldng2')">
-                                            Item 2</a> -->
-                                    </div>
-                                    <div class="widthfitcontent p-2 ">
-                                        <input type="checkbox" class="form-check-input" id="buildingitem3">
-                                            <label class="form-check-label text-white" for="buildingitem3">Item 3</label>
-                                        <!-- <a class="btnfiltermain btnfilter current" value="bldng3"
-                                            onclick="filterSelection('bldng3')">
-                                            Item 3
-                                        </a> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 dropdown">
-                                <button class="dropbtn btn btn-primary">Select unit number</button>
-                                <div id="FilterContainer" class="dropdown-content">
-                                    <div class="widthfitcontent p-2">
-                                        <input class="form-control  " type="text" placeholder="Search" aria-label="Search">
-                                    </div>
-                                    <div class="widthfitcontent p-2">
-                                        <input type="checkbox" class="form-check-input" id="unititem1">
-                                            <label class="form-check-label text-white" for="unititem1">Item 1</label>
-                                        <!-- <a class="btnfiltermain btnfilter" value="unit1" onclick="filterSelection('unit1')">
-                                            Item 1</a> -->
-                                    </div>
-                                    <div class="widthfitcontent p-2">
-                                        <input type="checkbox" class="form-check-input" id="unititem2">
-                                            <label class="form-check-label text-white" for="unititem2">Item 2</label>
-                                        <!-- <a class="btnfiltermain btnfilter" value="unit2"
-                                            onclick="filterSelection('unit2')">
-                                            Item 2</a> -->
-                                    </div>
-                                    <div class="widthfitcontent p-2">
-                                        <input type="checkbox" class="form-check-input" id="unititem3">
-                                            <label class="form-check-label text-white" for="unititem3">Item 3</label>
-                                        <!-- <a class="btnfiltermain btnfilter current" value="unit3"
-                                            onclick="filterSelection('unit3')">
-                                            Item 3
-                                        </a> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="text-white" />
-                        <div class="row justify-content-center">
-                            <div class="col-sm-12">
-                                <div class="timeline">
-                                    <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1" data-name="cat1, unit1, bldng1, date1">
-                                        <div class="content">
-                                            <h2>2017</h2>
-                                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
-                                                mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
-                                                voluptua dignissim per, habeo iusto primis ea eam.</p>
-                                        </div>
-                                    </div>
-                                    <div class="timelinecontainer filterDiv right cat2 unit2 bldng2 date2" data-name="cat2, unit2, bldng2, date2">
-                                        <div class="content">
-                                            <h2>2016</h2>
-                                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
-                                                mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
-                                                voluptua dignissim per, habeo iusto primis ea eam.</p>
-                                        </div>
-                                    </div>
-                                    <div class="timelinecontainer filterDiv right cat3 unit3 bldng3 date3" data-name="cat3, unit3, bldng3, date3">
-                                        <div class="content">
-                                            <h2>2015</h2>
-                                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
-                                                mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
-                                                voluptua dignissim per, habeo iusto primis ea eam.</p>
-                                        </div>
-                                    </div>
-                                    <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1" data-name="cat1, unit1, bldng1, date1">
-                                        <div class="content">
-                                            <h2>2012</h2>
-                                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
-                                                mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
-                                                voluptua dignissim per, habeo iusto primis ea eam.</p>
-                                        </div>
-                                    </div>
-                                    <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1" data-name="cat1, unit1, bldng1, date1">
-                                        <div class="content">
-                                            <h2>2011</h2>
-                                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
-                                                mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
-                                                voluptua dignissim per, habeo iusto primis ea eam.</p>
-                                        </div>
-                                    </div>
-                                    <div class="timelinecontainer filterDiv right made cat2 unit2 bldng2 date2" data-name="cat2, unit2, bldng2, date2">
-                                        <div class="content">
-                                            <h2>2007</h2>
-                                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
-                                                mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
-                                                voluptua dignissim per, habeo iusto primis ea eam.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="activities.html">Activities</a>
+    <a href="app-drawer.html">App Library</a>
+  </div>
+  <header id="main" class="navbar navbar-dark sticky-top bg-dark flex-nowrap p-0 shadow">
+    <button class="openbtn" onclick="openNav()">☰</button>
+    <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
+    <ul class="navicon px-3 d-flex m-0">
+      <li>
+        <a href="#">
+          <span class="fa-stack fa-lg" data-count="28">
+            <i class="fa fa-bell fa-stack-1x "></i>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="fa-stack fa-lg">
+            <i class="fas fa-user fa-stack-1x "></i>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </header>
+  <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <section class="mb-5">
+
+
+      <div class="container mt-5">
+        <h1 class="h1 text-white text-center">Activities</h1>
+        <hr class="text-white" />
+
+
+
+
+        <!-- <div class="filter js-navbar mt-5">
+          <ul class="menu p-0 d-flex">
+                <li>
+                  <a class="hasDropdown justify-content-center" href="#">Category</a>
+
+                  <ul class="filter-container p-0">
+
+                    <div class="container__list">
+                      <input class="form-control m-3" type="text" placeholder="Search" aria-label="Search"
+                        style="border-radius: 10px;">
+                      <div class="container__listItem">
+                        <div>Televisions</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Home Entertainment Systems</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Headphones</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Speakers</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>MP3, Media Players & Accessories</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Audio & Video Accessories</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Cameras</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>DSLR Cameras</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Camera Accessories</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Musical Instruments & Professional Audio</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Gaming Consoles</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div> All Electronics </div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Air Conditioners</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Refrigerators</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Washing Machines</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Kitchen & Home Appliances</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Heating & Cooling Appliances</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>All Appliances</div>
+                      </div>
                     </div>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" style="padding: 11.5px;"><input type="date" class="form-control" id="dob"
+                      placeholder="Select a Date"></a>
+                </li>
+                <li>
+                  <a class="hasDropdown" href="#">Location</a>
+                  <ul class="filter-container has-multi">
+
+                    <div class="container__list container__list-multi">
+                      <h2 class="text-dark">Building</h2>
+                      <input class="form-control me-3" type="text" placeholder="Search" aria-label="Search"
+                        style="border-radius: 10px;">
+                      <div class="container__listItem">
+                        <div>Televisions</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Home Entertainment Systems</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Headphones</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Speakers</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>MP3, Media Players & Accessories</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Audio & Video Accessories</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Cameras</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>DSLR Cameras</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Camera Accessories</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Musical Instruments & Professional Audio</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Gaming Consoles</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div> All Electronics </div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Air Conditioners</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Refrigerators</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Washing Machines</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Kitchen & Home Appliances</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Heating & Cooling Appliances</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>All Appliances</div>
+                      </div>
+                    </div>
+                    <div class="container__list container__list-multi">
+                      <h2 class="text-dark">Area</h2>
+                      <input class="form-control me-3" type="text" placeholder="Search" aria-label="Search"
+                        style="border-radius: 10px;">
+                      <div class="container__listItem">
+                        <div>Mobiles</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Laptops</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Mobile Accessories</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>PC Accessories</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Data Storage</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>PC Components</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Speakers</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Networking</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Printers and Ink</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Wearables</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Tablets</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div> Desktops </div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Chromebook</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>USBs</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>CAT5 Cables</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Water Purifiers</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Screenguards</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>All Appliances</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Landline Phones</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Chargers</div>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li>
+                  <a class="hasDropdown" href="#">Unit</a>
+                  <ul class="filter-container has-multi">
+
+                    <div class="container__list container__list-multi">
+                      <h2 class="text-dark">Block</h2>
+                      <input class="form-control me-3" type="text" placeholder="Search" aria-label="Search"
+                        style="border-radius: 10px;">
+                      <div class="container__listItem">
+                        <div>Televisions</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Home Entertainment Systems</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Headphones</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Speakers</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>MP3, Media Players & Accessories</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Audio & Video Accessories</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Cameras</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>DSLR Cameras</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Camera Accessories</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Musical Instruments & Professional Audio</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Gaming Consoles</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div> All Electronics </div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Air Conditioners</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Refrigerators</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Washing Machines</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Kitchen & Home Appliances</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Heating & Cooling Appliances</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>All Appliances</div>
+                      </div>
+                    </div>
+                    <div class="container__list container__list-multi">
+                      <h2 class="text-dark">Level</h2>
+                      <input class="form-control me-3" type="text" placeholder="Search" aria-label="Search"
+                        style="border-radius: 10px;">
+                      <div class="container__listItem">
+                        <div>Mobiles</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Laptops</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Mobile Accessories</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>PC Accessories</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Data Storage</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>PC Components</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Speakers</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Networking</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Printers and Ink</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Wearables</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Tablets</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div> Desktops </div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Chromebook</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>USBs</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>CAT5 Cables</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Water Purifiers</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Screenguards</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>All Appliances</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Landline Phones</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Chargers</div>
+                      </div>
+                    </div>
+                    <div class="container__list container__list-multi">
+                      <h2 class="text-dark">Unit no.</h2>
+                      <input class="form-control me-3" type="text" placeholder="Search" aria-label="Search"
+                        style="border-radius: 10px;">
+                      <div class="container__listItem">
+                        <div>Mobiles</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Laptops</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Mobile Accessories</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>PC Accessories</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Data Storage</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>PC Components</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Speakers</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Networking</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Printers and Ink</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Wearables</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Tablets</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div> Desktops </div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Chromebook</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>USBs</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>CAT5 Cables</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Water Purifiers</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Screenguards</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>All Appliances</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Landline Phones</div>
+                      </div>
+                      <div class="container__listItem">
+                        <div>Chargers</div>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+          </ul>
+        </div> -->
+        <hr class="text-white" />
+        <div class="row justify-content-center ">
+          <div class="col-sm-10">
+
+
+            <div class="row justify-content-center">
+              <div class="col-sm-12">
+                <div class="timeline">
+                  <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                    data-name="cat1, unit1, bldng1, date1">
+                    <div class="content">
+                      <h2>2017</h2>
+                      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
+                        mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
+                        voluptua dignissim per, habeo iusto primis ea eam.</p>
+                    </div>
+                  </div>
+                  <div class="timelinecontainer filterDiv right cat2 unit2 bldng2 date2"
+                    data-name="cat2, unit2, bldng2, date2">
+                    <div class="content">
+                      <h2>2016</h2>
+                      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
+                        mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
+                        voluptua dignissim per, habeo iusto primis ea eam.</p>
+                    </div>
+                  </div>
+                  <div class="timelinecontainer filterDiv right cat3 unit3 bldng3 date3"
+                    data-name="cat3, unit3, bldng3, date3">
+                    <div class="content">
+                      <h2>2015</h2>
+                      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
+                        mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
+                        voluptua dignissim per, habeo iusto primis ea eam.</p>
+                    </div>
+                  </div>
+                  <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                    data-name="cat1, unit1, bldng1, date1">
+                    <div class="content">
+                      <h2>2012</h2>
+                      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
+                        mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
+                        voluptua dignissim per, habeo iusto primis ea eam.</p>
+                    </div>
+                  </div>
+                  <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                    data-name="cat1, unit1, bldng1, date1">
+                    <div class="content">
+                      <h2>2011</h2>
+                      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
+                        mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
+                        voluptua dignissim per, habeo iusto primis ea eam.</p>
+                    </div>
+                  </div>
+                  <div class="timelinecontainer filterDiv right made cat2 unit2 bldng2 date2"
+                    data-name="cat2, unit2, bldng2, date2">
+                    <div class="content">
+                      <h2>2007</h2>
+                      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
+                        mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
+                        voluptua dignissim per, habeo iusto primis ea eam.</p>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-        <footer class="mt-auto text-white-50 text-center">
-            <p>&copy; <span id="year"></span>
-                Copyright by Jann Properties</p>
-        </footer>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-    </script>
-    <script>
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-        }
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="mt-auto text-white-50 text-center">
+      <p>&copy; <span id="year"></span>
+        Copyright by Jann Properties</p>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
 
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-        }
-    </script>
-    <script>
-        filterSelection("all")
-        function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("filterDiv");
-            if (c == "all") c = "";
-            for (i = 0; i < x.length; i++) {
-                w3RemoveClass(x[i], "show");
-                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-            }
-        }
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+  <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
 
-        function w3AddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
-            }
-        }
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+      }
+    }
 
-        function w3RemoveClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                    arr1.splice(arr1.indexOf(arr2[i]), 1);
-                }
-            }
-            element.className = arr1.join(" ");
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
         }
+      }
+      element.className = arr1.join(" ");
+    }
 
-        var btnContainer = document.getElementById("FilterContainer");
-        var btns = btnContainer.getElementsByClassName("btnfilter");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                var current = document.getElementsByClassName("current");
-                current[0].className = current[0].className.replace("current", "");
-                this.className += " current";
-            });
-        }
-    </script>
-    <script>
-        $("#filteroption").change(function () {
-            var selectItem = $(this).val();
-            filter(selectItem);
-        });
-        function filter(e) {
-            var regex = new RegExp('\\b\\w*' + e + '\\w*\\b');
-            $('.filterDiv').hide().filter(function () {
-                return regex.test($(this).data('name'))
-            }).show();
-            if ($("#vertical-timeline").children(":visible").length == 0) {
-                $(".empty").show();
-            } else {
-                $(".empty").hide();
-            }
-        }
-    </script>
+    var btnContainer = document.getElementById("FilterContainer");
+    var btns = btnContainer.getElementsByClassName("btnfilter");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("current");
+        current[0].className = current[0].className.replace("current", "");
+        this.className += " current";
+      });
+    }
+  </script>
+  <script>
+    $("#filteroption").change(function () {
+      var selectItem = $(this).val();
+      filter(selectItem);
+    });
+    function filter(e) {
+      var regex = new RegExp('\\b\\w*' + e + '\\w*\\b');
+      $('.filterDiv').hide().filter(function () {
+        return regex.test($(this).data('name'))
+      }).show();
+      if ($("#vertical-timeline").children(":visible").length == 0) {
+        $(".empty").show();
+      } else {
+        $(".empty").hide();
+      }
+    }
+  </script>
+  <script type="text/javascript">
+    /// some script
+
+    // jquery ready start
+    $(document).ready(function () {
+      // jQuery code
+
+      //////////////////////// Prevent closing from click inside dropdown
+      $(document).on('click', '.dropdown-menu', function (e) {
+        e.stopPropagation();
+      });
+
+
+    }); // jquery end
+  </script>
 </body>
 
 </html>
