@@ -57,7 +57,8 @@
                                             <label for="imageUpload"></label>
                                         </div>
                                         <div class="avatar-preview">
-                                            <div id="imagePreview" style="background-image: url(assets/img/avatar.svg);">
+                                            <div id="imagePreview"
+                                                style="background-image: url(assets/img/avatar.svg);">
                                             </div>
                                         </div>
                                     </div>
@@ -136,7 +137,7 @@
                                 <div class="col-12 mt-5">
                                     <h3>Personal Details</h3>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-4">
                                     <label for="username" class="form-label">Username</label>
                                     <div class="input-group">
                                         <span class="input-group-text">@</span>
@@ -148,28 +149,28 @@
                                     </div>
                                 </div>
 
-                                <div class="col-6">
+                                <div class="col-4">
+                                    <label for="familyName" class="form-label">Family / Sur Name (Optional) </label>
+                                    <input type="text" class="form-control" id="familyName" placeholder="Family Name"
+                                        required>
+                                   
+                                </div>
+                                <div class="col-4">
                                     <label for="email" class="form-label">Email</label>
                                     <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                                    <div class="invalid-feedback">
-                                        Please enter a valid email address.
-                                    </div>
+                                    
                                 </div>
                                 <div class="col-4">
                                     <label for="passport" class="form-label">Passport No.</label>
                                     <input type="number" class="form-control" id="passport"
                                         placeholder="eg: A00000000" />
-                                    <div class="invalid-feedback">
-                                        Please enter a valid passport number.
-                                    </div>
+                                    
                                 </div>
                                 <div class="col-4">
                                     <label for="id-no" class="form-label">Identification Number</label>
                                     <input type="number" class="form-control" id="id-no"
                                         placeholder="eg: 901025037890" />
-                                    <div class="invalid-feedback">
-                                        Please enter a valid identification number.
-                                    </div>
+                                    
                                 </div>
                                 <div class="col-4">
                                     <label for="phone-no" class="form-label">Contact Number</label>
@@ -188,9 +189,7 @@
                                         <option>Male</option>
                                         <option>Female</option>
                                     </select>
-                                    <div class="invalid-feedback">
-                                        Please enter a valid passport number.
-                                    </div>
+                                    
                                 </div>
 
                                 <div class="col-3">
@@ -446,16 +445,12 @@
                                         <option value="Zambia">Zambia</option>
                                         <option value="Zimbabwe">Zimbabwe</option>
                                     </datalist>
-                                    <div class="invalid-feedback">
-                                        Please select you nationality.
-                                    </div>
+                                    
                                 </div>
                                 <div class="col-3">
                                     <label for="dob" class="form-label">Date of birth</label>
                                     <input type="date" class="form-control" id="dob">
-                                    <div class="invalid-feedback">
-                                        Please enter your date of birth.
-                                    </div>
+                                    
                                 </div>
                                 <div class="col-3">
                                     <label for="email" class="form-label">Age</label>
@@ -465,15 +460,23 @@
                                 <div class="col-3">
                                     <label for="occupation" class="form-label">Occupation</label>
                                     <input type="text" class="form-control" id="occupation">
-                                    <div class="invalid-feedback">
-                                        Please enter your occupation.
-                                    </div>
+                                    
                                 </div>
                                 <div class="col-3">
                                     <label for="companyname" class="form-label">Company Name</label>
                                     <input type="text" class="form-control" id="companyname">
+                                    
+                                </div>
+                                <div class="col-3">
+                                    <label for="additionalRole" class="form-label">Additional Role</label>
+                                    <select class="form-select"id="additionalRole">
+                                        <option value="">Select your additional role</option>
+                                        <option>Student</option>
+                                        <option>Unemployed</option>
+                                        <option>business</option>
+                                    </select>
                                     <div class="invalid-feedback">
-                                        Please enter your Company Name.
+                                        Please select your additional Role.
                                     </div>
                                 </div>
                             </div>
@@ -487,48 +490,36 @@
                                 <div class="col-sm-3">
                                     <label for="block" class="form-label">Block</label>
                                     <input type="text" class="form-control" id="block">
-                                    <div class="invalid-feedback">
-                                        Please enter your shipping address.
-                                    </div>
+                                    
                                 </div>
 
                                 <div class="col-sm-3">
                                     <label for="level" class="form-label">Level</label>
                                     <input type="number" class="form-control" id="level">
-                                    <div class="invalid-feedback">
-                                        Please select a valid country.
-                                    </div>
+                                    
                                 </div>
 
                                 <div class="col-sm-3">
                                     <label for="unit" class="form-label">Unit</label>
                                     <input type="text" class="form-control" id="unit">
-                                    <div class="invalid-feedback">
-                                        Please select a valid country.
-                                    </div>
+                                    
                                 </div>
 
                                 <div class="col-sm-3">
                                     <label for="building" class="form-label">Building Name</label>
                                     <input type="text" class="form-control" id="building">
-                                    <div class="invalid-feedback">
-                                        Please provide a valid state.
-                                    </div>
+                                    
                                 </div>
 
                                 <div class="col-sm-3">
                                     <label for="lotunit" class="form-label">Lot / Unit Number</label>
                                     <input type="number" class="form-control" id="lotunit">
-                                    <div class="invalid-feedback">
-                                        Zip code required.
-                                    </div>
+                                    
                                 </div>
                                 <div class="col-sm-3">
                                     <label for="address" class="form-label">Street Name</label>
                                     <input type="text" class="form-control" id="address">
-                                    <div class="invalid-feedback">
-                                        Please enter your shipping address.
-                                    </div>
+                                    
                                 </div>
 
                                 <div class="col-sm-3">
@@ -539,24 +530,18 @@
                                 <div class="col-sm-3">
                                     <label for="postcode" class="form-label">Post Code</label>
                                     <input type="number" class="form-control" id="postcode">
-                                    <div class="invalid-feedback">
-                                        Please enter your valid post code
-                                    </div>
+                                    
                                 </div>
 
                                 <div class="col-sm-3">
                                     <label for="city" class="form-label">City</label>
                                     <input type="text" class="form-control" id="city">
-                                    <div class="invalid-feedback">
-                                        Please provide a valid City you currently in.
-                                    </div>
+                                   
                                 </div>
                                 <div class="col-sm-3">
                                     <label for="states" class="form-label">State</label>
                                     <input type="text" class="form-control" id="states">
-                                    <div class="invalid-feedback">
-                                        Please enter your state
-                                    </div>
+                                    
                                 </div>
                                 <div class="col-sm-3">
                                     <label for="world" class="form-label">Country</label>
@@ -810,9 +795,7 @@
                                         <option value="Zambia">Zambia</option>
                                         <option value="Zimbabwe">Zimbabwe</option>
                                     </datalist>
-                                    <div class="invalid-feedback">
-                                        Please enter your country.
-                                    </div>
+                                    
                                 </div>
                             </div>
 
@@ -826,18 +809,14 @@
                                 <div class="col-md-3">
                                     <label for="bankname" class="form-label">Bank Name</label>
                                     <input type="text" class="form-control" id="bankname" placeholder="eg: Maybank">
-                                    <div class="invalid-feedback">
-                                        Bank Name required
-                                    </div>
+                                    
                                 </div>
 
                                 <div class="col-md-3">
-                                    <label for="bankaccount" class="form-label">Bank Account NO.</label>
+                                    <label for="bankaccount" class="form-label">Bank Account NR.</label>
                                     <input type="text" class="form-control" id="bankaccount"
                                         placeholder="eg: 123456789012">
-                                    <div class="invalid-feedback">
-                                        Security code required
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <hr class="my-4">
@@ -861,9 +840,8 @@
                 Copyright by Jann Properties</p>
         </footer>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
         document.getElementById("year").innerHTML = new Date().getFullYear();

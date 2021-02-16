@@ -50,3 +50,9 @@ body {
 table {
   table-layout : fixed;
 }
+
+/* modal */
+/* ================================= */
+.btn-close {
+  color: #fff !important;
+}
