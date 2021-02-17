@@ -75,8 +75,8 @@ li:hover a.hasDropdown:after {
 
 .filter-container {
   position: absolute;
- z-index: 2;
-  top: 61px;
+  z-index: 2;
+  /* top: 61px; */
   right: 0;
   left: 0;
   display: none;
@@ -86,11 +86,12 @@ li:hover a.hasDropdown:after {
   box-shadow: 0 2px 0 rgba(0, 0, 0, .06);
   border-radius: 8px;
   padding: 20px;
+  margin-top: 61px;
 }
 
 .container__list {
-  /* display: flex; */
-  /* min-width: 0; */
+  display: flex;
+  min-width: 0;
   padding: 1px;
   flex: 1;
   flex-wrap: wrap;
@@ -125,6 +126,7 @@ li:hover a.hasDropdown:after {
 .filter-container.has-multi .container__list {
   border-radius: 4px;
   flex-basis: 33.333%;
+  display: block;
 }
 
 .filter-container.has-multi .container__list:not(:last-child) {
