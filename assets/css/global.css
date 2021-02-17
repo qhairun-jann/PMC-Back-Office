@@ -51,8 +51,23 @@ table {
   table-layout : fixed;
 }
 
+.desktop {
+  display: block ;
+}
+.mobile {
+  display: none ;
+}
+
 /* modal */
 /* ================================= */
 .btn-close {
   color: #fff !important;
+}
+
+/* button customize */
+/* ================================= */
+
+.btn-customsize {
+  padding: 20px;
+  border-radius: 13px;
 }

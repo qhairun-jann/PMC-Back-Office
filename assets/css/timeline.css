@@ -12,14 +12,14 @@
   position: absolute;
   width: 3px;
   background-color: rgb(145, 145, 145);
-  top: 20px;
-  bottom: 144px;
-  left: 30px;
+  top: 26px;
+  bottom: 133px;
+  left: 28px;
   margin-left: -3px;
 }
 
 .timelinecontainer {
-  padding: 10px 40px;
+  padding: 10px 27px;
   position: relative;
   background-color: inherit;
   width: 100%;
@@ -28,11 +28,11 @@
 .timelinecontainer::after {
   content: '';
   position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
+  width: 15px;
+  height: 15px;
+  right: -18px;
   background-color: #0d6efd;
-  top: 19px;
+  top: 25px;
   border-radius: 50%;
   z-index: 1;
 }
@@ -42,7 +42,7 @@
 }
 
 .right {
-  left: 30px;
+  left: 27px;
 }
 
 .left::before {
@@ -65,14 +65,14 @@
   top: 22px;
   width: 0;
   z-index: 1;
-  left: 30px;
+  left: 17px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
   border-color: transparent white transparent transparent;
 }
 
 .right::after {
-  left: -13px;
+  left: -8px;
 }
 
 .content {

@@ -8,6 +8,15 @@
   }
 }
 
+@media (min-width: 200px) and (max-width: 768px) {
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
+  }
+}
+
 /* Sidebar */
 /* ========================================== */
 
@@ -24,9 +33,7 @@
 /* ========================================== */
 
 @media screen and (max-width: 600px) {
-  .timeline::after {
-    left: 31px;
-  }
+  
   .timelinecontainer {
     width: 100%;
     padding-left: 70px;
@@ -45,8 +52,17 @@
     left: 0%;
   }
 }
+@media (min-width: 200px) and (max-width: 767px) {
+  .timeline::after {
+    left: 28px !important;
+    top: 26px !important;
+    bottom: 220px !important;
+  }
+}
 
 
+/* Dropdows */
+/* ======================================================= */
 @media (min-width: 200px) and (max-width: 767px) {
 .dropdown-content {
   display: none;
@@ -57,4 +73,11 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
+}
+
+@media all and (min-width: 992px) {
+  .navbar{ padding-top: 0; padding-bottom: 0; }
+  .navbar .has-megamenu{position:static!important;}
+  .navbar .megamenu{left:0; right:0; width:100%; padding:20px;  }
+  .navbar .nav-link{ padding-top:1rem; padding-bottom:1rem;  }
 }
