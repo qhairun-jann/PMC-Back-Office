@@ -203,6 +203,19 @@ li:hover a.hasDropdown:after {
   display: block;
   color:#fff;
 }
+.selected {
+  border-style:solid;
+  background-color: rgb(210, 222, 240);
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #0d6efd;
+}
+
+.selected:hover {
+  cursor:pointer !important ;
+}
+
+/* End Multiple Section Menu */
 
 .menu > ul > li:hover { background: #f0f0f0; }
 

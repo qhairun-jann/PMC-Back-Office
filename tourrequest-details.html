@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Create New Users | Requirements | Rizurf Back Office</title>
+    <meta name="description" content="A description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="activities.html">Activities</a>
+        <a href="app-drawer.html">App Library</a>
+    </div>
+    <header id="main" class="navbar navbar-dark sticky-top bg-dark flex-nowrap p-0 shadow">
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
+        <ul class="navicon px-3 d-flex m-0">
+            <li>
+                <a href="#">
+                    <span class="fa-stack fa-lg" data-count="28">
+                    <i class="fa fa-bell fa-stack-1x "></i>
+                  </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa-stack fa-lg">
+                    <i class="fas fa-user fa-stack-1x "></i>
+                  </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <section class="mb-5">
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-sm-10">
+                        <h1 class="h1 text-white text-center">Tour Request Details</h1>
+                        <hr />
+                        <form class="needs-validation text-start" action="documents.html" novalidate>
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input id="username" type="text" class="form-control"
+                                        value="TrevorHeind" disabled>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="phone-no" class="form-label">Contact Number</label>
+                                    <input type="number" class="form-control" id="phone-no"
+                                        value="01162528738" disabled>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="you@example.com" value="abs123@gmail.com" disabled>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="move-in" class="form-label">Proposed date of tour</label>
+                                    <input type="text" id="move-in" class="form-control" id="exampleFormControlInput1"
+                                        value="12/03/2021" disabled>
+                                </div>
+
+
+                                <div class="col-sm-6">
+                                    <label for="status" class="form-label">Registered User</label>
+                                    <div class="input-group">
+                                        <select id="status" class="form-control form-select" style="cursor: pointer;" list="status" disabled
+                                            placeholder="Registered user?">
+                                            <option value="Yes" selected>Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="session" class="form-label">Session</label>
+                                    <div class="input-group">
+                                        <select id="session" class="form-control form-select" style="cursor: pointer;" list="session" disabled
+                                            placeholder="Session">
+                                            <option value="Morning">Morning</option>
+                                            <option value="Afternoon" selected>Afternoon</option>
+                                            <option value="Evening">Evening</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="building" class="form-label">Building Name</label>
+                                    <input id="building" type="text" class="form-control"
+                                        value="Paradise Residence" disabled>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="unit" class="form-label">Unit No.</label>
+                                    <input id="unit" type="text" class="form-control"
+                                        value="B1811" disabled>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="location" class="form-label">Building Location</label>
+                                    <input id="location" type="text" class="form-control"
+                                        value="Jalan Mawar Bukit tinggi, Kuala Lumpur" disabled>
+                                </div>
+                            </div>
+                            <hr class="text-black" />
+                            <div class="row g-3 mt-3">
+                                <div class="col-sm-12">
+                                    <label for="remarks" class="form-label">Message</label>
+                                    <textarea  class="form-control" id="remarks" style="height: 100px" disabled>it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                                    </textarea>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+                            <div class="row justify-content-center">
+                                <div class="col-4">
+                                    <button class="w-100 btn btn-outline-info" onclick="goBack()">
+                                        <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
+                                        Back To Personal Details
+                                    </button>
+                                </div>
+                                <div class="col-4">
+                                    <button class="w-100 btn btn-primary" type="submit">
+                                        Continue To Document Checklist &nbsp;
+                                        <i class="far fa-arrow-alt-circle-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="mt-auto text-white-50">
+            <p>&copy; <span id="year"></span>
+                Copyright by Jann Properties</p>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <script>
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+
+</html>

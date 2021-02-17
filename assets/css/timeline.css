@@ -82,3 +82,12 @@
   border-radius: 6px;
 }
 
+.content:hover {
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+
+.right::after:hover {
+  background-color: rgb(240, 240, 240);
+}
+
