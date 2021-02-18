@@ -105,6 +105,12 @@ li:hover a.hasDropdown:after {
   /* white-space: nowrap; */
   /* flex: 0 0 33.33%; */
 }
+.container__listItem a{
+  padding: 0 !important;
+}
+.container__listItem a:hover{
+  text-decoration: underline;
+}
 
 .container__listItem > div {
   overflow: hidden;
