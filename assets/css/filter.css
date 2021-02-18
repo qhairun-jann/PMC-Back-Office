@@ -99,6 +99,13 @@ li:hover a.hasDropdown:after {
   background: #343a40;
 }
 
+.container__list a {
+  padding: 0 !important;
+}
+.container__list a {
+  padding: 0 !important;
+}
+
 .container__listItem {
   overflow: hidden;
   padding: 5px 6px;

@@ -64,62 +64,26 @@
                         <div class="filter-container p-0">
 
                           <div class="container__list">
-                            <input class="form-control m-3" type="text" placeholder="Search" aria-label="Search"
-                              style="border-radius: 10px;">
-                            <div class="container__listItem">
-                              <div>Prospect</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Referrer</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Client agent</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Doorcares staff</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Rizurf staff</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Rizurf staff</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Agent/Licensee</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Prospect</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Prospect</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Prospect</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Prospect</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Prospect</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Prospect</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Prospect</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Prospect</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Prospect</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Prospect</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Prospect</div>
-                            </div>
+                            <table class="table text-white table-borderless">
+
+                              <tbody>
+                                <tr>
+                                  <td><a href="#" onclick="select(event)">Mark</a></td>
+                                  <td><a href="#" onclick="select(event)">Otto</a></td>
+                                  <td><a href="#" onclick="select(event)">Otto1</a></td>
+                                </tr>
+                                <tr>
+                                  <td><a href="#" onclick="select(event)">Jacob</a></td>
+                                  <td><a href="#" onclick="select(event)">Thornton</a></td>
+                                  <td><a href="#" onclick="select(event)">@fat</a></td>
+                                </tr>
+                                <tr>
+                                  <td><a href="#" onclick="select(event)">Larry the Bird</a></td>
+                                  <td><a href="#" onclick="select(event)">@twitter</a></td>
+                                  <td><a href="#" onclick="select(event)">@fat</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
                           </div>
                         </div>
                       </li>
@@ -343,6 +307,12 @@
                 </ul>
               </div>
             </div>
+            <div class="row">
+              <div class="col">
+                
+            <button class="btn btn-primary" style="display: none;" id="role"></button>  
+              </div>
+            </div>  
             <div class="row mt-5">
               <div class="col">
                 <div class="table-responsive text-start">
@@ -355,22 +325,22 @@
                       </tr>
                     </thead>
                     <thead>
-                      
-                      <tr>
-                        <td>
-                          <h6 class="text-center">Role</h6>
+
+                      <tr class="align-middle">
+                        <td class="py-3">
+                          <h6 class="m-0">Role</h6>
                         </td>
                         <td>
-                          <h6 class="text-center">Username</h6>
+                          <h6 class="m-0">Username</h6>
                         </td>
                         <td>
-                          <h6 class="text-center">Email ID</h6>
+                          <h6 class="m-0">Email ID</h6>
                         </td>
                         <td>
-                          <h6 class="text-center">Phone</h6>
+                          <h6 class="m-0">Phone</h6>
                         </td>
                         <td>
-                          <h6 class="text-center">Verification</h6>
+                          <h6 class="m-0">Verification</h6>
                         </td>
                         <td></td>
                       </tr>
@@ -422,7 +392,7 @@
                         </td>
                       </tr>
                       <tr class="align-middle" onclick="location.href='tourrequest.html';">
-                        <td>Agent/Licensee</td>
+                        <td>Agent / Licensee</td>
                         <td>User name </td>
                         <td>-</td>
                         <td>-</td>
@@ -450,6 +420,17 @@
   <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
+
+    function select(event) {
+      document.getElementById("role").innerHTML = event.target.innerHTML
+      document.getElementById("role").style.display = "block"
+    }
+    
+
+    
+  </script>
+  <script>
+    
     document.getElementById("year").innerHTML = new Date().getFullYear();
   </script>
   <script>
