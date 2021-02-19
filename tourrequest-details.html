@@ -120,10 +120,10 @@
                             <hr class="my-4">
                             <div class="row justify-content-center">
                                 <div class="col-4">
-                                    <button class="w-100 btn btn-outline-info" onclick="goBack()">
+                                    <a href="#" class="w-100 btn btn-outline-info" onclick="history.go(-1)">
                                         <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
                                         Back to Timeline
-                                    </button>
+                                    </a>
                                 </div>
                                 <div class="col-4">
                                     <button class="w-100 btn btn-primary" type="submit">
@@ -158,9 +158,6 @@
         function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";
-        }
-        function goBack() {
-            window.history.back();
         }
     </script>
     <script>

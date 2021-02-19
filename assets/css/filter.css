@@ -218,14 +218,28 @@ li:hover a.hasDropdown:after {
 }
 .selected {
   border-style:solid;
+  width: fit-content;
+  padding: 5px;
   background-color: rgb(210, 222, 240);
   border-radius: 10px;
   border-width: 1px;
   border-color: #0d6efd;
 }
 
-.selected:hover {
-  cursor:pointer !important ;
+.close{
+  cursor: pointer;
+  font-size: 17px;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
 }
 
 /* End Multiple Section Menu */

@@ -54,7 +54,7 @@
               </div>
             </div>
             <hr />
-            <div class="row my-5 justify-content-center">
+            <div class="row justify-content-center">
               <div class="filter js-navbar">
                 <ul class="menu p-0">
                   <div class="row">
@@ -71,8 +71,6 @@
                                   <td><a href="#" onclick="select(event)">Mark</a></td>
                                   <td><a href="#" onclick="select(event)">Otto</a></td>
                                   <td><a href="#" onclick="select(event)">Otto1</a></td>
-                                </tr>
-                                <tr>
                                   <td><a href="#" onclick="select(event)">Jacob</a></td>
                                   <td><a href="#" onclick="select(event)">Thornton</a></td>
                                   <td><a href="#" onclick="select(event)">@fat</a></td>
@@ -96,60 +94,24 @@
                           <div class="container__list">
                             <input class="form-control m-3" type="text" placeholder="Search" aria-label="Search"
                               style="border-radius: 10px;">
-                            <div class="container__listItem">
-                              <div>Johndoe</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Antonchigur</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Jefferygein</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>MichaelDavidson</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Antonygreen</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>DemarDahmr</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>WaltWhitman</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Heisenberg</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Nikolatesla</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Charlesbridges</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Kevinwilliamson</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Fredrickclarkson</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Jamesaldrige</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Calvinhayes</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Markjordan</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Richardmay</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Simonkennedy</div>
-                            </div>
-                            <div class="container__listItem">
-                              <div>Eddjoshua</div>
-                            </div>
+                              <table class="table text-white table-borderless">
+
+                                <tbody>
+                                  <tr>
+                                    <td><a href="#" onclick="select(event2)">Mark</a></td>
+                                    <td><a href="#" onclick="select(event2)">Otto</a></td>
+                                    <td><a href="#" onclick="select(event2)">Otto1</a></td>
+                                    <td><a href="#" onclick="select(event2)">Jacob</a></td>
+                                    <td><a href="#" onclick="select(event2)">Thornton</a></td>
+                                    <td><a href="#" onclick="select(event2)">@fat</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#" onclick="select(event2)">Larry the Bird</a></td>
+                                    <td><a href="#" onclick="select(event2)">@twitter</a></td>
+                                    <td><a href="#" onclick="select(event2)">@fat</a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
                           </div>
                         </div>
                       </li>
@@ -308,9 +270,9 @@
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col-12">
                 
-            <button class="btn btn-primary" style="display: none;" id="role"></button>  
+            <button class="selected" style="display: none;" id="role"></button>  
               </div>
             </div>  
             <div class="row mt-5">
@@ -346,7 +308,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr class="align-middle" onclick="location.href='tourrequest.html';">
+                      <tr class="align-middle" onclick="location.href='#'" style="cursor: pointer;">
                         <td>Prospect</td>
                         <td>User name </td>
                         <td>-</td>
@@ -355,7 +317,7 @@
                         <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
                         </td>
                       </tr>
-                      <tr class="align-middle" onclick="location.href='tourrequest.html';">
+                      <tr class="align-middle" onclick="location.href='#'" style="cursor: pointer;">
                         <td>Referrer</td>
                         <td>User name </td>
                         <td>-</td>
@@ -364,7 +326,7 @@
                         <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
                         </td>
                       </tr>
-                      <tr class="align-middle" onclick="location.href='tourrequest.html';">
+                      <tr class="align-middle" onclick="location.href='#'" style="cursor: pointer;">
                         <td>Client agent</td>
                         <td>User name </td>
                         <td>-</td>
@@ -373,7 +335,7 @@
                         <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
                         </td>
                       </tr>
-                      <tr class="align-middle" onclick="location.href='tourrequest.html';">
+                      <tr class="align-middle" onclick="location.href='#'" style="cursor: pointer;">
                         <td>Doorcares staff</td>
                         <td>User name </td>
                         <td>-</td>
@@ -382,7 +344,7 @@
                         <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
                         </td>
                       </tr>
-                      <tr class="align-middle" onclick="location.href='tourrequest.html';">
+                      <tr class="align-middle" onclick="location.href='#'" style="cursor: pointer;">
                         <td>Rizurf staff</td>
                         <td>User name </td>
                         <td>-</td>
@@ -391,7 +353,7 @@
                         <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
                         </td>
                       </tr>
-                      <tr class="align-middle" onclick="location.href='tourrequest.html';">
+                      <tr class="align-middle" onclick="location.href='#'" style="cursor: pointer;">
                         <td>Agent / Licensee</td>
                         <td>User name </td>
                         <td>-</td>
