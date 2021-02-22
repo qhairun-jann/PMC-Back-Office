@@ -52,6 +52,8 @@
     })
   })()
 
+  // Filter Selection
+  // ===========================================================================
   
   filterSelection("all")
   function filterSelection(c) {
