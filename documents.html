@@ -279,11 +279,8 @@
                 </div>
             </div>
         </section>
-
-        <footer class="mt-auto text-white-50">
-            <p>&copy; <span id="year"></span>
-                Copyright by Jann Properties</p>
-        </footer>
+        <div includeHtml="footer.html"></div>
+        
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content bg-dark">
@@ -586,7 +583,9 @@
                             </div>
                         </div>
                     </div>
-                    <div includeHtml="footer.html"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
