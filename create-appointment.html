@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Create New Users | Requirements | Rizurf Back Office</title>
+    <title>Create New Users | Personal Details | Rizurf Back Office</title>
     <meta name="description" content="A description.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -46,228 +46,129 @@
             <div class="container mt-5">
                 <div class="row justify-content-center">
                     <div class="col-sm-10">
-                        <h1 class="h1 text-white text-center">Requirements</h1>
+                        <h1 class="h1 text-white text-center">Create Appointment</h1>
                         <hr />
-                        <form class="needs-validation text-start" action="documents.html" novalidate>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="avatar-upload">
-                                        <div class="avatar-preview">
-                                            <div id="imagePreview"
-                                                style="background-image: url(assets/img/avatar.svg);">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <label for="gender" class="form-label">Role</label>
-                                            <select class="form-control form-select" id="gender" disabled>
-                                                <option>Prospect(Tenant)</option>
-                                                <option selected>Referrer</option>
-                                                <option>Rizurf staff</option>
-                                                <option>Agent/Licensee</option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                                Please select one
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <label for="gender" class="form-label">Verification Status</label>
-                                            <select class="form-control form-select" id="gender" disabled>
-                                                <option>Pending</option>
-                                                <option selected>Verified</option>
-                                                <option>Not Verified</option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                                Please select one
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <p class="m-0 text-muted">Account created on 12-12-2020 by (name)</p>
-                                <p class="text-muted">Last edited 21-12-2020, 12:12 PM by (name) </p>
-                            </div>
-                            <hr />
-                            <div class="row">
-                                <div class="col-2">
-                                    <button class="btn btn-outline-info w-100" type="button"
-                                        onclick="location.href='user-details.html';">Personal Details</button>
-                                </div>
-                                <div class="col-2">
-                                    <button class="btn btn-primary w-100" type="button">Requirements</button>
-                                </div>
-                                <div class="col-2">
-                                    <button class="btn btn-outline-info w-100" type="button"
-                                        onclick="location.href='user-documents.html';">Documents</button>
-                                </div>
-                                <div class="col-2">
-                                    <button class="btn btn-outline-info w-100" type="button"
-                                    onclick="location.href='user-roles.html';">Roles</button>
-                                </div>
-                                <div class="col-2">
-                                    <button class="btn btn-outline-info w-100" type="button"
-                                    onclick="location.href='user-tourrequest.html';">Tour Requests</button>
-                                </div>
-                                <div class="col-2">
-                                    <button class="btn btn-outline-info w-100" type="button"
-                                    onclick="location.href='user-appointments.html';">Appointments</button>
-                                </div>
-                                <div class="col-2 mt-3">
-                                    <button class="btn btn-outline-info w-100" type="button"
-                                    onclick="location.href='user-offers.html';">Offers</button>
-                                </div>
-                                <div class="col-2 mt-3">
-                                    <button class="btn btn-outline-info w-100" type="button"
-                                    onclick="location.href='user-properties.html';">Properties</button>
-                                </div>
-                                <div class="col-2 mt-3">
-                                    <button class="btn btn-outline-info w-100" type="button"
-                                    onclick="location.href='user-payments.html';">Payments</button>
-                                </div>
-                                <div class="col-2 mt-3">
-                                    <button class="btn btn-outline-info w-100" type="button"
-                                    onclick="location.href='user-referandearn.html';">Refer and Earn</button>
-                                </div>
-                            </div>
-                            <hr />
-                            <div class="row g-3">
-                                <div class="col-sm-6">
-                                    <label for="budget" class="form-label">Budget</label>
-                                    <input id="budget" type="text" class="form-control"
-                                        value="RM6,000" disabled>
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="beds" class="form-label">Beds</label>
-                                    <select id="beds" class="form-control form-select" style="cursor: pointer;"
-                                        list="bed" disabled>
-                                        <option selected>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                        <form class="needs-validation text-start">
+                            <div class="row g-3 mt-3">
+                                <div class="col-4">
+                                    <label for="category" class="form-label">Category of Appointment</label>
+                                    <select class="form-control form-select" id="category">
+                                        <option value="">Select category</option>
+                                        <option>Property viewing (Pay cash to agent)</option>
+                                        <option>Property viewing (Pay cash by CDM)</option>
                                     </select>
                                 </div>
-                                <div class="col-sm-6">
-                                    <label for="furnishing" class="form-label">Furnishing</label>
-                                    <select id="furnishing" class="form-control form-select" style="cursor: pointer;"
-                                        list="furnishing" disabled>
-                                        <option selected>Fully furnished</option>
-                                        <option>Partially furnished</option>
+
+                                <div class="col-4">
+                                    <label for="category" class="form-label">Sub Category of Appointment</label>
+                                    <select class="form-control form-select" id="category">
+                                        <option value="">Select sub category</option>
+                                        <option>Property viewing (Pay cash to agent)</option>
+                                        <option>Property viewing (Pay cash by CDM)</option>
                                     </select>
                                 </div>
-                                <div class="col-sm-6">
-                                    <label for="move-in" class="form-label">Preferred move in date</label>
-                                    <input type="text" id="move-in" class="form-control" id="exampleFormControlInput1"
-                                        value="12-07-2021" disabled>
+                                <div class="col-4"></div>
+
+                                <div class="col-4">
+                                    <label for="email" class="form-label">Date of Appointment</label>
+                                    <input type="date" class="form-control" id="date">
+                                    
+                                </div>
+                                <div class="col-4">
+                                    <label for="passport" class="form-label">Time of Appointment</label>
+                                    <input type="time" class="form-control" id="time"/>
+                                    
+                                </div>
+                                <div class="col-4"></div>
+                                <div class="col-4">
+                                    <label for="building" class="form-label">Building Name</label>
+                                    <select class="form-control form-select" id="building">
+                                        <option value="">Select building name</option>
+                                        <option>Paradise Residence</option>
+                                        <option>Kingkong Residence</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <label for="unit" class="form-label">Unit no.</label>
+                                    <select class="form-control form-select" id="unit">
+                                        <option value="">Select unit number</option>
+                                        <option>B1713</option>
+                                        <option>D1811</option>
+                                    </select>
                                 </div>
 
 
-                                <div class="col-sm-6">
-                                    <label for="occupants" class="form-label">Total occupants</label>
-                                    <input type="number" id="occupants" class="form-control"
-                                        value="2" disabled>
+                                <div class="col-4">
+                                    <label for="location" class="form-label">Location of Building</label>
+                                    <input type="text" class="form-control" id="location">
+                                    
                                 </div>
-                                <div class="col-sm-6">
-                                    <label for="occupations" class="form-label">Occupation</label>
-                                    <select type="text" id="occupations" class="form-control"
-                                        placeholder="What is your occupation?" disabled>
-                                    <datalist id="occupation">
-                                        <option>Chiropractor</option>
-                                        <option>Dentist</option>
-                                        <option>Dietitian or Nutritionist</option>
-                                        <option>Optometrist</option>
-                                        <option>Pharmacist</option>
-                                        <option>Physician</option>
-                                        <option>Physician Assistant</option>
-                                        <option>Podiatrist</option>
-                                        <option>Registered Nurse</option>
-                                        <option>Therapist</option>
-                                        <option>Veterinarian</option>
-                                        <option>Health Technologist or Technician</option>
-                                        <option>Other Healthcare Practitioners and Technical Occupation</option>
-                                        <option>Nursing, Psychiatric, or Home Health Aide</option>
-                                        <option>Occupational and Physical Therapist Assistant or Aide</option>
-                                        <option>Other Healthcare Support Occupation</option>
-                                        <option>Chief Executive</option>
-                                        <option>General and Operations Manager</option>
-                                        <option>Advertising, Marketing, Promotions, Public Relations, and Sales Manager
-                                        </option>
-                                        <option>Operations Specialties Manager (e.g., IT or HR Manager)</option>
-                                        <option>Construction Manager</option>
-                                        <option>Engineering Manager</option>
-                                        <option>Accountant, Auditor</option>
-                                        <option>Business Operations or Financial Specialist</option>
-                                        <option>Business Owner</option>
-                                        <option>Other Business, Executive, Management, Financial Occupation</option>
-                                        <option>Architect, Surveyor, or Cartographer</option>
-                                        <option>Engineer</option>
-                                        <option>Other Architecture and Engineering Occupation</option>
-                                        <option>Postsecondary Teacher (e.g., College Professor)</option>
-                                        <option>Primary, Secondary, or Special Education School Teacher</option>
-                                        <option>Other Teacher or Instructor</option>
-                                        <option>Other Education, Training, and Library Occupation</option>
-                                        <option>Arts, Design, Entertainment, Sports, and Media Occupations</option>
-                                        <option>Computer Specialist, Mathematical Science</option>
-                                        <option>Counselor, Social Worker, or Other Community and Social Service
-                                            Specialist
-                                        </option>
-                                        <option selected>Lawyer, Judge</option>
-                                        <option>Life Scientist (e.g., Animal, Food, Soil, or Biological Scientist,
-                                            Zoologist)</option>
-                                        <option>Physical Scientist (e.g., Astronomer, Physicist, Chemist, Hydrologist)
-                                        </option>
-                                        <option>Religious Worker (e.g., Clergy, Director of Religious Activities or
-                                            Education)</option>
-                                        <option>Social Scientist and Related Worker</option>
-                                        <option>Other Professional Occupation</option>
-                                        <option>Supervisor of Administrative Support Workers</option>
-                                        <option>Financial Clerk</option>
-                                        <option>Secretary or Administrative Assistant</option>
-                                        <option>Material Recording, Scheduling, and Dispatching Worker</option>
-                                        <option>Other Office and Administrative Support Occupation</option>
-                                        <option>Protective Service (e.g., Fire Fighting, Police Officer, Correctional
-                                            Officer)</option>
-                                        <option>Chef or Head Cook</option>
-                                        <option>Cook or Food Preparation Worker</option>
-                                        <option>Food and Beverage Serving Worker (e.g., Bartender, Waiter, Waitress)
-                                        </option>
-                                        <option>Building and Grounds Cleaning and Maintenance</option>
-                                        <option>Personal Care and Service (e.g., Hairdresser, Flight Attendant,
-                                            Concierge)
-                                        </option>
-                                        <option>Sales Supervisor, Retail Sales</option>
-                                        <option>Retail Sales Worker</option>
-                                        <option>Insurance Sales Agent</option>
-                                        <option>Sales Representative</option>
-                                        <option>Real Estate Sales Agent</option>
-                                        <option>Other Services Occupation</option>
-                                        <option>Construction and Extraction (e.g., Construction Laborer, Electrician)
-                                        </option>
-                                        <option>Farming, Fishing, and Forestry</option>
-                                        <option>Installation, Maintenance, and Repair</option>
-                                        <option>Production Occupations</option>
-                                        <option>Other Agriculture, Maintenance, Repair, and Skilled Crafts Occupation
-                                        </option>
-                                        <option>Aircraft Pilot or Flight Engineer</option>
-                                        <option>Motor Vehicle Operator (e.g., Ambulance, Bus, Taxi, or Truck Driver)
-                                        </option>
-                                        <option>Other Transportation Occupation</option>
-                                        <option>Military</option>
-                                        <option>Homemaker</option>
-                                        <option>Other Occupation</option>
-                                        <option>Don't Know</option>
-                                        <option>Not Applicable</option>
-                                    </datalist>
-                                </select>
+
+                            <hr class="my-4">
+
+                            <div class="row g-3 mt-0">
+                                <div class="col-12">
+                                    <h3>User Details</h3>
                                 </div>
-                                <div class="col-sm-6">
-                                    <label for="nationality" class="form-label">Nationality</label>
-                                    <select type="text" id="nationality" class="form-control form-select"
-                                        style="cursor: pointer;" list="country" disabled>
+                                <div class="col-12"> <img src="/assets/img/avatar.svg" width="60px"> </div>
+                                <div class="col-sm-3">
+                                    <label for="block" class="form-label">Block</label>
+                                    <input type="text" class="form-control" id="block" value="D" disabled>
+                                    
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <label for="level" class="form-label">Level</label>
+                                    <input type="number" class="form-control" id="level" value="18" disabled>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <label for="unit" class="form-label">Unit</label>
+                                    <input type="text" class="form-control" id="unit" value="11" disabled>
+                                    
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <label for="building" class="form-label">Building Name</label>
+                                    <input type="text" class="form-control" id="building" value="Paradise Residence" disabled> 
+                                    
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <label for="lotunit" class="form-label">Lot / Unit Number</label>
+                                    <input type="number" class="form-control" id="lotunit" value="12" disabled>
+                                    
+                                </div>
+                                <div class="col-sm-3">
+                                    <label for="address" class="form-label">Street Name</label>
+                                    <input type="text" class="form-control" id="address" value="Mawar Street" disabled>
+                                    
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <label for="residential" class="form-label">Residential Area</label>
+                                    <input type="text" class="form-control" id="residential" value="bukit tinggi" disabled>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <label for="postcode" class="form-label">Post Code</label>
+                                    <input type="number" class="form-control" id="postcode" value="99000" disabled>
+                                    
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <label for="city" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="city" value="Kuala Lumpur" disabled>
+                                   
+                                </div>
+                                <div class="col-sm-3">
+                                    <label for="states" class="form-label">State</label>
+                                    <input type="text" class="form-control" id="states" value="Kuala Lumpur" disabled>
+                                    
+                                </div>
+                                <div class="col-sm-3">
+                                    <label for="world" class="form-label">Country</label>
+                                    <select type="text" list="country" class="form-control form-select" id="world" disabled>
                                     <datalist id="country">
                                         <option value="Afghanistan">Afghanistan</option>
                                         <option value="Albania">Albania</option>
@@ -298,8 +199,8 @@
                                         <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
                                         <option value="Botswana">Botswana</option>
                                         <option value="Brazil">Brazil</option>
-                                        <option value="British Indian Ocean Territory">British Indian Ocean
-                                            Territory</option>
+                                        <option value="British Indian Ocean Territory">British Indian Ocean Territory
+                                        </option>
                                         <option value="Brunei">Brunei</option>
                                         <option value="Bulgaria">Bulgaria</option>
                                         <option value="Burkina Faso">Burkina Faso</option>
@@ -399,7 +300,7 @@
                                         <option value="Macau">Macau</option>
                                         <option value="Macedonia">Macedonia</option>
                                         <option value="Madagascar">Madagascar</option>
-                                        <option value="Malaysia">Malaysia</option>
+                                        <option value="Malaysia" selected>Malaysia</option>
                                         <option value="Malawi">Malawi</option>
                                         <option value="Maldives">Maldives</option>
                                         <option value="Mali">Mali</option>
@@ -515,60 +416,48 @@
                                         <option value="Yemen">Yemen</option>
                                         <option value="Zaire">Zaire</option>
                                         <option value="Zambia">Zambia</option>
-                                        <option value="Zimbabwe" selected>Zimbabwe</option>
+                                        <option value="Zimbabwe">Zimbabwe</option>
                                     </datalist>
                                 </select>
                                 </div>
-                                <div class="col-sm-6">
-                                    <label for="gender" class="form-label">Gender</label>
-                                    <div class="input-group">
-                                        <select id="gender" class="form-control form-select" style="cursor: pointer;"
-                                            list="gender" disabled>
-                                            <option value="Male" selected>Male</option>
-                                            <option value="Female">Female</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <label for="duration" class="form-label">Duration of tenancy</label>
-                                    <div class="input-group">
-                                        <select class="form-control form-select" id="duration" style="cursor: pointer;"
-                                            disabled>
-                                            <option>3 months</option>
-                                            <option>6 months</option>
-                                            <option>9 months</option>
-                                            <option selected>12 months</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="text-black" />
-                            <div class="row g-3 mt-3">
-                                <div class="col-sm-12">
-                                    <label for="remarks" class="form-label">Other remarks</label>
-                                    <textarea class="form-control" id="remarks" style="height: 100px"
-                                        disabled>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</textarea>
-                                </div>
                             </div>
 
-                            <hr class="my-4">
-                            <div class="row justify-content-center">
+                            <hr class="my-4" />
+
+                            <div class="row gy-3">
+                                <div class="col-12 mt-5">
+                                    <h3>Bank Details</h3>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <label for="bankname" class="form-label">Bank Name</label>
+                                    <input type="text" class="form-control" id="bankname" value="Maybank" disabled>
+                                    
+                                </div>
+
+                                <div class="col-md-3">
+                                    <label for="bankaccount" class="form-label">Bank Account NR.</label>
+                                    <input type="text" class="form-control" id="bankaccount"
+                                        placeholder="eg: 123456789012" value="123987456" disabled>
+                                    
+                                </div>
+                            </div>
+                            <div class="row justify-content-center mt-5">
                                 <div class="col-4">
-                                    <a href="user-details.html" class="w-100 btn btn-outline-info">
+                                    <a href="#" class="w-100 btn btn-outline-info" onclick="location.href='user.html'">
                                         <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
-                                        Back To 
-                                        
-                                        Details
+                                        Back To User Page
                                     </a>
                                 </div>
                                 <div class="col-4">
-                                    <a href="user-documents.html" class="w-100 btn btn-primary">
-                                        Continue To Document Checklist &nbsp;
+                                    <a href="user-requirements.html" class="w-100 btn btn-primary">
+                                        Continue To Requirements Page &nbsp;
                                         <i class="far fa-arrow-alt-circle-right"></i>
                                     </a>
                                 </div>
                             </div>
+
+
                         </form>
                     </div>
                 </div>
@@ -590,23 +479,15 @@
             document.getElementById("mySidebar").style.width = "250px";
             document.getElementById("main").style.marginLeft = "250px";
         }
-
         function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";
-        }
-        function goBack() {
-            window.history.back();
         }
     </script>
     <script>
         (function () {
             'use strict'
-
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
             var forms = document.querySelectorAll('.needs-validation')
-
-            // Loop over them and prevent submission
             Array.prototype.slice.call(forms)
                 .forEach(function (form) {
                     form.addEventListener('submit', function (event) {
@@ -614,7 +495,6 @@
                             event.preventDefault()
                             event.stopPropagation()
                         }
-
                         form.classList.add('was-validated')
                     }, false)
                 })

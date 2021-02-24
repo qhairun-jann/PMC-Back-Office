@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Create New Users | Requirements | Rizurf Back Office</title>
+    <meta name="description" content="A description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="activities.html">Activities</a>
+        <a href="app-drawer.html">App Library</a>
+    </div>
+    <header id="main" class="navbar navbar-dark sticky-top bg-dark flex-nowrap p-0 shadow">
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
+        <ul class="navicon px-3 d-flex m-0">
+            <li>
+                <a href="#">
+                    <span class="fa-stack fa-lg" data-count="28">
+                        <i class="fa fa-bell fa-stack-1x "></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa-stack fa-lg">
+                        <i class="fas fa-user fa-stack-1x "></i>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <section class="mb-5">
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-sm-10">
+                        <h1 class="h1 text-white text-center">Appointments</h1>
+                        <hr />
+                        <form class="needs-validation text-start" novalidate>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="avatar-upload">
+                                        <div class="avatar-preview">
+                                            <div id="imagePreview"
+                                                style="background-image: url(assets/img/avatar.svg);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="gender" class="form-label">Role</label>
+                                            <select class="form-control form-select" id="gender" disabled>
+                                                <option>Prospect(Tenant)</option>
+                                                <option selected>Referrer</option>
+                                                <option>Rizurf staff</option>
+                                                <option>Agent/Licensee</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please select one
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="gender" class="form-label">Verification Status</label>
+                                            <select class="form-control form-select" id="gender" disabled>
+                                                <option>Pending</option>
+                                                <option selected>Verified</option>
+                                                <option>Not Verified</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please select one
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="m-0 text-muted">Account created on 12-12-2020 by (name)</p>
+                                <p class="text-muted">Last edited 21-12-2020, 12:12 PM by (name) </p>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col-2">
+                                    <button class="btn btn-outline-info w-100" type="button"
+                                        onclick="location.href='user-details.html';">Personal Details</button>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-outline-info w-100" type="button" onclick="location.href='user-requirements.html';">Requirements</button>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-outline-info w-100" type="button" onclick="location.href='user-documents.html';">Documents</button>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-outline-info w-100" type="button" onclick="location.href='user-roles.html';">Roles</button>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-outline-info w-100"
+                                    onclick="location.href='user-tourrequest.html';" type="button">Tour Requests</button>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-primary w-100" type="button">Appointments</button>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <button class="btn btn-outline-info w-100" type="button"
+                                    onclick="location.href='user-offers.html';">Offers</button>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <button class="btn btn-outline-info w-100" type="button"
+                                    onclick="location.href='user-properties.html';">Properties</button>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <button class="btn btn-outline-info w-100" type="button"
+                                    onclick="location.href='user-payments.html';">Payments</button>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <button class="btn btn-outline-info w-100" type="button"
+                                    onclick="location.href='user-referandearn.html';">Refer and Earn</button>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row text-end">
+                                <div class="col">
+                                    <button class="btn btn-primary" type="button" onclick="location.href='create-appointment.html'">
+                                        + Create Appointment
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                  <div class="table-responsive text-start">
+                                    <table class="table table-dark table-striped table-hover">
+                                      <thead>
+                                        <tr>
+                                            <td>
+                                              <h6>Appointment date</h6>
+                                            </td>
+                                            <td>
+                                              <h6>Building name</h6>
+                                            </td>
+                                            <td>
+                                              <h6>Unit no.</h6>
+                                            </td>
+                                            <td>
+                                              <h6>Category</h6>
+                                            </td>
+                                            <td>
+                                              <h6>Status</h6>
+                                            </td>
+                                            <td>
+                                              <h6>Person in charge</h6>
+                                            </td>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr class="align-middle" onclick="location.href='tourrequest-details.html'" style="cursor: pointer;">
+                                          <td>12-03-2021</td>
+                                          <td>Paradise Residence</td>
+                                          <td>-</td>
+                                          <td>-</td>
+                                          <td>Completed</td>
+                                          <td>Rudy</td>
+                                        </tr>
+                                        <tr class="align-middle" onclick="location.href='tourrequest-details.html'" style="cursor: pointer;">
+                                          <td>12-03-2021</td>
+                                          <td>Paradise Residence</td>
+                                          <td>-</td>
+                                          <td>-</td>
+                                          <td>Completed</td>
+                                          <td>Rudy</td>
+                                        </tr>
+                                        <tr class="align-middle" onclick="location.href='tourrequest-details.html'" style="cursor: pointer;">
+                                          <td>12-03-2021</td>
+                                          <td>Paradise Residence</td>
+                                          <td>-</td>
+                                          <td>-</td>
+                                          <td>Completed</td>
+                                          <td>Rudy</td>
+                                        </tr>
+                  
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+
+                            <hr class="my-4">
+                            <div class="row justify-content-center">
+                                <div class="col-4">
+                                    <a href="user-roles.html" class="w-100 btn btn-outline-info">
+                                        <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
+                                        Back To Roles Details
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="user-appointments.html" class="w-100 btn btn-primary">
+                                        Continue To Appointments Details &nbsp;
+                                        <i class="far fa-arrow-alt-circle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="mt-auto text-white-50">
+            <p>&copy; <span id="year"></span>
+                Copyright by Jann Properties</p>
+        </footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <script>
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imageUpload").change(function () {
+            readURL(this);
+        });
+    </script>
+</body>
+
+</html>
