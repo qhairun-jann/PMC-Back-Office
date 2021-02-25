@@ -61,19 +61,8 @@
                                 </div>
                                 <div class="row gy-3 mt-0">
                                     <div class="col-12">
-                                        <h3>Viewing Details</h3>
+                                        <h3>Property Details</h3>
                                     </div>
-
-                                    <div class="col-4">
-                                        <label for="email" class="form-label">Date of Visit</label>
-                                        <input type="date" class="form-control" id="date" value="2018-07-22" disabled>
-                                    </div>
-
-                                    <div class="col-4">
-                                        <label for="pic" class="form-label">Person In Charge</label>
-                                        <input type="text" class="form-control" id="pic" value="Rudy Hayes" disabled>
-                                    </div>
-                                    <div class="col-4"></div>
 
                                     <div class="col-4">
                                         <label for="building" class="form-label">Building Name</label>
@@ -104,70 +93,55 @@
 
                                 <div class="row gy-3 mt-0">
                                     <div class="col-12">
-                                        <h3>Offer</h3>
+                                        <h3>Payment</h3>
                                     </div>
 
                                     <div class="col-4">
-                                        <label for="offerdate" class="form-label">Date of Offer</label>
-                                        <input type="date" class="form-control" id="offerdate" value="2018-07-22" disabled>
+                                        <label for="duedate" class="form-label">Due Date</label>
+                                        <input type="date" class="form-control" id="duedate" value="2021-07-22" disabled>
+                                    </div>
+                                    <div class="col-8"></div>
+
+                                    <div class="col-4">
+                                        <label for="datepayment" class="form-label">Date of Payment</label>
+                                        <input type="date" class="form-control" id="datepayment" value="2021-07-22" disabled>
                                     </div>
 
                                     <div class="col-4">
-                                        <label for="status" class="form-label">Status of Offer</label>
+                                        <label for="status" class="form-label">Status of Payemnt</label>
                                         <select class="form-control form-select" id="status" disabled>
                                             <option value="">Select status</option>
-                                            <option>Offer pending</option>
-                                            <option selected>Offer accepted</option>
-                                            <option>Offer rejected</option>
+                                            <option selected>Paid</option>
+                                            <option>Unpaid</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4"></div>
+                                    <div class="col-4">
+                                        <label for="paymentmode" class="form-label">Mode of Payment</label>
+                                        <select class="form-control form-select" id="paymentmode" disabled>
+                                            <option value="">Select payment mode</option>
+                                            <option>Paid online</option>
+                                            <option selected>Paid cash to agent</option>
+                                            <option>Paid via CDM</option>
                                             <option>Offer under negotiation</option>
                                         </select>
-                                    </div>
-                                    <div class="col-4">
-                                        <label for="negotiated" class="form-label">Negotiated</label>
-                                        <select class="form-control form-select" id="negotiated" disabled>
-                                            <option value="">Select status</option>
-                                            <option>Yes</option>
-                                            <option selected>No</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <hr class="my-4" />
-                                <div class="row gy-3 mt-0">
-                                    <div class="col-12">
-                                        <h3>Payments</h3>
-                                    </div>
-                                    <div class="col-4">
-                                        <label for="offerdate" class="form-label">Date of Payment</label>
-                                        <input type="date" class="form-control" id="offerdate" value="2018-07-22" disabled>
-                                    </div>
-
-                                    <div class="col-4">
-                                        <div class="col-5">
-                                            <label for="username" class="form-label">Username</label>
-                                            <input type="text" class="form-control" id="username" value="johndoe" disabled>
-                                        </div>
                                     </div>
                                     <div class="col-4">
                                         <label for="pic" class="form-label">Person In Charge</label>
                                         <input type="text" class="form-control" id="pic" value="Rudy Hayes" disabled>
                                     </div>
-                                    
                                 </div>
                                 <hr class="my-4" />
-                                <div class="row gy-3 mt-0">
-                                    <div class="col-12">
-                                        <h3>Check In</h3>
-                                    </div>
-                                    <div class="col-4">
-                                        <label for="offerdate" class="form-label">Date of Payment</label>
-                                        <input type="date" class="form-control" id="offerdate" value="2018-07-22" disabled>
-                                    </div>
-                                </div>
+                                        <h3>Bill</h3>
+                                    <img src="/assets/img/bill.png" width="400px" height="500px">
+
+                                    <h3 class="mt-5">Receipt</h3>
+                                    <img src="/assets/img/receipt.png" width="400px" height="500px">
                                 
                                 <div class="row justify-content-center mt-5">
                                     <div class="col-4">
                                         <a href="#" class="w-100 btn btn-outline-info"
-                                            onclick="location.href='/user-properties.html'">
+                                            onclick="location.href='/user-offers.html'">
                                             <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
                                             Back To Properties List
                                         </a>
