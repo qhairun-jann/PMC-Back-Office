@@ -37,6 +37,7 @@ function includeHTML() {
 // ===================================================================
   function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("myOverlay").style.display = "block";
     
 }
 
@@ -44,6 +45,7 @@ function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
     
+    document.getElementById("myOverlay").style.display = "none";
 }
 function goBack() {
     window.history.back();
