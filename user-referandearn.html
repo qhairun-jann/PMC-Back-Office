@@ -50,7 +50,7 @@
                         <hr />
                         <form class="needs-validation text-start" novalidate>
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-md-6 col-4">
                                     <div class="avatar-upload">
                                         <div class="avatar-preview">
                                             <div id="imagePreview"
@@ -59,31 +59,27 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <label for="gender" class="form-label">Role</label>
-                                            <select class="form-control form-select" id="gender" disabled>
-                                                <option>Prospect(Tenant)</option>
-                                                <option selected>Referrer</option>
-                                                <option>Rizurf staff</option>
-                                                <option>Agent/Licensee</option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                                Please select one
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <label for="gender" class="form-label">Verification Status</label>
-                                            <select class="form-control form-select" id="gender" disabled>
-                                                <option>Pending</option>
-                                                <option selected>Verified</option>
-                                                <option>Not Verified</option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                                Please select one
-                                            </div>
-                                        </div>
+                                <div class="col-md-3 col">
+                                    <label for="gender" class="form-label">Role</label>
+                                    <select class="form-control form-select" id="gender" disabled>
+                                        <option>Prospect(Tenant)</option>
+                                        <option selected>Referrer</option>
+                                        <option>Rizurf staff</option>
+                                        <option>Agent/Licensee</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select one
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col">
+                                    <label for="gender" class="form-label">Verification Status</label>
+                                    <select class="form-control form-select" id="gender" disabled>
+                                        <option>Pending</option>
+                                        <option selected>Verified</option>
+                                        <option>Not Verified</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select one
                                     </div>
                                 </div>
                             </div>
@@ -92,51 +88,41 @@
                                 <p class="text-muted">Last edited 21-12-2020, 12:12 PM by (name) </p>
                             </div>
                             <hr />
-                            <div class="row">
-                                <div class="col-2">
-                                    <button class="btn btn-outline-info w-100" type="button"
-                                        onclick="location.href='user-details.html';">Personal Details</button>
-                                </div>
-                                <div class="col-2">
-                                    <button class="btn btn-outline-info w-100" type="button"
-                                        onclick="location.href='user-requirements.html';">Requirements</button>
-                                </div>
-                                <div class="col-2">
-                                    <button class="btn btn-outline-info w-100" type="button"
-                                        onclick="location.href='user-documents.html';">Documents</button>
-                                </div>
-                                <div class="col-2">
-                                    <button class="btn btn-outline-info w-100" type="button"
-                                        onclick="location.href='user-roles.html';">Roles</button>
-                                </div>
-                                <div class="col-2">
-                                    <button class="btn btn-outline-info w-100"
-                                        onclick="location.href='user-tourrequest.html';" type="button">Tour
-                                        Requests</button>
-                                </div>
-                                <div class="col-2">
-                                    <button class="btn btn-outline-info w-100" type="button"
-                                        onclick="location.href='user-appointments.html';">Appointments</button>
-                                </div>
-                                <div class="col-2 mt-3">
-                                    <button class="btn btn-outline-info w-100" type="button"
-                                        onclick="location.href='user-offers.html';">Offers</button>
-                                </div>
-                                <div class="col-2 mt-3">
-                                    <button class="btn btn-outline-info w-100" type="button"
-                                        onclick="location.href='user-properties.html';">Properties</button>
-                                </div>
-                                <div class="col-2 mt-3">
-                                    <button class="btn btn-outline-info w-100" type="button"
-                                        onclick="location.href='user-payments.html';">Payments</button>
-                                </div>
-                                <div class="col-2 mt-3">
-                                    <button class="btn btn-primary w-100" type="button">Refer and Earn</button>
-                                </div>
+                            <div>
+
+                                <button class="btn btn-outline-info mt-3 me-3 fixed-width fixed-width" type="button"
+                                    onclick="location.href='user-details.html';">Personal Details</button>
+
+                                <button class="btn btn-outline-info mt-3 me-3 fixed-width" type="button"
+                                    onclick="location.href='user-requirements.html';">Requirements</button>
+
+                                <button class="btn btn-outline-info mt-3 me-3 fixed-width" type="button"
+                                    onclick="location.href='user-documents.html';">Documents</button>
+
+                                <button class="btn btn-outline-info mt-3 me-3 fixed-width" type="button"
+                                    onclick="location.href='user-roles.html';">Roles</button>
+
+                                <button class="btn btn-outline-info mt-3 me-3 fixed-width"
+                                    onclick="location.href='user-tourrequest.html';" type="button">Tour
+                                    Requests</button>
+
+                                <button class="btn btn-outline-info mt-3 me-3 fixed-width" type="button"
+                                    onclick="location.href='user-appointments.html';">Appointments</button>
+
+                                <button class="btn btn-outline-info mt-3 me-3 fixed-width" type="button"
+                                    onclick="location.href='user-offers.html';">Offers</button>
+
+                                <button class="btn btn-outline-info mt-3 me-3 fixed-width" type="button"
+                                    onclick="location.href='user-properties.html';">Properties</button>
+                                <button class="btn btn-outline-info mt-3 me-3 fixed-width" type="button"
+                                    onclick="location.href='user-payments.html';">Payments</button>
+
+                                <button class="btn btn-primary mt-3 me-3 fixed-width" type="button"
+                                    onclick="location.href='user-referandearn.html';">Refer and Earn</button>
                             </div>
                             <hr class="my-4">
 
-                            <div class="row mb-5 justify-content-center">
+                            <div class="row mb-5 mt-5 justify-content-center">
                                 <div class="col-4">
                                     <h3 class="text-center">Total Referrals
                                         <span class="nav-link mt-2">
@@ -167,7 +153,7 @@
                                     <div class="col-lg-12 col-md-12 col-12 ">
 
                                         <div class="row">
-                                            <div class="card" onclick="location.href='refereeregistered.html';"
+                                            <div class="card light" onclick="location.href='refereeregistered.html';"
                                                 style="cursor:pointer;">
                                                 <div class="card-body">
                                                     <div class="row ">
@@ -203,7 +189,7 @@
                                         </div>
 
                                         <div class="row">
-                                            <div class="card" onclick="location.href='refereeunregistered.html';"
+                                            <div class="card light" onclick="location.href='refereeunregistered.html';"
                                                 style="cursor:pointer;">
                                                 <div class="card-body">
                                                     <div class="row ">

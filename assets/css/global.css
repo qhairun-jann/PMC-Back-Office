@@ -58,6 +58,10 @@ table {
   display: none ;
 }
 
+.fixed-width {
+  width: 175px;
+}
+
 /* modal */
 /* ================================= */
 .btn-close {
