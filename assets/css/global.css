@@ -24,7 +24,8 @@ body {
 .h-100 {
   height: 100vh !important;
 }
-.w-300px{
+
+.w-300px {
   width: 300px !important;
 }
 
@@ -36,7 +37,7 @@ body {
 
 .bdr-radius-right {
   border-top-right-radius: .25rem !important;
-    border-bottom-right-radius: .25rem !important;
+  border-bottom-right-radius: .25rem !important;
 }
 
 .img-circle {
@@ -48,27 +49,37 @@ body {
 }
 
 table {
-  table-layout : fixed;
+  table-layout: fixed;
 }
 
 .desktop {
-  display: block ;
+  display: block;
 }
+
 .mobile {
-  display: none ;
+  display: none;
 }
 
 .fixed-width {
   width: 199px;
 }
 
+.dateLabel {
+  white-space: nowrap;
+  margin: 0px 5px 0px 0px;
+  align-self: center;
+}
+
 /* modal */
+
 /* ================================= */
+
 .btn-close {
   color: #fff !important;
 }
 
 /* button customize */
+
 /* ================================= */
 
 .btn-customsize {
