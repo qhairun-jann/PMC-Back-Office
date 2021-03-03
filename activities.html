@@ -27,284 +27,275 @@
 
         <div class="filter js-navbar">
           <nav class="menu p-0">
-            <div class="row">
-              <div class="col-lg-3 col-md-12 mb-2">
-                <li>
-                  <a class="hasDropdown justify-content-center" href="#">Category</a>
-                  <section class="filter-container ">
+            <ul>
+              <li>
+                <a class="hasDropdown justify-content-center" href="#">Category</a>
+                <section class="filter-container ">
 
-                    <div class="container__list">
-                      <input class="form-control " type="text" placeholder="Search" aria-label="Search" />
-                      <table class="table text-white table-borderless mt-3">
-                        <tbody>
-                          <tr>
-                            <td><a href="tl-tourrequest.html">Tour Request</a></td>
-                            <td onclick="location.href='tl-userreg.html'" style="cursor: pointer;">User Registration </td>
-                            <td onclick="location.href='tl-requirements.html';" style="cursor: pointer;">Requirements</td>
-                          </tr>
-                          <tr>
-                            <td onclick="location.href='tl-appointment.html';" style="cursor: pointer;">Appointments</td>
-                            <td onclick="location.href='tl-offers.html';" style="cursor: pointer;">Offers</td>
-                            <td onclick="location.href='tl-payment.html';" style="cursor: pointer;">Payments</td>
-                          </tr>
-                          <tr>
-                            <td onclick="location.href='tl-document.html';" style="cursor: pointer;">Document Checklist</td>
-                            <td onclick="location.href='tl-document.html';" style="cursor: pointer;">Tenancy Agreements</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                  <div class="container__list">
+                    <input class="form-control " type="text" placeholder="Search" aria-label="Search" />
+                    <div class="mt-3 d-flex filterbtn">
+                      <ul>
+                        <li><a href="tl-tourrequest.html">Tour Request</a></li>
+                        <li><a href="tl-userreg.html">User Registration</a></li>
+                        <li><a href="tl-requirements.html">Requirements</a></li>
+                        <li><a href="tl-appointment.html">Appointments</a></li>
+                        
+                      </ul>
+                      <ul>
+                        <li><a href="tl-offers.html">Offers</a></li>
+                        <li><a href="tl-payment.html">Payments</a></li>
+                        <li><a href="tl-document.html">Document Checklist</a></li>
+                        <li><a href="tl-tenancyagreement.html">Tenancy Agreements</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+              </li>
+              <li>
+                <a href="#" style="padding: 11.5px;"><label class="dateLabel">Select Date</label><input type="date"
+                    class="form-control" id="dob" placeholder="Select a Date"></a>
+              </li>
+              <li>
+                <a class="hasDropdown" href="#">Location</a>
+                <section class="filter-container has-multi">
 
+                  <div class="container__list container__list-multi">
+                    <h5>Building</h5>
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
+                    <div class="container__listItem mt-3">
+                      <div>KL Gateway Residence</div>
                     </div>
-                  </section>
-                </li>
-              </div>
-              <div class="col-lg-3 col-md-12 mb-2">
-                <li>
-                  <a href="#" style="padding: 11.5px;"><label class="dateLabel">Select Date</label><input type="date" class="form-control" id="dob"
-                      placeholder="Select a Date"></a>
-                </li>
-              </div>
-              <div class="col-lg-3 col-md-12 mb-2">
-                <li>
-                  <a class="hasDropdown" href="#">Location</a>
-                  <section class="filter-container has-multi">
+                    <div class="container__listItem">
+                      <div>Novum Bangsar South</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Inwood Residences @ Pantai Sentral Park</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Camellia Serviced Suites</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>KL Gateway Premium</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>The Establishment</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Secoya Residence</div>
+                    </div>
+                  </div>
+                  <div class="container__list container__list-multi">
+                    <h5>Area</h5>
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
+                    <div class="container__listItem mt-3">
+                      <div>Bangsar</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Bangsar South</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>KL Gateway</div>
+                    </div>
+                  </div>
+                </section>
+              </li>
+              <li>
+                <a class="hasDropdown" href="#">Unit</a>
+                <section class="filter-container has-multi">
 
-                    <div class="container__list container__list-multi">
-                      <h5>Building</h5>
-                      <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
-                      <div class="container__listItem mt-3">
-                        <div>KL Gateway Residence</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Novum Bangsar South</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Inwood Residences @ Pantai Sentral Park</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Camellia Serviced Suites</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>KL Gateway Premium</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>The Establishment</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Secoya Residence</div>
-                      </div>
+                  <div class="container__list container__list-multi">
+                    <h5>Block</h5>
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
+                    <div class="container__listItem mt-3">
+                      <div>A-10-2</div>
                     </div>
-                    <div class="container__list container__list-multi">
-                      <h5>Area</h5>
-                      <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
-                      <div class="container__listItem mt-3">
-                        <div>Bangsar</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Bangsar South</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>KL Gateway</div>
-                      </div>
+                    <div class="container__listItem">
+                      <div>A-03A-03A</div>
                     </div>
-                  </section>
-                </li>
-              </div>
-              <div class="col-lg-3 col-md-12 mb-2">
-                <li>
-                  <a class="hasDropdown" href="#">Unit</a>
-                  <section class="filter-container has-multi">
-
-                    <div class="container__list container__list-multi">
-                      <h5>Block</h5>
-                      <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
-                      <div class="container__listItem mt-3">
-                        <div>A-10-2</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>A-03A-03A</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>A-G-01</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>A-G-02</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>A-G-03</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>A-G-04</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Cameras</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>DSLR Cameras</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Camera Accessories</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Musical Instruments & Professional Audio</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Gaming Consoles</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div> All Electronics </div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Air Conditioners</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Refrigerators</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Washing Machines</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Kitchen & Home Appliances</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Heating & Cooling Appliances</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>All Appliances</div>
-                      </div>
+                    <div class="container__listItem">
+                      <div>A-G-01</div>
                     </div>
-                    <div class="container__list container__list-multi">
-                      <h5>Level</h5>
-                      <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
-                      <div class="container__listItem mt-3">
-                        <div>Mobiles</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Laptops</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Mobile Accessories</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>PC Accessories</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Data Storage</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>PC Components</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Speakers</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Networking</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Printers and Ink</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Wearables</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Tablets</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div> Desktops </div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Chromebook</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>USBs</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>CAT5 Cables</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Water Purifiers</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Screenguards</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>All Appliances</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Landline Phones</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Chargers</div>
-                      </div>
+                    <div class="container__listItem">
+                      <div>A-G-02</div>
                     </div>
-                    <div class="container__list container__list-multi">
-                      <h5>Unit no.</h5>
-                      <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
-                      <div class="container__listItem mt-3">
-                        <div>Mobiles</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Laptops</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Mobile Accessories</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>PC Accessories</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Data Storage</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>PC Components</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Speakers</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Networking</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Printers and Ink</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Wearables</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Tablets</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div> Desktops </div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Chromebook</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>USBs</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>CAT5 Cables</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Water Purifiers</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Screenguards</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>All Appliances</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Landline Phones</div>
-                      </div>
-                      <div class="container__listItem">
-                        <div>Chargers</div>
-                      </div>
+                    <div class="container__listItem">
+                      <div>A-G-03</div>
                     </div>
-                  </section>
-                </li>
-              </div>
-            </div>
+                    <div class="container__listItem">
+                      <div>A-G-04</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Cameras</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>DSLR Cameras</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Camera Accessories</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Musical Instruments & Professional Audio</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Gaming Consoles</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div> All Electronics </div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Air Conditioners</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Refrigerators</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Washing Machines</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Kitchen & Home Appliances</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Heating & Cooling Appliances</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>All Appliances</div>
+                    </div>
+                  </div>
+                  <div class="container__list container__list-multi">
+                    <h5>Level</h5>
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
+                    <div class="container__listItem mt-3">
+                      <div>Mobiles</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Laptops</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Mobile Accessories</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>PC Accessories</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Data Storage</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>PC Components</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Speakers</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Networking</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Printers and Ink</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Wearables</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Tablets</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div> Desktops </div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Chromebook</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>USBs</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>CAT5 Cables</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Water Purifiers</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Screenguards</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>All Appliances</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Landline Phones</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Chargers</div>
+                    </div>
+                  </div>
+                  <div class="container__list container__list-multi">
+                    <h5>Unit no.</h5>
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
+                    <div class="container__listItem mt-3">
+                      <div>Mobiles</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Laptops</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Mobile Accessories</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>PC Accessories</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Data Storage</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>PC Components</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Speakers</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Networking</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Printers and Ink</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Wearables</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Tablets</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div> Desktops </div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Chromebook</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>USBs</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>CAT5 Cables</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Water Purifiers</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Screenguards</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>All Appliances</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Landline Phones</div>
+                    </div>
+                    <div class="container__listItem">
+                      <div>Chargers</div>
+                    </div>
+                  </div>
+                </section>
+              </li>
+              <li>
+                <a class="" href="#">Unread *Highly Important</a>
+              </li>
+            </ul>
           </nav>
         </div>
         <hr class="text-white" />

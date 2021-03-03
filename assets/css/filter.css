@@ -5,9 +5,7 @@
   color: #fff;
   height: auto;
   border-radius: 4px;
-
 }
-
 
 .filter .menu {
   position: relative;
@@ -18,22 +16,35 @@
   transition: background-color .5s ease;
   text-align: center;
   flex: 1;
-  margin: 0 10px;
+  margin: 8px 5px;
   background-color: #0d6efd;
   border-radius: 10px;
+  min-width: 237px;
 }
 
 .filter .menu a {
   position: relative;
   display: inline-flex;
-  padding: 20px;
   text-decoration: none;
   color: #fff;
   flex: 1;
   justify-content: center;
+  white-space: nowrap;
 }
 
-.filter .menu a > .fa {
+.filter .menu a:hover {
+  color: #fff;
+}
+
+.tableResult td a {
+  justify-content: start !important;
+}
+
+.tableResult td a:hover {
+  text-decoration: underline;
+}
+
+.filter .menu a>.fa {
   font-weight: bold;
   margin-left: 8px;
 }
@@ -41,11 +52,12 @@
 .filter .menu li:hover {
   background-color: #0b5ed7;
 }
+
 .filter .menu li:focus {
   color: #fff;
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
-    box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+  box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
 }
 
 .filter .menu li:hover .filter-container {
@@ -85,7 +97,7 @@ li:hover a.hasDropdown:after {
   box-shadow: 0 2px 0 rgba(0, 0, 0, .06);
   border-radius: 8px;
   padding: 20px;
-  margin-top: 61px;
+  margin-top: 63px;
 }
 
 .w-customdate {
@@ -98,13 +110,14 @@ li:hover a.hasDropdown:after {
   padding: 1px;
   flex: 1;
   flex-wrap: wrap;
-  padding: 15px;
+  padding: 15px 0px;
   background: #343a40;
 }
 
 .container__list a {
   padding: 0 !important;
 }
+
 .container__list a {
   padding: 0 !important;
 }
@@ -115,14 +128,16 @@ li:hover a.hasDropdown:after {
   /* white-space: nowrap; */
   flex: 0 0 33.33%;
 }
-.container__listItem a{
+
+.container__listItem a {
   padding: 0 !important;
 }
-.container__listItem a:hover{
+
+.container__listItem a:hover {
   text-decoration: underline;
 }
 
-.container__listItem > div {
+.container__listItem>div {
   overflow: hidden;
   cursor: pointer;
   white-space: nowrap;
@@ -150,10 +165,10 @@ li:hover a.hasDropdown:after {
   border-right: solid 1px #343a40;
 }
 
-
-
 /* Megamenu */
+
 /* ======================================================== */
+
 .menu-container {
   width: 80%;
   margin: 0 auto;
@@ -189,38 +204,40 @@ li:hover a.hasDropdown:after {
   color: #333;
 }
 
-.menu > ul {
+.menu>ul {
   margin: 0 auto;
   width: 100%;
   list-style: none;
   padding: 0;
   position: relative;
-  /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
   box-sizing: border-box;
 }
 
-.menu > ul:before, .menu > ul:after {
+.menu>ul:before, .menu>ul:after {
   content: "";
   display: table;
 }
 
-.menu > ul:after { clear: both; }
+.menu>ul:after {
+  clear: both;
+}
 
-.menu > ul > li {
+.menu>ul>li {
   float: left;
   background: #3498DB;
   padding: 0;
   margin: 0;
 }
 
-.menu > ul > li a {
+.menu>ul>li a {
   text-decoration: none;
   padding: 1.5em 3em;
   display: block;
-  color:#fff;
+  color: #fff;
 }
+
 .selected {
-  border-style:solid;
+  border-style: solid;
   width: fit-content;
   padding: 5px;
   background-color: rgb(210, 222, 240);
@@ -229,29 +246,33 @@ li:hover a.hasDropdown:after {
   border-color: #0d6efd;
 }
 
-.close{
+.close {
   cursor: pointer;
   font-size: 17px;
 }
 
 #myInput {
-  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-  background-position: 10px 12px; /* Position the search icon */
-  background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 100%; /* Full-width */
-  font-size: 16px; /* Increase font-size */
-  padding: 12px 20px 12px 40px; /* Add some padding */
-  border: 1px solid #ddd; /* Add a grey border */
-  margin-bottom: 12px; /* Add some space below the input */
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
 }
 
 /* End Multiple Section Menu */
 
-.menu > ul > li:hover { background: #f0f0f0; }
+.menu>ul>li:hover {
+  background: #f0f0f0;
+}
 
-.menu > ul > li:hover > a { color: #333; }
+.menu>ul>li:hover>a {
+  color: #fff;
+}
 
-.menu > ul > li > ul {
+.menu>ul>li>ul {
   display: none;
   width: 100%;
   background: #f0f0f0;
@@ -264,14 +285,16 @@ li:hover a.hasDropdown:after {
   box-sizing: border-box;
 }
 
-.menu > ul > li > ul:before, .menu > ul > li > ul:after {
+.menu>ul>li>ul:before, .menu>ul>li>ul:after {
   content: "";
   display: table;
 }
 
-.menu > ul > li > ul:after { clear: both; }
+.menu>ul>li>ul:after {
+  clear: both;
+}
 
-.menu > ul > li > ul > li {
+.menu>ul>li>ul>li {
   margin: 0;
   padding-bottom: 0;
   list-style: none;
@@ -280,7 +303,7 @@ li:hover a.hasDropdown:after {
   float: left;
 }
 
-.menu > ul > li > ul > li a {
+.menu>ul>li>ul>li a {
   color: #777;
   padding: .2em 0;
   width: 95%;
@@ -288,7 +311,7 @@ li:hover a.hasDropdown:after {
   border-bottom: 1px solid #ccc;
 }
 
-.menu > ul > li > ul > li > ul {
+.menu>ul>li>ul>li>ul {
   display: block;
   padding: 0;
   margin: 10px 0 0;
@@ -296,14 +319,16 @@ li:hover a.hasDropdown:after {
   box-sizing: border-box;
 }
 
-.menu > ul > li > ul > li > ul:before, .menu > ul > li > ul > li > ul:after {
+.menu>ul>li>ul>li>ul:before, .menu>ul>li>ul>li>ul:after {
   content: "";
   display: table;
 }
 
-.menu > ul > li > ul > li > ul:after { clear: both; }
+.menu>ul>li>ul>li>ul:after {
+  clear: both;
+}
 
-.menu > ul > li > ul > li > ul > li {
+.menu>ul>li>ul>li>ul>li {
   float: left;
   width: 100%;
   padding: 10px 0;
@@ -311,49 +336,93 @@ li:hover a.hasDropdown:after {
   font-size: .8em;
 }
 
-.menu > ul > li > ul > li > ul > li a { border: 0; }
+.menu>ul>li>ul>li>ul>li a {
+  border: 0;
+}
 
-.menu > ul > li > ul.normal-sub {
+.menu>ul>li>ul.normal-sub {
   width: 300px;
   left: auto;
   padding: 10px 20px;
 }
 
-.menu > ul > li > ul.normal-sub > li { width: 100%; }
+.menu>ul>li>ul.normal-sub>li {
+  width: 100%;
+}
 
-.menu > ul > li > ul.normal-sub > li a {
+.menu>ul>li>ul.normal-sub>li a {
   border: 0;
   padding: 1em 0;
 }
 
+.filterbtn ul li {
+  background-color: transparent !important;
+  text-align: left;
+  display: flex;
+  transition: background-color .5s ease;
+  text-align: left !important;
+  flex: 1;
+  margin: 8px 5px;
+  border-radius: 10px;
+  min-width: 237px;
+}
+
+.filterbtn ul li a {
+  position: relative;
+  display: inline-flex;
+  text-decoration: none;
+  color: #fff;
+  flex: 1;
+  justify-content: start !important;
+  white-space: nowrap;
+}
+
+.filterbtn ul li a:hover {
+  text-decoration: underline !important;
+  justify-content: start !important;
+}
+
 @media only screen and (max-width: 959px) {
-
-.menu-container { width: 100%; }
-.menu-mobile { display: block; }
-.menu-dropdown-icon:before { display: block; }
-.menu > ul { display: none; }
-.menu > ul > li {
-  width: 100%;
-  float: none;
-  display: block;
-}
-
-.menu > ul > li a {
-  padding: 1.5em;
-  width: 100%;
-  display: block;
-}
-
-.menu > ul > li > ul { position: relative; }
-.menu > ul > li > ul.normal-sub { width: 100%; }
-.menu > ul > li > ul > li {
-  float: none;
-  width: 100%;
-  margin-top: 20px;
-}
-
-.menu > ul > li > ul > li:first-child { margin: 0; }
-.menu > ul > li > ul > li > ul { position: relative; }
-.menu > ul > li > ul > li > ul > li { float: none; }
-.menu .show-on-mobile { display: block; }
+  .menu-container {
+    width: 100%;
+  }
+  .menu-mobile {
+    display: block;
+  }
+  .menu-dropdown-icon:before {
+    display: block;
+  }
+  .menu>ul>li {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+  .menu>ul>li a {
+    padding: 1.5em;
+    width: 100%;
+    display: block;
+  }
+  .menu>ul>li>ul {
+    position: relative;
+  }
+  .menu>ul>li>ul.normal-sub {
+    width: 100%;
+  }
+  .menu>ul>li>ul>li {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .menu>ul>li>ul>li:first-child {
+    margin: 0;
+  }
+  .menu>ul>li>ul>li>ul {
+    position: relative;
+  }
+  .menu>ul>li>ul>li>ul>li {
+    float: none;
+  }
+  .menu .show-on-mobile {
+    display: block;
+  }
 }

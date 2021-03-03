@@ -76,6 +76,10 @@
 .w-customdate {
   width: 100% !important;
 }
+.filter .menu li {
+  min-width: 100% !important;
+  margin: 10px 0 !important;
+}
 }
 
 @media all and (min-width: 992px) {
