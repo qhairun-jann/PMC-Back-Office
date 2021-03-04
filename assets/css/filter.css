@@ -88,8 +88,8 @@ li:hover a.hasDropdown:after {
 .filter-container {
   position: absolute;
   z-index: 2;
-  right: 0;
-  left: 0;
+  /* right: 0; */
+  /* left: 0; */
   display: none;
   margin-bottom: 30px;
   text-align: left;
@@ -106,12 +106,13 @@ li:hover a.hasDropdown:after {
 
 .container__list {
   display: flex;
-  min-width: 0;
+  min-width: 205px;
   padding: 1px;
   flex: 1;
   flex-wrap: wrap;
   padding: 15px 0px;
   background: #343a40;
+  border-radius: 10px;
 }
 
 .container__list a {
@@ -149,6 +150,11 @@ li:hover a.hasDropdown:after {
 /* End Single Section Menu */
 
 /* Start Multiple Section Menu */
+
+.has-multi {
+  left: 0;
+  right: 0;
+}
 
 .filter-container.has-multi .container__listItem {
   flex-basis: 100%;
@@ -357,14 +363,19 @@ li:hover a.hasDropdown:after {
 
 .filterbtn ul li {
   background-color: transparent !important;
-  text-align: left;
-  display: flex;
-  transition: background-color .5s ease;
   text-align: left !important;
-  flex: 1;
-  margin: 8px 5px;
-  border-radius: 10px;
-  min-width: 237px;
+  padding-left: 20px;
+}
+.filterbtn ul {
+  padding-inline-start: 0;
+}
+
+.filterbtn ul li.autowidth {
+  min-width: auto;
+}
+
+.menu li.autowidth {
+  min-width: 205px;
 }
 
 .filterbtn ul li a {
