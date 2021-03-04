@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>App Library | Rizurf Back Office</title>
+    <meta name="description" content="A description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body class="p-0 bg-dark h-100 bg-dark">
+
+    <div class="sticky-top" includeHtml="navbar.html"></div>
+    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <section class="mb-5 ">
+            <!-- <div class="container mt-5">
+                <h1 class="h1 text-white text-center">Referral and earnings</h1>
+                <hr class="text-white" />
+                <div class="filter js-navbar">
+                    <nav class="menu p-0">
+
+                        <ul>
+                            <li>
+                                <div class="col-4 mt-0">
+                                    <a class="hasDropdown" href="#">Referrer name</a>
+                                    <section class="filter-container has-multi">
+
+                                        <div class="container__list container__list-multi">
+                                            <h5>Select name</h5>
+                                            <input class="form-control" type="text" placeholder="Search"
+                                                aria-label="Search" />
+                                            <div class="container__listItem mt-3">
+                                                <div>User111@123</div>
+                                            </div>
+                                            <div class="container__listItem">
+                                                <div>User222@123</div>
+                                            </div>
+                                            <div class="container__listItem">
+                                                <div>User333@123</div>
+                                            </div>
+                                        </div>
+
+                                    </section>
+                            </li>
+                            <li>
+                                <a href="javascript:void" style="padding: 11.5px;">
+                                    <label class="dateLabel">Date of
+                                        referral
+                                    </label>
+                                    <input type="date" class="form-control" id="date" placeholder="Select a Date" />
+                                </a>
+                            </li>
+                            <li> <a href="javascript:void" style="padding: 11.5px;">
+                                    <label for="passport" class="dateLabel">Passport No.</label>
+                                    <input type="text" class="form-control" id="passport" value="B199923" />
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void" style="padding: 11.5px;">
+                                    <label for="idNo" class="dateLabel">IC no</label>
+                                    <input type="text" class="form-control" id="idNo" value="901201101234" />
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <hr class="text-white" />
+                <div class="row mt-5">
+                    <div class="col">
+                        <div class="table-responsive text-start">
+                            <table class="table table-dark table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <td colspan="6">
+                                            <h5 class="text-center">10 last accessed users</h5>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <thead>
+
+                                    <tr class="align-middle">
+                                        <td class="py-3">
+                                            <h6 class="m-0">Role</h6>
+                                        </td>
+                                        <td>
+                                            <h6 class="m-0">Username</h6>
+                                        </td>
+                                        <td>
+                                            <h6 class="m-0">Email ID</h6>
+                                        </td>
+                                        <td>
+                                            <h6 class="m-0">Phone</h6>
+                                        </td>
+                                        <td>
+                                            <h6 class="m-0">Verification</h6>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="align-middle" onclick="location.href='user-details.html'"
+                                        style="cursor: pointer;">
+                                        <td>Prospect</td>
+                                        <td>User name </td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>Verified</td>
+                                        <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle" onclick="location.href='user-details.html'"
+                                        style="cursor: pointer;">
+                                        <td>Referrer</td>
+                                        <td>User name </td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>Verified</td>
+                                        <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle" onclick="location.href='user-details.html'"
+                                        style="cursor: pointer;">
+                                        <td>Client agent</td>
+                                        <td>User name </td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>Verified</td>
+                                        <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle" onclick="location.href='user-details.html'"
+                                        style="cursor: pointer;">
+                                        <td>Doorcares staff</td>
+                                        <td>User name </td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>Verified</td>
+                                        <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle" onclick="location.href='user-details.html'"
+                                        style="cursor: pointer;">
+                                        <td>Rizurf staff</td>
+                                        <td>User name </td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>Verified</td>
+                                        <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="align-middle" onclick="location.href='user-details.html'"
+                                        style="cursor: pointer;">
+                                        <td>Agent / Licensee</td>
+                                        <td>User name </td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>Verified</td>
+                                        <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-sm-10">
+                  <h1 class="h1 text-white text-center">Users</h1>
+                  <hr />
+                  <div class="row justify-content-center">
+                    <div class="filter js-navbar">
+                        <nav class="menu p-0">
+
+                            <ul>
+                                <li>
+                                    <div class="col-4 mt-0">
+                                        <a class="hasDropdown" href="#">Referrer name</a>
+                                        <section class="filter-container has-multi">
+    
+                                            <div class="container__list container__list-multi">
+                                                <h5>Select name</h5>
+                                                <input class="form-control" type="text" placeholder="Search"
+                                                    aria-label="Search" />
+                                                <div class="container__listItem mt-3">
+                                                    <div>User111@123</div>
+                                                </div>
+                                                <div class="container__listItem">
+                                                    <div>User222@123</div>
+                                                </div>
+                                                <div class="container__listItem">
+                                                    <div>User333@123</div>
+                                                </div>
+                                            </div>
+    
+                                        </section>
+                                </li>
+                                <li>
+                                    <a href="javascript:void" style="padding: 11.5px;">
+                                        <label class="dateLabel">Date of
+                                            referral
+                                        </label>
+                                        <input type="date" class="form-control" id="date" placeholder="Select a Date" />
+                                    </a>
+                                </li>
+                                <li> <a href="javascript:void" style="padding: 11.5px;">
+                                        <label for="passport" class="dateLabel">Passport No.</label>
+                                        <input type="text" class="form-control" id="passport" value="B199923" />
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="javascript:void" style="padding: 11.5px;">
+                                        <label for="idNo" class="dateLabel">IC no</label>
+                                        <input type="text" class="form-control" id="idNo" value="901201101234" />
+                                    </a>
+                                </li>
+    
+                            </ul>
+                        </nav>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      
+                  <button class="selected" style="display: none;" id="role"></button>  
+                    </div>
+                  </div>  
+                  <div class="row mt-5">
+                    <div class="col">
+                      <div class="table-responsive text-start">
+                        <table class="table table-dark table-striped table-hover">
+                          <thead>
+                            <tr>
+                              <td colspan="8">
+                                <h5 class="text-center">Referral and earnings</h5>
+                              </td>
+                            </tr>
+                          </thead>
+                          <thead>
+      
+                            <tr class="align-middle">
+                              <td class="py-3">
+                                <h6 class="m-0">Referree name</h6>
+                              </td>
+                              <td>
+                                <h6 class="m-0">Passport no</h6>
+                              </td>
+                              <td>
+                                <h6 class="m-0">Email ID</h6>
+                              </td>
+                              <td>
+                                <h6 class="m-0">IC no</h6>
+                              </td>
+                              <td>
+                                <h6 class="m-0">Sign up status</h6>
+                              </td>
+                              <td>
+                                <h6 class="m-0">Sign up date</h6>
+                              </td>
+                              <td>
+                                <h6 class="m-0">Status of rental</h6>
+                              </td>
+                              <td>
+                                <h6 class="m-0">Amount received</h6>
+                              </td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+                              <td>Prospect</td>
+                              <td>User name </td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>Yes</td>
+                              <td>DD/MM/YYYY</td>
+                              <td>rented</td>
+                              <td>RM xxxx.xx</td>
+                              
+                            </tr>
+                            <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+                              <td>Referrer</td>
+                              <td>User name </td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>Yes</td>
+                              <td>DD/MM/YYYY</td>
+                              <td>rented</td>
+                              <td>RM xxxx.xx</td>
+                              
+                            </tr>
+                            <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+                              <td>Client agent</td>
+                              <td>User name </td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>no</td>
+                              <td>DD/MM/YYYY</td>
+                              <td>not rented</td>
+                              <td>RM xxxx.xx</td>
+                              
+                            </tr>
+                            <tr class="align-middle" style="cursor: pointer;">
+                              <td>Doorcares staff</td>
+                              <td>User name </td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>Yes</td>
+                              <td>DD/MM/YYYY</td>
+                              <td>rented</td>
+                              <td>RM xxxx.xx</td>
+                              
+                            </tr>
+                            <tr class="align-middle" style="cursor: pointer;">
+                              <td>Rizurf staff</td>
+                              <td>User name </td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>no</td>
+                              <td>DD/MM/YYYY</td>
+                              <td> not rented</td>
+                              <td>RM xxxx.xx</td>
+                              
+                            </tr>
+                            <tr class="align-middle" style="cursor: pointer;">
+                              <td>Agent / Licensee</td>
+                              <td>User name </td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>Yes</td>
+                              <td>DD/MM/YYYY</td>
+                              <td>rented</td>
+                              <td>RM xxxx.xx</td>
+                              
+                            </tr>
+      
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <div includeHtml="footer.html"></div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/includefile.js"></script>
+    <script>
+        includeHTML();
+    </script>
+
+</body>
+
+</html>
