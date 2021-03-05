@@ -65,8 +65,7 @@
                                     <h3>Referee Details</h3>
                                 </div>
                                 <div class="col-1">
-                                    <img class="me-3 img-circle img-no-padding img-responsive p-0"
-                                        src="./assets/img/man.svg" width="70px" alt="..." />
+                                    <img class="me-3 img-circle img-no-padding img-responsive p-0" src="./assets/img/man.svg" width="70px" alt="..." />
                                 </div>
                                 <div class="col-5">
                                     <label for="username" class="form-label">Referee Name</label>
@@ -125,10 +124,8 @@
 
                             <div class="row justify-content-center mt-5">
                                 <div class="col-4">
-                                    <a href="#" class="w-100 btn btn-outline-info"
-                                        onclick="location.href='/user-referandearn.html'">
-                                        <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
-                                        Back To Refer and Earn List
+                                    <a href="#" class="w-100 btn btn-outline-info" onclick="location.href='/user-referandearn.html'">
+                                        <i class="far fa-arrow-alt-circle-left"></i>&nbsp; Back To Refer and Earn List
                                     </a>
                                 </div>
                             </div>
@@ -140,8 +137,7 @@
             </div>
         </section>
         <footer class="mt-auto text-white-50">
-            <p>&copy; <span id="year"></span>
-                Copyright by Jann Properties</p>
+            <p>&copy; <span id="year"></span> Copyright by Jann Properties</p>
         </footer>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -155,18 +151,19 @@
             document.getElementById("mySidebar").style.width = "250px";
             document.getElementById("main").style.marginLeft = "250px";
         }
+
         function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";
         }
     </script>
     <script>
-        (function () {
+        (function() {
             'use strict'
             var forms = document.querySelectorAll('.needs-validation')
             Array.prototype.slice.call(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
+                .forEach(function(form) {
+                    form.addEventListener('submit', function(event) {
                         if (!form.checkValidity()) {
                             event.preventDefault()
                             event.stopPropagation()
@@ -180,7 +177,7 @@
         function readURL(input) {
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
-                reader.onload = function (e) {
+                reader.onload = function(e) {
                     $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
                     $('#imagePreview').hide();
                     $('#imagePreview').fadeIn(650);
@@ -188,7 +185,7 @@
                 reader.readAsDataURL(input.files[0]);
             }
         }
-        $("#imageUpload").change(function () {
+        $("#imageUpload").change(function() {
             readURL(this);
         });
     </script>
