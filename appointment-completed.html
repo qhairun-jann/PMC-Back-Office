@@ -22,7 +22,7 @@
             <div class="container mt-5">
                 <div class="row justify-content-center">
                     <div class="col-sm-10">
-                        <h1 class="h1 text-white text-center">Appointment Details</h1>
+                        <h1 class="h1 text-white text-center">Review Appointments Detail</h1>
                         <hr />
                         <form class="needs-validation text-start">
                             <div class="row g-3 mt-3">
@@ -43,7 +43,6 @@
                                         <option selected>Property viewing (Pay cash by CDM)</option>
                                     </select>
                                 </div>
-                                <div class="col-4"></div>
 
                                 <div class="col-4">
                                     <label for="email" class="form-label">Date of Appointment</label>
@@ -55,7 +54,6 @@
                                     <input type="time" class="form-control" id="time" value="14:30">
 
                                 </div>
-                                <div class="col-4"></div>
                                 <div class="col-4">
                                     <label for="building" class="form-label">Building Name</label>
                                     <select class="form-control form-select" id="building" disabled>
@@ -431,8 +429,6 @@
                                         <label for="pic" class="form-label">Person In Charge</label>
                                         <input type="text" class="form-control" id="pic" value="Rudy Hayes" disabled>
                                     </div>
-                                    <div class="col-4"></div>
-                                    <div class="col-4"></div>
                                     <div class="col-4">
                                         <label for="status" class="form-label">Status</label>
                                         <select class="form-control form-select" id="status" disabled>
@@ -453,121 +449,185 @@
                                         <textarea class="form-control" id="remarks" style="height: 100px"
                                             placeholder="Leave a remarks here"></textarea>
                                     </div>
-                                    <div class="col-12 mt-4">
+                                    <div class="col-12 mt-5">
                                         <h4>Unit Ratings</h4>
                                     </div>
                                     <div class="col-5">
-                                    <div class="row">
-                                    <div class="col-4">
-                                        <h5 class="m-0">Design</h5>
+                                        <table class="table table-dark table-borderless table-rating">
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <h6 class="m-0">Design</h6>
+                                                </td>
+                                                <td>
+                                                    <p class="rate m-0">
+                                                        <input type="radio" id="1star5" name="rate1" value="5" checked
+                                                            disabled />
+                                                        <label for="2star5" title="5 Stars">5 stars</label>
+                                                        <input type="radio" id="1star4" name="rate1" value="4"
+                                                            disabled />
+                                                        <label for="2star4" title="4 Stars">4 stars</label>
+                                                        <input type="radio" id="1star3" name="rate1" value="3"
+                                                            disabled />
+                                                        <label for="2star3" title="3 Stars">3 stars</label>
+                                                        <input type="radio" id="1star2" name="rate1" value="2"
+                                                            disabled />
+                                                        <label for="2star2" title="2 Stars">2 stars</label>
+                                                        <input type="radio" id="1star1" name="rate1" value="1"
+                                                            disabled />
+                                                        <label for="2star1" title="1 Star">1 star</label>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <h6 class="m-0">Furnishing</h6>
+                                                </td>
+                                                <td>
+                                                    <p class="rate m-0">
+                                                        <input type="radio" id="2star5" name="rate2" value="5"
+                                                            disabled />
+                                                        <label for="2star5" title="5 Stars">5 stars</label>
+                                                        <input type="radio" id="2star4" name="rate2" value="4"
+                                                            disabled />
+                                                        <label for="2star4" title="4 Stars">4 stars</label>
+                                                        <input type="radio" id="2star3" name="rate2" value="3" checked
+                                                            disabled />
+                                                        <label for="2star3" title="3 Stars">3 stars</label>
+                                                        <input type="radio" id="2star2" name="rate2" value="2"
+                                                            disabled />
+                                                        <label for="2star2" title="2 Stars">2 stars</label>
+                                                        <input type="radio" id="2star1" name="rate2" value="1"
+                                                            disabled />
+                                                        <label for="2star1" title="1 Star">1 star</label>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <h6 class="m-0">Brightness</h6>
+                                                </td>
+                                                <td>
+                                                    <p class="rate m-0">
+                                                        <input type="radio" id="3star5" name="rate3" value="5" checked
+                                                            disabled />
+                                                        <label for="2star5" title="5 Stars">5 stars</label>
+                                                        <input type="radio" id="3star4" name="rate3" value="4"
+                                                            disabled />
+                                                        <label for="2star4" title="4 Stars">4 stars</label>
+                                                        <input type="radio" id="3star3" name="rate3" value="3"
+                                                            disabled />
+                                                        <label for="2star3" title="3 Stars">3 stars</label>
+                                                        <input type="radio" id="3star2" name="rate3" value="2"
+                                                            disabled />
+                                                        <label for="2star2" title="2 Stars">2 stars</label>
+                                                        <input type="radio" id="3star1" name="rate3" value="1"
+                                                            disabled />
+                                                        <label for="2star1" title="1 Star">1 star</label>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <h6 class="m-0">Cleanliness</h6>
+                                                </td>
+                                                <td>
+                                                    <p class="rate m-0">
+                                                        <input type="radio" id="4star5" name="rate4" value="5"
+                                                            disabled />
+                                                        <label for="2star5" title="5 Stars">5 stars</label>
+                                                        <input type="radio" id="4star4" name="rate4" value="4"
+                                                            disabled />
+                                                        <label for="2star4" title="4 Stars">4 stars</label>
+                                                        <input type="radio" id="4star3" name="rate4" value="3"
+                                                            disabled />
+                                                        <label for="2star3" title="3 Stars">3 stars</label>
+                                                        <input type="radio" id="4star2" name="rate4" value="2" checked
+                                                            disabled />
+                                                        <label for="2star2" title="2 Stars">2 stars</label>
+                                                        <input type="radio" id="4star1" name="rate4" value="1"
+                                                            disabled />
+                                                        <label for="2star1" title="1 Star">1 star</label>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <h6 class="m-0">Aroma</h6>
+                                                </td>
+                                                <td>
+                                                    <p class="rate m-0">
+                                                        <input type="radio" id="5star5" name="rate5" value="5"
+                                                            disabled />
+                                                        <label for="2star5" title="5 Stars">5 stars</label>
+                                                        <input type="radio" id="5star4" name="rate5" value="4" checked
+                                                            disabled />
+                                                        <label for="2star4" title="4 Stars">4 stars</label>
+                                                        <input type="radio" id="5star3" name="rate5" value="3"
+                                                            disabled />
+                                                        <label for="2star3" title="3 Stars">3 stars</label>
+                                                        <input type="radio" id="5star2" name="rate5" value="2"
+                                                            disabled />
+                                                        <label for="2star2" title="2 Stars">2 stars</label>
+                                                        <input type="radio" id="5star1" name="rate5" value="1"
+                                                            disabled />
+                                                        <label for="2star1" title="1 Star">1 star</label>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+
+                                        <div class="row">
+                                            <div class="col-4">
+
+                                            </div>
+                                            <div class="col-6">
+
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-6">
-                                        <p class="rate m-0">
-                                            <input type="radio" id="1star5" name="rate1" value="5" checked disabled />
-                                            <label for="2star5" title="text">5 stars</label>
-                                            <input type="radio" id="1star4" name="rate1" value="4"  disabled/>
-                                            <label for="2star4" title="text">4 stars</label>
-                                            <input type="radio" id="1star3" name="rate1" value="3" disabled />
-                                            <label for="2star3" title="text">3 stars</label>
-                                            <input type="radio" id="1star2" name="rate1" value="2" disabled />
-                                            <label for="2star2" title="text">2 stars</label>
-                                            <input type="radio" id="1star1" name="rate1" value="1" disabled />
-                                            <label for="2star1" title="text">1 star</label>
-                                        </p>
+                                    <div class="col-7"></div>
+                                    <div class="col-5 mt-0">
+                                        <div class="row">
+                                            <div class="col-4">
+
+                                            </div>
+                                            <div class="col-6">
+
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="col-7"></div>
+                                    <div class="col-5 mt-0">
+                                        <div class="row">
+                                            <div class="col-4">
+                                            </div>
+                                            <div class="col-6">
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="col-7"></div>
+                                    <div class="col-5 mt-0">
+                                        <div class="row">
+                                            <div class="col-4">
+                                            </div>
+                                            <div class="col-6">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-7"></div>
+                                    <div class="col-5 mt-0">
+                                        <div class="row">
+                                            <div class="col-4">
+                                            </div>
+                                            <div class="col-6">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-7"></div>
                                 </div>
-                                <div class="col-7"></div>
-                                <div class="col-5 mt-0">
-                                    <div class="row">
-                                    <div class="col-4">
-                                        <h5 class="m-0">Furnishing</h5>
-                                    </div>
-                                    <div class="col-6">
-                                        <p class="rate m-0">
-                                            <input type="radio" id="2star5" name="rate2" value="5" disabled />
-                                            <label for="2star5" title="text">5 stars</label>
-                                            <input type="radio" id="2star4" name="rate2" value="4" disabled/>
-                                            <label for="2star4" title="text">4 stars</label>
-                                            <input type="radio" id="2star3" name="rate2" value="3" checked disabled />
-                                            <label for="2star3" title="text">3 stars</label>
-                                            <input type="radio" id="2star2" name="rate2" value="2" disabled />
-                                            <label for="2star2" title="text">2 stars</label>
-                                            <input type="radio" id="2star1" name="rate2" value="1" disabled />
-                                            <label for="2star1" title="text">1 star</label>
-                                        </p>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="col-7"></div>
-                                <div class="col-5 mt-0">
-                                    <div class="row">
-                                    <div class="col-4">
-                                        <h5 class="m-0">Brightness</h5>
-                                    </div>
-                                    <div class="col-6">
-                                        <p class="rate m-0">
-                                            <input type="radio" id="3star5" name="rate3" value="5" checked disabled />
-                                            <label for="2star5" title="text">5 stars</label>
-                                            <input type="radio" id="3star4" name="rate3" value="4" disabled/>
-                                            <label for="2star4" title="text">4 stars</label>
-                                            <input type="radio" id="3star3" name="rate3" value="3" disabled />
-                                            <label for="2star3" title="text">3 stars</label>
-                                            <input type="radio" id="3star2" name="rate3" value="2" disabled />
-                                            <label for="2star2" title="text">2 stars</label>
-                                            <input type="radio" id="3star1" name="rate3" value="1" disabled />
-                                            <label for="2star1" title="text">1 star</label>
-                                        </p>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="col-7"></div>
-                                <div class="col-5 mt-0">
-                                    <div class="row">
-                                    <div class="col-4">
-                                        <h5 class="m-0">Cleanliness</h5>
-                                    </div>
-                                    <div class="col-6">
-                                        <p class="rate m-0">
-                                            <input type="radio" id="4star5" name="rate4" value="5" disabled />
-                                            <label for="2star5" title="text">5 stars</label>
-                                            <input type="radio" id="4star4" name="rate4" value="4" disabled/>
-                                            <label for="2star4" title="text">4 stars</label>
-                                            <input type="radio" id="4star3" name="rate4" value="3" disabled />
-                                            <label for="2star3" title="text">3 stars</label>
-                                            <input type="radio" id="4star2" name="rate4" value="2" checked disabled />
-                                            <label for="2star2" title="text">2 stars</label>
-                                            <input type="radio" id="4star1" name="rate4" value="1" disabled />
-                                            <label for="2star1" title="text">1 star</label>
-                                        </p>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="col-7"></div>
-                                <div class="col-5 mt-0">
-                                    <div class="row">
-                                    <div class="col-4">
-                                        <h5 class="m-0">Aroma</h5>
-                                    </div>
-                                    <div class="col-6">
-                                        <p class="rate m-0">
-                                            <input type="radio" id="5star5" name="rate5" value="5" disabled />
-                                            <label for="2star5" title="text">5 stars</label>
-                                            <input type="radio" id="5star4" name="rate5" value="4" checked disabled/>
-                                            <label for="2star4" title="text">4 stars</label>
-                                            <input type="radio" id="5star3" name="rate5" value="3" disabled />
-                                            <label for="2star3" title="text">3 stars</label>
-                                            <input type="radio" id="5star2" name="rate5" value="2" disabled />
-                                            <label for="2star2" title="text">2 stars</label>
-                                            <input type="radio" id="5star1" name="rate5" value="1" disabled />
-                                            <label for="2star1" title="text">1 star</label>
-                                        </p>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="col-7"></div>
-                                </div>
-                                
+
                                 <div class="row justify-content-center mt-5">
                                     <div class="col-4">
                                         <a href="#" class="w-100 btn btn-outline-info"
@@ -591,7 +651,7 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/includefile.js"></script>
     <script>
-      includeHTML();
+        includeHTML();
     </script>
     <script>
         function readURL(input) {
