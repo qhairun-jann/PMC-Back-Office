@@ -19,7 +19,7 @@
   margin: 8px 5px;
   background-color: #0d6efd;
   border-radius: 10px;
-  min-width: 237px;
+  min-width: 205px;
 }
 
 .filter .menu a {
@@ -230,10 +230,11 @@ li:hover a.hasDropdown:after {
 
 .menu>ul>li {
   float: left;
-  background: #3498DB;
   padding: 0;
-  margin: 0;
+  margin: 0px;
 }
+
+
 
 .menu>ul>li a {
   text-decoration: none;
@@ -245,12 +246,16 @@ li:hover a.hasDropdown:after {
 .selected {
   border-style: solid;
   width: fit-content;
-  padding: 5px;
-  background-color: rgb(210, 222, 240);
+  padding: 5px 20px;
+  background-color: #fff;
   border-radius: 10px;
   border-width: 1px;
-  border-color: #0d6efd;
+  text-align: center;
+  justify-self: center;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 
 .close {
   cursor: pointer;
@@ -368,6 +373,7 @@ li:hover a.hasDropdown:after {
 }
 .filterbtn ul {
   padding-inline-start: 0;
+  list-style: none;
 }
 
 .filterbtn ul li.autowidth {
