@@ -85,6 +85,11 @@ table {
   text-decoration: underline;
 }
 
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
 
 /* modal */
 
