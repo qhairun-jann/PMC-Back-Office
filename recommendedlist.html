@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>App Library | Rizurf Back Office</title>
+    <meta name="description" content="A description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body class="p-0 bg-dark h-100 bg-dark">
+
+    <div class="sticky-top" includeHtml="navbar.html"></div>
+    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <section class="mb-5 ">
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-sm-10">
+                    <h1 class="h1 text-white text-center">Recommended List</h1>
+                    <hr />
+                    <div class="row justify-content-center">
+                        <div class="filter js-navbar">
+                            <nav class="menu p-0">
+
+                                <ul>
+                                    <li>
+                                        <div class="col-4 mt-0">
+                                            <a class="hasDropdown" href="#">Username</a>
+                                            <section class="filter-container has-multi">
+
+                                                <div class="container__list container__list-multi">
+                                                    <h5>Select name</h5>
+                                                    <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
+                                                    <div class="container__listItem mt-3">
+                                                        <div>User111@123</div>
+                                                    </div>
+                                                    <div class="container__listItem">
+                                                        <div>User222@123</div>
+                                                    </div>
+                                                    <div class="container__listItem">
+                                                        <div>User333@123</div>
+                                                    </div>
+                                                </div>
+
+                                            </section>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void" style="padding: 11.5px;">
+                                            <label class="dateLabel">Date of
+                                            requirement (FAQ)
+                                        </label>
+                                            <input type="date" class="form-control" id="date" placeholder="Select a Date" />
+                                        </a>
+                                    </li>
+
+
+
+                                </ul>
+                            </nav>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+
+                                <button class="selected" style="display: none;" id="role"></button>
+                            </div>
+                        </div>
+                        <div class="row mt-0">
+                            <div class="col-11">
+                                <div class="table-responsive text-start">
+                                    <table class="table table-dark table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <td colspan="4">
+                                                    <h5 class="text-center"></h5>
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <thead>
+
+                                            <tr class="align-middle">
+                                                <td class="py-3">
+                                                    <h6 class="m-0">Username</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="m-0">Date of requirement (FAQ)</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="m-0">Total PIC recommendation</h6>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+
+                                                <td>User name </td>
+                                                <td>-</td>
+                                                <td>-</td>
+
+                                            </tr>
+                                            <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+
+                                                <td>User name </td>
+                                                <td>-</td>
+                                                <td>-</td>
+
+
+                                            </tr>
+                                            <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+
+                                                <td>User name </td>
+                                                <td>-</td>
+                                                <td>-</td>
+
+
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div includeHtml="footer.html"></div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/includefile.js"></script>
+    <script>
+        includeHTML();
+    </script>
+
+</body>
+
+</html>
