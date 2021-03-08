@@ -12,14 +12,16 @@
 }
 
 .filter .menu li {
-  display: flex;
   transition: background-color .5s ease;
   text-align: center;
   flex: 1;
   margin: 8px 5px;
   background-color: #0d6efd;
   border-radius: 10px;
-  min-width: 205px;
+}
+
+.filter .menu.w200 li a{
+  width: 250px !important;
 }
 
 .filter .menu a {
@@ -88,8 +90,6 @@ li:hover a.hasDropdown:after {
 .filter-container {
   position: absolute;
   z-index: 2;
-  /* right: 0; */
-  /* left: 0; */
   display: none;
   margin-bottom: 30px;
   text-align: left;
@@ -97,7 +97,6 @@ li:hover a.hasDropdown:after {
   box-shadow: 0 2px 0 rgba(0, 0, 0, .06);
   border-radius: 8px;
   padding: 20px;
-  margin-top: 63px;
 }
 
 .w-customdate {
@@ -217,6 +216,8 @@ li:hover a.hasDropdown:after {
   padding: 0;
   position: relative;
   box-sizing: border-box;
+  justify-content: center;
+  display: flex;
 }
 
 .menu>ul:before, .menu>ul:after {
@@ -397,49 +398,4 @@ li:hover a.hasDropdown:after {
 .filterbtn ul li a:hover {
   text-decoration: underline !important;
   justify-content: start !important;
-}
-
-@media only screen and (max-width: 959px) {
-  .menu-container {
-    width: 100%;
-  }
-  .menu-mobile {
-    display: block;
-  }
-  .menu-dropdown-icon:before {
-    display: block;
-  }
-  .menu>ul>li {
-    width: 100%;
-    float: none;
-    display: block;
-  }
-  .menu>ul>li a {
-    padding: 1.5em;
-    width: 100%;
-    display: block;
-  }
-  .menu>ul>li>ul {
-    position: relative;
-  }
-  .menu>ul>li>ul.normal-sub {
-    width: 100%;
-  }
-  .menu>ul>li>ul>li {
-    float: none;
-    width: 100%;
-    margin-top: 20px;
-  }
-  .menu>ul>li>ul>li:first-child {
-    margin: 0;
-  }
-  .menu>ul>li>ul>li>ul {
-    position: relative;
-  }
-  .menu>ul>li>ul>li>ul>li {
-    float: none;
-  }
-  .menu .show-on-mobile {
-    display: block;
-  }
 }
