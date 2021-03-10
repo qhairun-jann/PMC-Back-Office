@@ -1,5 +1,5 @@
-/* Global Classes */
-
+/* Global Classes 
+====================================*/
 * {
     box-sizing: border-box;
 }
@@ -48,9 +48,6 @@ body {
     max-width: 100%;
 }
 
-table {
-    table-layout: fixed;
-}
 
 .desktop {
     display: block;
@@ -95,22 +92,33 @@ fieldset:disabled .btn {
 }
 
 
-/* modal */
 
-
-/* ================================= */
+/* modal 
+====================================== */
 
 .btn-close {
     color: #fff !important;
 }
 
 
-/* button customize */
 
-
-/* ================================= */
+/* button customize
+===================================== */
 
 .btn-customsize {
     padding: 20px;
     border-radius: 13px;
+}
+
+
+
+/* Table
+====================================== */
+
+table {
+    table-layout: fixed;
+}
+
+.table>:not(caption)>*>* {
+    padding: .9rem .6rem;
 }
