@@ -82,6 +82,18 @@
   .menu>ul {
     display: block !important;
   }
+  .filter-container {
+    position: absolute;
+    z-index: 2;
+    display: none;
+    margin-bottom: 30px;
+    text-align: left;
+    background-color: #343a40;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .06);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100% !important;
+  }
 }
 
 @media only screen and (max-width: 959px) {

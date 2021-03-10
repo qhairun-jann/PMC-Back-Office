@@ -21,7 +21,11 @@
 }
 
 .filter .menu.w200 li a{
-  width: 250px !important;
+  width: 259px !important;
+}
+
+.oddtoFlushRight {
+  right: 0;
 }
 
 .filter .menu a {
@@ -97,6 +101,7 @@ li:hover a.hasDropdown:after {
   box-shadow: 0 2px 0 rgba(0, 0, 0, .06);
   border-radius: 8px;
   padding: 20px;
+  width: 260px;
 }
 
 .w-customdate {
