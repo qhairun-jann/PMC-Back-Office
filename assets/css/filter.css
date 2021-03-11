@@ -2,6 +2,8 @@
 
 .nav-link {
   padding: .5rem 0.5rem;
+  width: 13rem;
+  flex: none !important;
 }
 
 .btn-group-vertical>.btn, .btn-group>.btn {

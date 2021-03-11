@@ -24,13 +24,192 @@
           <div class="col-sm-10">
             <h1 class="h1 text-white text-center">Users</h1>
             <hr />
-            <div class="row my-5 text-end">
-              <div class="col-12">
-                <a href="newuser.html" class="btn btn-primary btn-sm">+ Create New User</a>
-              </div>
+            <div class="text-end">
+              <a href="newuser.html" class="btn btn-primary btn-sm">+ Create New User</a>
             </div>
             <hr />
-            <div class="row justify-content-center">
+            <ul class="nav nav-pills nav-fill">
+              <li class="nav-item nav-link">
+                <div class="btn-group w-100">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Role
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-control " type="text" placeholder="Search" aria-label="Search" /></a></li>
+                    <li><a class="dropdown-item mt-3" href="#">Prospect</a></li>
+                    <li><a class="dropdown-item" href="#">Rizurf Staff</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item nav-link">
+                <div class="btn-group w-100">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    User Name
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search" /></a></li>
+                    <li><a class="dropdown-item mt-3" href="#">Jacobs</a></li>
+                    <li><a class="dropdown-item" href="#">Mark</a></li>
+                    <li><a class="dropdown-item" href="#">Otto1</a></li>
+                    <li><a class="dropdown-item" href="#">Thornton</a></li>
+                    <li><a class="dropdown-item" href="#">@fat</a></li>
+                    <li><a class="dropdown-item" href="#">Larry the Bird</a></li>
+                    <li><a class="dropdown-item" href="#">twitter</a></li>
+                    <li><a class="dropdown-item" href="#">fat</a></li>
+                    <li><a class="dropdown-item" href="#">Otto3</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item nav-link">
+                <div class="btn-group w-100">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Email ID
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-control " type="text" placeholder="Search" aria-label="Search" /></a></li>
+                    <li><a class="dropdown-item mt-3" href="#">Otto1@email.com</a></li>
+                    <li><a class="dropdown-item" href="#">youremail@email.com</a></li>
+                    <li><a class="dropdown-item" href="#">Otto1@email.com</a></li>
+                    <li><a class="dropdown-item" href="#">Thornton@email.com</a></li>
+                    <li><a class="dropdown-item" href="#">fat@fat.com</a></li>
+                    <li><a class="dropdown-item" href="#">Larry@email.com</a></li>
+                    <li><a class="dropdown-item" href="#">twitter@email.com</a></li>
+                    <li><a class="dropdown-item" href="#">fatty@fat.com</a></li>
+                    <li><a class="dropdown-item" href="#">Otto3@email.com</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item nav-link">
+                <div class="btn-group w-100">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Phone Number
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-control " type="number" placeholder="Search" aria-label="Search" /></a></li>
+                    <li><a class="dropdown-item mt-3" href="#">+6012 123 4578</a></li>
+                    <li><a class="dropdown-item" href="#">+6012 123 4578</a></li>
+                    <li><a class="dropdown-item" href="#">+6012 123 4578</a></li>
+                    <li><a class="dropdown-item" href="#">+6012 123 4578</a></li>
+                    <li><a class="dropdown-item" href="#">+6012 123 4578</a></li>
+                    <li><a class="dropdown-item" href="#">+6012 123 4578</a></li>
+                    <li><a class="dropdown-item" href="#">+6012 123 4578</a></li>
+                    <li><a class="dropdown-item" href="#">+6012 123 4578</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item nav-link">
+                <div class="btn-group w-100">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Verification
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-control " type="text" placeholder="Search" aria-label="Search" /></a></li>
+                    <li><a class="dropdown-item mt-3" href="#">Not Verified</a></li>
+                    <li><a class="dropdown-item" href="#">Pending</a></li>
+                    <li><a class="dropdown-item" href="#">Verified</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <div class="table-responsive text-start mt-5">
+              <table class="table table-dark table-striped table-hover">
+                <thead>
+                  <tr>
+                    <td colspan="6">
+                      <h5 class="text-center">10 last accessed users</h5>
+                    </td>
+                  </tr>
+                </thead>
+                <thead>
+                  <tr class="align-middle">
+                    <td class="py-3">
+                      <h6 class="m-0">Role</h6>
+                    </td>
+                    <td>
+                      <h6 class="m-0">Username</h6>
+                    </td>
+                    <td>
+                      <h6 class="m-0">Email ID</h6>
+                    </td>
+                    <td>
+                      <h6 class="m-0">Phone</h6>
+                    </td>
+                    <td>
+                      <h6 class="m-0">Verification</h6>
+                    </td>
+                    <td></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+                    <td>Prospect</td>
+                    <td>User name </td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Verified</td>
+                    <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
+                    </td>
+                  </tr>
+                  <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+                    <td>Referrer</td>
+                    <td>User name </td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Verified</td>
+                    <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
+                    </td>
+                  </tr>
+                  <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+                    <td>Client agent</td>
+                    <td>User name </td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Verified</td>
+                    <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
+                    </td>
+                  </tr>
+                  <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+                    <td>Doorcares staff</td>
+                    <td>User name </td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Verified</td>
+                    <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
+                    </td>
+                  </tr>
+                  <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+                    <td>Rizurf staff</td>
+                    <td>User name </td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Verified</td>
+                    <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
+                    </td>
+                  </tr>
+                  <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+                    <td>Agent / Licensee</td>
+                    <td>User name </td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Verified</td>
+                    <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- <div class="row justify-content-center">
               <div class="filter js-navbar">
                 <nav class="menu p-0">
                   <ul >
@@ -172,105 +351,7 @@
                   </ul>
                 </nav>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <button class="selected" style="display: none;" id="role"></button>
-              </div>
-            </div>
-            <div class="row mt-5">
-              <div class="col">
-                <div class="table-responsive text-start">
-                  <table class="table table-dark table-striped table-hover">
-                    <thead>
-                      <tr>
-                        <td colspan="6">
-                          <h5 class="text-center">10 last accessed users</h5>
-                        </td>
-                      </tr>
-                    </thead>
-                    <thead>
-
-                      <tr class="align-middle">
-                        <td class="py-3">
-                          <h6 class="m-0">Role</h6>
-                        </td>
-                        <td>
-                          <h6 class="m-0">Username</h6>
-                        </td>
-                        <td>
-                          <h6 class="m-0">Email ID</h6>
-                        </td>
-                        <td>
-                          <h6 class="m-0">Phone</h6>
-                        </td>
-                        <td>
-                          <h6 class="m-0">Verification</h6>
-                        </td>
-                        <td></td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
-                        <td>Prospect</td>
-                        <td>User name </td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>Verified</td>
-                        <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
-                        </td>
-                      </tr>
-                      <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
-                        <td>Referrer</td>
-                        <td>User name </td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>Verified</td>
-                        <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
-                        </td>
-                      </tr>
-                      <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
-                        <td>Client agent</td>
-                        <td>User name </td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>Verified</td>
-                        <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
-                        </td>
-                      </tr>
-                      <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
-                        <td>Doorcares staff</td>
-                        <td>User name </td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>Verified</td>
-                        <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
-                        </td>
-                      </tr>
-                      <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
-                        <td>Rizurf staff</td>
-                        <td>User name </td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>Verified</td>
-                        <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
-                        </td>
-                      </tr>
-                      <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
-                        <td>Agent / Licensee</td>
-                        <td>User name </td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>Verified</td>
-                        <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button>
-                        </td>
-                      </tr>
-
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
