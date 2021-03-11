@@ -122,3 +122,13 @@ table {
 .table>:not(caption)>*>* {
     padding: .9rem .6rem;
 }
+
+/* floating sharing button
+======================================= */
+
+.sharebtn {
+    position: fixed;
+    bottom: 22px;
+    z-index: 9999;
+    right: 19px;
+}
