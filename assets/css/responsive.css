@@ -72,9 +72,9 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
-  .nav-fill .nav-item, .nav-fill>.nav-link {
+  /* .nav-fill .nav-item, .nav-fill>.nav-link {
     flex: none;
-  }
+  } */
   .nav {
     justify-content: left !important;
   }

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>View Requirement| Rizurf Back Office</title>
+  <meta name="description" content="A description.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body class="p-0 bg-dark h-100 text-white bg-dark">
+  <div class="sticky-top" includeHtml="navbar.html"></div>
+  <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <section class="mb-5">
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-sm-10">
+            <h1 class="h1 text-white text-center">Requirements</h1>
+            <hr />
+            <ul class="nav nav-pills nav-fill">
+              <li class="nav-item nav-link">
+                <div class="btn-group w-100">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Date of update
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-control" type="date" placeholder="Search" aria-label="Search" /></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item nav-link">
+                <div class="btn-group w-100">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    User name
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-control " type="text" placeholder="Search" aria-label="Search" /></a></li>
+                    <li><a class="dropdown-item mt-3" href="#">Mark</a></li>
+                    <li><a class="dropdown-item" href="#">Otto1</a></li>
+                    <li><a class="dropdown-item" href="#">Thornton</a></li>
+                    <li><a class="dropdown-item" href="#">@fat</a></li>
+                    <li><a class="dropdown-item" href="#">Larry the Bird</a></li>
+                    <li><a class="dropdown-item" href="#">twitter</a></li>
+                    <li><a class="dropdown-item" href="#">fat</a></li>
+                    <li><a class="dropdown-item" href="#">Otto3</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item nav-link">
+                <div class="btn-group w-100">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Preferred move in date
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-control" type="date" placeholder="Search" aria-label="Search" /></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item nav-link">
+                <div class="btn-group w-100">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Budget <small>(Per Months)</small>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-control " type="text" placeholder="Search" aria-label="Search" /></a></li>
+                    <li><a class="dropdown-item mt-3" href="#">RM 1K - RM 4K</a></li>
+                    <li><a class="dropdown-item" href="#">RM 5K - RM 10K</a></li>
+                    <li><a class="dropdown-item" href="#">RM 10k - Above</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item nav-link">
+                <div class="btn-group w-100">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Duration of tenancy
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-control " type="text" placeholder="Search" aria-label="Search" /></a></li>
+                    <li><a class="dropdown-item mt-3" href="#">3 - 6 Months</a></li>
+                    <li><a class="dropdown-item" href="#">6 - 12 Months</a></li>
+                    <li><a class="dropdown-item" href="#">1 Year</a></li>
+                    <li><a class="dropdown-item" href="#">2 Years</a></li>
+                    <li><a class="dropdown-item" href="#">3 Years</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <div class="table-responsive text-start mt-5">
+              <table class="table table-dark table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <h6>Date of update</h6>
+                    </th>
+                    <th scope="col">
+                      <h6>Username</h6>
+                    </th>
+                    <th scope="col" >
+                      <h6>Preferred move in date</h6>
+                    </th>
+                    <th scope="col">
+                      <h6>Budget</h6>
+                    </th>
+                    <th scope="col" colspan="2">
+                      <h6>Duration of tenancy</h6>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="align-middle" onclick="location.href='user-requirements.html'" style="cursor: pointer;">
+                    <td>12-03-2021</td>
+                    <td>Tylermiller</td>
+                    <td>20-03-2021</td>
+                    <td>RM1k - RM4k</td>
+                    <td>1 year</td>
+                    <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button></td>
+                  </tr>
+                  <tr class="align-middle" onclick="location.href='user-requirements.html'" style="cursor: pointer;">
+                    <td>12-03-2021</td>
+                    <td>Mark Jacobs</td>
+                    <td>21-03-2021</td>
+                    <td>RM1k - RM4k</td>
+                    <td>3 - 6 months</td>
+                    <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button></td>
+                  </tr>
+                  <tr class="align-middle" onclick="location.href='user-requirements.html'" style="cursor: pointer;">
+                    <td>12-03-2021</td>
+                    <td>Hulk Hogan</td>
+                    <td>22-03-2021</td>
+                    <td>RM1k - RM4k</td>
+                    <td>3 Years</td>
+                    <td><button class="btn btn-outline-info btn-sm w-100">Send Link</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div includeHtml="footer.html" class="mt-auto"></div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/includefile.js"></script>
+  <script>
+    includeHTML();
+  </script>
+</body>
+
+</html>

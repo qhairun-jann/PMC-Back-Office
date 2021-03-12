@@ -2,8 +2,8 @@
 
 .nav-link {
   padding: .5rem 0.5rem;
-  width: 13rem;
-  flex: none !important;
+  /* min-width: 13rem;
+  flex: none !important; */
 }
 
 .btn-group-vertical>.btn, .btn-group>.btn {
@@ -16,4 +16,7 @@
     right: -7px;
     border-radius: 30px;
     color: #000;
+}
+.dropdown-menu.show {
+  width: 100%
 }
