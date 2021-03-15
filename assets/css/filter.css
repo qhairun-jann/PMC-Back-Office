@@ -2,12 +2,13 @@
 
 .nav-link {
   padding: .5rem 0.5rem;
-  /* min-width: 13rem;
-  flex: none !important; */
+  min-width: 259px;
+  flex: none !important;
 }
 
 .btn-group-vertical>.btn, .btn-group>.btn {
   padding: 12px;
+  text-transform: capitalize;
 }
 
 .notify-badge {
@@ -19,4 +20,9 @@
 }
 .dropdown-menu.show {
   width: 100%
+}
+
+.dropdown-menu li a {
+  white-space: normal;
+  line-height: 1.5;
 }

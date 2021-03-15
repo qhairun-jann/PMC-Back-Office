@@ -62,6 +62,14 @@
 /* Dropdows
 ======================================================= */
 
+@media (min-width: 769px) and (max-width: 1124px) {
+  .nav-link {
+    min-width: auto !important;
+    flex: none !important;
+  }
+}
+
+
 @media (min-width: 200px) and (max-width: 768px) {
   .dropdown-content {
     display: none;
@@ -72,11 +80,13 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
-  /* .nav-fill .nav-item, .nav-fill>.nav-link {
-    flex: none;
-  } */
   .nav {
     justify-content: left !important;
+  }
+  .nav-link {
+    padding: .5rem 0.5rem;
+    min-width: auto !important;
+    flex: none !important;
   }
   
 }
