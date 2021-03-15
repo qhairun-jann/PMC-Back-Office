@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Check In Status | Rizurf Back Office</title>
+  <meta name="description" content="A description.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body class="p-0 bg-dark h-100 bg-dark">
+
+  <div class="sticky-top" includeHtml="navbar.html"></div>
+  <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <section class="mb-5">
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <h1 class="h1 text-white text-center">Tenancy Agreement - Check in</h1>
+            <hr class="text-white" />
+            <ul class="nav nav-pills nav-fill">
+              <li class="nav-item nav-link">
+                <div class="btn-group w-100">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Date of update
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-control" type="date" placeholder="Search" aria-label="Search"></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item nav-link">
+                <div class="btn-group w-100">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    User name
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-control " type="text" placeholder="Search" aria-label="Search"></a></li>
+                    <li><a class="dropdown-item mt-3" href="#">Mark</a></li>
+                    <li><a class="dropdown-item" href="#">Otto1</a></li>
+                    <li><a class="dropdown-item" href="#">Thornton</a></li>
+                    <li><a class="dropdown-item" href="#">@fat</a></li>
+                    <li><a class="dropdown-item" href="#">Larry the Bird</a></li>
+                    <li><a class="dropdown-item" href="#">twitter</a></li>
+                    <li><a class="dropdown-item" href="#">fat</a></li>
+                    <li><a class="dropdown-item" href="#">Otto3</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item nav-link">
+                <div class="btn-group w-100">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Preferred move in date
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-control" type="date" placeholder="Search" aria-label="Search"></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item nav-link">
+                <div class="btn-group w-100">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Budget <small>(Per Months)</small>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-control " type="text" placeholder="Search" aria-label="Search"></a></li>
+                    <li><a class="dropdown-item mt-3" href="#">RM 1K - RM 4K</a></li>
+                    <li><a class="dropdown-item" href="#">RM 5K - RM 10K</a></li>
+                    <li><a class="dropdown-item" href="#">RM 10k - Above</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item nav-link">
+                <div class="btn-group w-100">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Duration of tenancy
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-control " type="text" placeholder="Search" aria-label="Search"></a></li>
+                    <li><a class="dropdown-item mt-3" href="#">3 - 6 Months</a></li>
+                    <li><a class="dropdown-item" href="#">6 - 12 Months</a></li>
+                    <li><a class="dropdown-item" href="#">1 Year</a></li>
+                    <li><a class="dropdown-item" href="#">2 Years</a></li>
+                    <li><a class="dropdown-item" href="#">3 Years</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <div includeHtml="footer.html" class="mt-auto"></div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/includefile.js"></script>
+  <script>
+    includeHTML();
+  </script>
+
+</body>
+
+</html>
