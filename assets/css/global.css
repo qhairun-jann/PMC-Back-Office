@@ -1,5 +1,6 @@
 /* Global Classes 
 ====================================*/
+
 * {
     box-sizing: border-box;
 }
@@ -7,6 +8,10 @@
 body {
     padding-top: 5rem;
     font-size: .875rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 .bd-placeholder-img {
@@ -48,7 +53,6 @@ body {
     max-width: 100%;
 }
 
-
 .desktop {
     display: block;
 }
@@ -84,14 +88,10 @@ body {
     text-decoration: underline;
 }
 
-.btn.disabled,
-.btn:disabled,
-fieldset:disabled .btn {
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
     pointer-events: none;
     opacity: 0.3;
 }
-
-
 
 /* modal 
 ====================================== */
@@ -100,27 +100,12 @@ fieldset:disabled .btn {
     color: #fff !important;
 }
 
-
-
 /* button customize
 ===================================== */
 
 .btn-customsize {
     padding: 20px;
     border-radius: 13px;
-}
-
-
-
-/* Table
-====================================== */
-
-table {
-    table-layout: fixed;
-}
-
-.table>:not(caption)>*>* {
-    padding: .9rem .6rem;
 }
 
 /* floating sharing button

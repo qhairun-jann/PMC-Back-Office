@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>View amount | Refferal&earnings | Rizurf Back Office</title>
+    <title>Referral &amp; Earnings List | Refferal&earnings | Rizurf Back Office</title>
     <meta name="description" content="A description.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -51,6 +51,19 @@
                       <div class="btn-group w-100">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
                           aria-expanded="false">
+                          Date Of Referral
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a class="dropdown-item" href="javascript:void">
+                              <input class="form-control" type="date" placeholder="Search" aria-label="Search"></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item nav-link">
+                      <div class="btn-group w-100">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                          aria-expanded="false">
                           Passport No.
                         </button>
                         <ul class="dropdown-menu dropdown-menu-dark">
@@ -81,62 +94,6 @@
                         </ul>
                       </div>
                     </li>
-                    <li class="nav-item nav-link">
-                      <div class="btn-group w-100">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          Building Name
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                          <li><a class="dropdown-item" href="#">
-                              <input class="form-control " type="text" placeholder="Search" aria-label="Search" /></a></li>
-                          <li><a class="dropdown-item mt-3" href="#">KL Gateway Residences</a></li>
-                          <li><a class="dropdown-item" href="#">KL Gateway Premium</a></li>
-                          <li><a class="dropdown-item" href="#">Inwood Residences @ Pantai Sentral Park</a></li>
-                          <li><a class="dropdown-item" href="#">Novum Bangsar South</a></li>
-                          <li><a class="dropdown-item" href="#">South View Service Apartments</a></li>
-                          <li><a class="dropdown-item" href="#">KL Eco City</a></li>
-                          <li><a class="dropdown-item" href="#">Camellia Serviced Suites</a></li>
-                          <li><a class="dropdown-item" href="#">Secoya Residences</a></li>
-                          <li><a class="dropdown-item" href="#">The Establishment</a></li>
-                          <li><a class="dropdown-item" href="#">Menara KL Gateway (Work Suites)</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="nav-item nav-link">
-                      <div class="btn-group w-100">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                         Unit No.
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                          <li><a class="dropdown-item" href="#">
-                              <input class="form-control " type="text" placeholder="Search" aria-label="Search"></a></li>
-                          <li><a class="dropdown-item mt-3" href="#">A-G-1</a></li>
-                          <li><a class="dropdown-item" href="#">A-G-2</a></li>
-                          <li><a class="dropdown-item" href="#">A-G-3</a></li>
-                          <li><a class="dropdown-item" href="#">A-G-3A</a></li>
-                          <li><a class="dropdown-item" href="#">A-G-5</a></li>
-                          <li><a class="dropdown-item" href="#">A-G-6</a></li>
-                          <li><a class="dropdown-item" href="#">A-G-7</a></li>
-                          <li><a class="dropdown-item" href="#">A-G-8</a></li>
-                          <li><a class="dropdown-item" href="#">A-G-9</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="nav-item nav-link">
-                      <div class="btn-group w-100">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          Date Of Check-In
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                          <li><a class="dropdown-item" href="javascript:void">
-                              <input class="form-control" type="date" placeholder="Search" aria-label="Search"></a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
                   </ul>
 
 
@@ -159,9 +116,6 @@
                             <h6 class="m-0">Passport no</h6>
                           </td>
                           <td>
-                            <h6 class="m-0">Email ID</h6>
-                          </td>
-                          <td>
                             <h6 class="m-0">IC no</h6>
                           </td>
                           <td>
@@ -173,72 +127,65 @@
                           <td>
                             <h6 class="m-0">Status of rental</h6>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <h6 class="m-0">Amount received</h6>
                           </td>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+                        <tr class="align-middle" onclick="location.href='user-referandearn.html'" style="cursor: pointer;">
                           <td>Prospect</td>
                           <td>User name </td>
-                          <td>-</td>
-                          <td>-</td>
+                          <td>801203-03-8808</td>
                           <td>Yes</td>
                           <td>DD/MM/YYYY</td>
                           <td>rented</td>
                           <td>RM xxxx.xx</td>
                           
                         </tr>
-                        <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+                        <tr class="align-middle" onclick="location.href='user-referandearn.html'" style="cursor: pointer;">
                           <td>Referrer</td>
                           <td>User name </td>
-                          <td>-</td>
-                          <td>-</td>
+                          <td>801203-03-8808</td>
                           <td>Yes</td>
                           <td>DD/MM/YYYY</td>
                           <td>rented</td>
                           <td>RM xxxx.xx</td>
                           
                         </tr>
-                        <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+                        <tr class="align-middle" onclick="location.href='user-referandearn.html'" style="cursor: pointer;">
                           <td>Client agent</td>
                           <td>User name </td>
-                          <td>-</td>
-                          <td>-</td>
+                          <td>801203-03-8808</td>
                           <td>no</td>
                           <td>DD/MM/YYYY</td>
                           <td>not rented</td>
                           <td>RM xxxx.xx</td>
                           
                         </tr>
-                        <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+                        <tr class="align-middle" onclick="location.href='user-referandearn.html'" style="cursor: pointer;">
                           <td>Doorcares staff</td>
                           <td>User name </td>
-                          <td>-</td>
-                          <td>-</td>
+                          <td>801203-03-8808</td>
                           <td>Yes</td>
                           <td>DD/MM/YYYY</td>
                           <td>rented</td>
                           <td>RM xxxx.xx</td>
                           
                         </tr>
-                        <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+                        <tr class="align-middle" onclick="location.href='user-referandearn.html'" style="cursor: pointer;">
                           <td>Rizurf staff</td>
                           <td>User name </td>
-                          <td>-</td>
-                          <td>-</td>
+                          <td>801203-03-8808</td>
                           <td>no</td>
                           <td>DD/MM/YYYY</td>
                           <td> not rented</td>
                           <td>RM xxxx.xx</td>
-                          
                         </tr>
                         <tr class="align-middle" style="cursor: pointer;">
                           <td>Agent / Licensee</td>
                           <td>User name </td>
-                          <td>-</td>
-                          <td>-</td>
+                          <td>801203-03-8808</td>
                           <td>Yes</td>
                           <td>DD/MM/YYYY</td>
                           <td>rented</td>

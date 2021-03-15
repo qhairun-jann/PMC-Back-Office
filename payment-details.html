@@ -16,31 +16,7 @@
 </head>
 
 <body class="p-0 bg-dark h-100 text-center text-white bg-dark">
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="activities.html">Activities</a>
-        <a href="app-drawer.html">App Library</a>
-    </div>
-    <header id="main" class="navbar navbar-dark sticky-top bg-dark flex-nowrap p-0 shadow">
-        <button class="openbtn" onclick="openNav()">☰</button>
-        <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
-        <ul class="navicon px-3 d-flex m-0">
-            <li>
-                <a href="#">
-                    <span class="fa-stack fa-lg" data-count="28">
-                        <i class="fa fa-bell fa-stack-1x "></i>
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="fa-stack fa-lg">
-                        <i class="fas fa-user fa-stack-1x "></i>
-                    </span>
-                </a>
-            </li>
-        </ul>
-    </header>
+    <div class="sticky-top" includeHtml="navbar.html"></div>
     <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <section class="mb-5">
             <div class="container mt-5">
@@ -49,15 +25,13 @@
                         <h1 class="h1 text-white text-center">Payment Details</h1>
                         <hr />
                         <form class="needs-validation text-start">
-
                             <div class="row gy-3 mt-0">
-                                <div class="col-1 align-self-center">
+                                <div class="col-md-1 align-self-center">
                                     <img src="/assets/img/avatar.svg" width="70px">
                                 </div>
-                                <div class="col-4 align-self-center">
+                                <div class="col-md-4 align-self-center">
                                     <p class="m-0">Username</p>
                                     <h4>John Doe</h4>
-
                                 </div>
                             </div>
                             <div class="row gy-3 mt-5">
