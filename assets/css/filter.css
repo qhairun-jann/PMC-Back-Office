@@ -2,7 +2,6 @@
 
 .nav-link {
   padding: .5rem 0.5rem;
-  min-width: 259px;
   flex: none !important;
 }
 
@@ -19,7 +18,7 @@
     color: #000;
 }
 .dropdown-menu.show {
-  width: 100%
+  width: 250px
 }
 
 .dropdown-menu li a {
