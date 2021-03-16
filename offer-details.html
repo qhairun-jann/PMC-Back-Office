@@ -390,25 +390,12 @@
                                     <label for="pet" class="form-label">Pet</label>
                                     <input type="text" class="form-control" id="pet" value="2 pets">
                                 </div>
-
-                                    <div class="col-4">
-                                        <label for="pic" class="form-label">Person In Charge</label>
-                                        <input type="text" class="form-control" id="pic" value="Rudy Hayes" disabled>
-                                    </div>
-
-                                    <div class="row g-3 mt-3">
-                                        <div class="col-sm-12">
-                                            <label for="remarks" class="form-label">Other remarks</label>
-                                            <textarea class="form-control" id="remarks" style="height: 100px"
-                                                disabled>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</textarea>
-                                        </div>
-                                    </div>
                                 <div class="col-4">
-                                    <label for="email" class="form-label">Date of Appointment</label>
+                                    <label for="email" class="form-label">Date of Offer</label>
                                     <input type="date" class="form-control" id="date" value="2018-07-22" disabled>
 
-                                </div>
-                                 <div class="col-4">
+                                </div>                             
+                                <div class="col-4">
                                     <label for="status" class="form-label">Status of Offer</label>
                                     <select class="form-control form-select" id="status">
                                         <option value="">Select status</option>
@@ -426,13 +413,20 @@
                                         <option selected>No</option>
                                     </select>
                                 </div>
+                                <div class="row g-3 mt-3">
+                                    <div class="col-sm-12">
+                                        <label for="remarks" class="form-label">Other Remarks</label>
+                                        <textarea class="form-control" id="remarks" style="height: 100px"
+                                            placeholder="Leave a remarks here" disabled></textarea>
+                                    </div>
+                                </div>
                             </div>
                             <hr class="my-4" />
 
 
                             <div class="row justify-content-center mt-5">
                                 <div class="col-4">
-                                    <a href="#" onclick="history.go(-1)" class="w-100 btn btn-outline-info">
+                                    <a href="offers-list.html" class="w-100 btn btn-outline-info">
                                         <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
                                         Back To Offers List
                                     </a>
