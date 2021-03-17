@@ -92,6 +92,12 @@ a {
     pointer-events: none;
     opacity: 0.3;
 }
+/* Table 
+=======================================*/
+tfoot, th, thead, tr {
+    text-transform: capitalize !important;
+}
+
 
 /* modal 
 ====================================== */
