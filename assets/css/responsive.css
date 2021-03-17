@@ -67,6 +67,9 @@
     min-width: auto !important;
     flex: none !important;
   }
+  .nav-center {
+    justify-content: start !important;
+}
 }
 
 
@@ -88,7 +91,9 @@
     min-width: auto !important;
     flex: none !important;
   }
-  
+  .nav-center {
+    justify-content: start !important;
+}
 }
 
 @media (min-width: 200px) and (max-width: 560px) {

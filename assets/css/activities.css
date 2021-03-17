@@ -1,3 +1,7 @@
 .filterClick {
     cursor: pointer;
 }
+
+.nav-center {
+    justify-content: center;
+}
