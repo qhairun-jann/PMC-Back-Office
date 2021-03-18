@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> TEST FILTER </title>
+  <meta name="description" content="A description.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body class="p-0 bg-dark h-100 bg-dark">
+  <!-- 
+
+
+ -->
+  <div class="sticky-top" includeHtml="navbar.html"></div>
+  <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="vue-app">
+    <section class="mb-5">
+      <div class="container mt-5">
+        <h1 class="h1 text-white text-center">Activities</h1>
+        <hr class="text-white" />
+        <!-- TASK-TO-WAN -->
+        <div class="filter js-navbar">
+          <ul class="nav nav-pills nav-fill">
+            <li class="nav-item nav-link" v-for="btn in filterBtns" >
+              <div class="btn-group w-100" >
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  {{btn.name}}
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <button class="dropdown-item">
+                      <input class="form-control " type="text" placeholder="Search" aria-label="Search" />
+                    </button>
+                  </li>
+                  <li v-for="item in btn.items" ><button class="dropdown-item" @click="clickFilterBtn" :data-id="item.codeName"> {{ item.name }} </button></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item nav-link">
+              <div class="btn-group w-100">
+                <button type="button" class="btn btn-primary dropdown-toggle autowidth" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Select Date
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">
+                      <input class="form-control" type="date" placeholder="Search" aria-label="Search" /></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item nav-link">
+              <div class="btn-group w-100">
+                <button type="button" class="btn btn-danger">
+                  Unread
+                  <span class="badge bg-light notify-badge">9</span>
+                  <span class="visually-hidden">unread messages</span>
+                </button>
+              </div>
+            </li>
+            <li class="nav-item nav-link">
+              <div class="btn-group w-100">
+                <button type="button" class="btn btn-warning">
+                  *Important
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-sm-10">
+            <div class="row justify-content-center">
+              <div class="col-sm-12">
+                <!-- TASK-TO-WAN -->
+                <article class="timeline">
+                  <section class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                    v-for="(card,index) in renderState" :key="index" data-name="cat1, unit1, bldng1, date1">
+                    <div class="content" onclick="location.href='tourrequest-details.html';">
+                      <small class="text-muted">{{card.date}}</small>
+                      <h2>{{card.h1}} </h2>
+                      <p>{{card.p}}</p>
+                    </div>
+                  </section>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div includeHtml="footer.html" class="mt-auto"></div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="assets/js/main.js"></script> -->
+  <script src="assets/js/includefile.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="assets/js/fakeData.js"></script>
+  <script>
+    includeHTML();
+  </script>
+
+</body>
+
+</html>
+
+<script>
+  
+  var app = new Vue({
+    el: '#vue-app',
+    data: {
+      filterBtns: [
+        {
+          name: "Category",
+          items: [
+            { codeName: "appointments", name: 'Appointments' },
+            { codeName: "offers", name: 'Offers' },
+            { codeName: "payments", name: 'Payments' },
+          ]
+        },
+        {
+          name: "Building",
+          items: [
+            { codeName: "kl_gateway_residences", name: 'KL Gateway Residences' },
+            { codeName: "kl_gateway_premium", name: 'KL Gateway Premium' },
+            { codeName: "kl_gateway_south", name: 'KL Gateway South' },
+          ]
+        },
+        {
+          name: "Area",
+          items: [
+            { codeName: "bangsar", name: 'Bangsar' },
+            { codeName: "bangsar_south", name: 'Bangsar South' },
+          ]
+        },
+        {
+          name: "Block",
+          items: [
+          { codeName: "block_a", name: 'Block A' },
+            { codeName: "block_b", name: 'Block B' },
+            { codeName: "block_c", name: 'Block C' },
+          ]
+        },
+        {
+          name: "Level",
+          items: [
+            { codeName: "level_1", name: 'Level 1' },
+            { codeName: "level_2", name: 'Level 2' },
+            { codeName: "level_3", name: 'Level 3' },
+          ]
+        },
+        {
+          name: "Unit",
+          items: [
+            { codeName: "a-g-1", name: 'A-G-1' },
+            { codeName: "a-g-2", name: 'A-G-2' },
+            { codeName: "a-g-3", name: 'A-G-3' },
+          ]
+        },
+      ],
+      renderState: [],
+      partitionArray: []
+
+    },
+    mounted() {
+      this.renderState = cards
+
+    },
+    methods: {
+      clickFilterBtn(event) {
+        const el = event.target
+        let getName = this.trimLowerString(el.innerHTML)
+        let getDataId = this.trimLowerString(el.dataset.id)
+        // console.log(getDataId)
+        this.renderState = this.getDatabyName(getDataId)
+      },
+      trimLowerString(data) {
+        let temp = String(data)
+        temp = temp.toLowerCase()
+        const result = temp.trim()
+        return result
+      },
+      getDatabyName(getName) {
+        let tempArray = []
+        for (let index = 0; index < cards.length; index++) {
+          const card = cards[index];
+          const filterNames = card.filterNames
+          for (let index = 0; index < filterNames.length; index++) {
+            const filter_name = filterNames[index];
+            // console.log(filter_name,getName)
+            if (filter_name === getName) {
+              tempArray.push(card)
+              break
+            }
+          }
+        }
+        return tempArray
+      }
+    }
+  })
+</script>
