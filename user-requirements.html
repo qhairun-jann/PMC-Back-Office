@@ -15,13 +15,13 @@
 
 </head>
 
-<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
-    <div class="sticky-top" includeHtml="navbar.html"></div>
+<body class="p-0 bg-dark h-100 text-center bg-dark">
+    <div class="sticky-top" includehtml="navbar.html"></div>
     <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <section class="container mb-5">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center text-white ">
                 <div class="col-sm-10">
-                    <h1 class="mt-5 text-white text-center">Requirements</h1>
+                    <h1 class="mt-5 text-center">Requirements</h1>
                     <hr />
                     <form class="needs-validation text-start" novalidate>
                         <div class="row">
@@ -512,7 +512,8 @@
                             </div>
 
                             <div class="col-4">
-                                <a href="user-details.html" class="w-100 mt-5 btn btn-primary ms-auto">
+                                <a href="user-details.html" class="w-100 mt-5 btn btn-primary ms-auto"
+                                    data-bs-toggle="modal" data-bs-target="#fowardpic">
                                     Forward To PIC &nbsp;
                                     <i class="far fa-arrow-alt-circle-right"></i>
                                 </a>
@@ -521,9 +522,11 @@
 
                         <hr class="text-black" />
                         <div class="table-responsive">
-                            <table  class="table table-dark table-striped table-hover">
+                            <table class="table table-dark table-striped table-hover">
                                 <thead>
-                                    <td colspan="3"><h3>Forwards To PIC</h3></td>
+                                    <td colspan="3">
+                                        <h3>Forwards To PIC</h3>
+                                    </td>
                                 </thead>
                                 <thead>
                                     <td>PIC Name</td>
@@ -568,14 +571,62 @@
             </div>
         </section>
 
-        <div includeHtml="footer.html" class="mt-auto"></div>
+        <div includehtml="footer.html" class="mt-auto"></div>
+
+        <!-- Modal -->
+        <div class="modal fade text-start" id="fowardpic" tabindex="-1" aria-labelledby="fowardpicLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header noborderbtm">
+                        <h5 class="modal-title" id="fowardpicLabel">Forwards To PIC</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">PIC Name</th>
+                                    <th scope="col">Forward</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Esther Vimala</td>
+                                    <td><button class="btn btn-primary forward w-100" id="esther" >Forward</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Felicia See</td>
+                                    <td><button class="btn btn-primary forward w-100" id="felicia">Forward</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Chin Han Tung</td>
+                                    <td><button class="btn btn-primary forward w-100" id="chin" >Forward</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Nurul Najmina</td>
+                                    <td><button class="btn btn-primary forward w-100" id="najmina" >Forward</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Jessica Iwazaki</td>
+                                    <td><button class="btn btn-primary forward w-100" id="jessy" >Forward</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/includefile.js"></script>
     <script>
-        includeHTML();
+        includehtml();
+    </script>
+    <script>
+        
     </script>
 </body>
 
