@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>View Details | Users | Rizurf Back Office</title>
+    <meta name="description" content="A description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
+    <div class="sticky-top" includehtml="navbar.html"></div>
+    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <section class="mb-5">
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-sm-10">
+                        <h1 class="h1 text-white text-center">Recomended Properties</h1>
+                        <hr />
+                        <form class="needs-validation text-start" novalidate>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="avatar-upload d-flex">
+                                        <div class="avatar-preview">
+                                            <div id="imagePreview" style="background-image: url(assets/img/avatar.svg);">
+                                            </div>
+                                        </div>
+                                        <div class="align-self-center ms-5">
+                                            <h5>John Doe Alexander</h5>
+                                        </div>
+                                    </div>
+                                    <p class="m-0 text-muted">Account created on 12-12-2020 by (name)</p>
+                                    <p class="text-muted">Last edited 21-12-2020, 12:12 PM by (name) </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Role</label>
+                                    <input type="text" class="form-control" value="Prospect(Tenant)" disabled>
+                                    <div class="invalid-feedback">
+                                        Please select one
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Verification Status</label>
+                                    <input type="text" class="form-control" value="Verified" disabled>
+                                    <div class="invalid-feedback">
+                                        Please select one
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row justify-content-lg-start justify-content-sm-center">
+
+                                <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                                    onclick="location.href='user-details.html';">Personal Details</button>
+
+                                <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                                    onclick="location.href='user-requirements.html';">Requirements
+                                </button>
+
+                                <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                                    onclick="location.href='user-documents.html';">Documents</button>
+
+                                <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                                    onclick="location.href='user-roles.html';">Roles</button>
+
+                                <button class="btn btn-outline-info m-2 fixed-width"
+                                    onclick="location.href='user-tourrequest.html';" type="button">Tour
+                                    Requests</button>
+
+                                <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                                    onclick="location.href='user-appointments.html';">Appointments</button>
+
+                                <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                                    onclick="location.href='user-offers.html';">Offers</button>
+
+                                <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                                    onclick="location.href='user-checkin.html';">TA &amp; Check-In</button>
+
+                                <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                                    onclick="location.href='user-payments.html';">Payments</button>
+
+                                <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                                    onclick="location.href='user-referandearn.html';">Refer and Earn</button>
+                                    
+                                <button class="btn btn-primary m-2 fixed-width" type="button"
+                                    onclick="location.href='user-recommended.html';">Recomended Properties</button>
+                            </div>
+                            <hr />
+    
+                            <div class="row mt-3 ">
+                                <h5 class="mx-2 mb-0">Novum Bangsar South</h5>
+                                <p class="mx-2 text-muted">3 Recommendations | 21/12/2020</p>
+                                <div class="col-4">
+                                    <div class="card " style="cursor:pointer;">
+                                        <div class="card-img-top ">
+                                            <div class="cardbadge">
+                                                <input class="form-check-input" type="checkbox" value="" />
+                                            </div>
+                                            <div onclick="location.href='propertypage.html';">
+                                                <img class="d-block img-fluid" src="/assets/img/novum-bangsarsouth.jpg"
+                                                    alt="First slide">
+                                            </div>
+                                        </div>
+    
+                                        <div class="card-body" onclick="location.href='propertypage.html';">
+                                            <h3 class="card-title text-start">Novum Bangsar South</h3>
+                                            <p>Residensi Era Novum Jalan Kerinchi Kiri 2</p>
+                                            <h5 class="card-title text-start">RM 2,000</h5>
+                                            <div class="d-flex iconsmall">
+                                                <p class="me-2 ms-1"><img src="/assets/img/double-bed.svg" alt="..."
+                                                        width="20px"> 3</p>
+                                                <p class="me-2 ms-1"><img src="/assets/img/bath-tub.svg" alt="..."
+                                                        width="20px"> 2
+                                                </p>
+                                                <p class="me-2 ms-1"><img src="/assets/img/parking.svg" alt="..."
+                                                        width="20px"> 3
+                                                </p>
+                                                <p class="me-2 ms-1"><img src="/assets/img/area-graph.svg" alt="..."
+                                                        width="20px"> 3000 sqft.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-4">
+                                    <div class="card " style="cursor:pointer;">
+                                        <div class="card-img-top ">
+                                            <div class="cardbadge">
+                                                <input class="form-check-input" type="checkbox" value="" />
+                                            </div>
+                                            <div onclick="location.href='propertypage.html';">
+                                                <img class="d-block img-fluid" src="/assets/img/novum-bangsarsouth.jpg"
+                                                    alt="First slide">
+                                            </div>
+                                        </div>
+    
+                                        <div class="card-body" onclick="location.href='propertypage.html';">
+                                            <h3 class="card-title text-start">Novum Bangsar South</h3>
+                                            <p>Residensi Era Novum Jalan Kerinchi Kiri 2</p>
+                                            <h5 class="card-title text-start">RM 2,000</h5>
+                                            <div class="d-flex iconsmall">
+                                                <p class="me-2 ms-1"><img src="/assets/img/double-bed.svg" alt="..."
+                                                        width="20px"> 3</p>
+                                                <p class="me-2 ms-1"><img src="/assets/img/bath-tub.svg" alt="..."
+                                                        width="20px"> 2
+                                                </p>
+                                                <p class="me-2 ms-1"><img src="/assets/img/parking.svg" alt="..."
+                                                        width="20px"> 3
+                                                </p>
+                                                <p class="me-2 ms-1"><img src="/assets/img/area-graph.svg" alt="..."
+                                                        width="20px"> 3000 sqft.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-4">
+                                    <div class="card " style="cursor:pointer;">
+                                        <div class="card-img-top ">
+                                            <div class="cardbadge">
+                                                <input class="form-check-input" type="checkbox" value="" />
+                                            </div>
+                                            <div onclick="location.href='propertypage.html';">
+                                                <img class="d-block img-fluid" src="/assets/img/novum-bangsarsouth.jpg"
+                                                    alt="First slide">
+                                            </div>
+                                        </div>
+    
+                                        <div class="card-body" onclick="location.href='propertypage.html';">
+                                            <h3 class="card-title text-start">Novum Bangsar South</h3>
+                                            <p>Residensi Era Novum Jalan Kerinchi Kiri 2</p>
+                                            <h5 class="card-title text-start">RM 2,000</h5>
+                                            <div class="d-flex iconsmall">
+                                                <p class="me-2 ms-1"><img src="/assets/img/double-bed.svg" alt="..."
+                                                        width="20px"> 3</p>
+                                                <p class="me-2 ms-1"><img src="/assets/img/bath-tub.svg" alt="..."
+                                                        width="20px"> 2
+                                                </p>
+                                                <p class="me-2 ms-1"><img src="/assets/img/parking.svg" alt="..."
+                                                        width="20px"> 3
+                                                </p>
+                                                <p class="me-2 ms-1"><img src="/assets/img/area-graph.svg" alt="..."
+                                                        width="20px"> 3000 sqft.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="my-5" />
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-4">
+                                    <a href="#" class="w-100 btn btn-outline-info" onclick="location.href='user.html'">
+                                        <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
+                                        Back To User Page
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="user-requirements.html" class="w-100 btn btn-primary">
+                                        Continue To Requirements Page &nbsp;
+                                        <i class="far fa-arrow-alt-circle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div includehtml="footer.html" class="mt-auto"></div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/includefile.js"></script>
+    <script>
+        includehtml();
+    </script>
+</body>
+
+</html>
