@@ -11,7 +11,7 @@
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
 
 </head>
 
@@ -27,7 +27,7 @@
                         <form class="needs-validation text-start">
                             <div class="row g-3 mt-3">
                                 <div class="col-4">
-                                    <label for="category" class="form-label">Category of Appointment</label>
+                                    <label class="form-label">Category of Appointment</label>
                                     <select class="form-control form-select" disabled>
                                         <option value="">Select category</option>
                                         <option selected>Property viewing (Pay cash to agent)</option>
@@ -35,7 +35,7 @@
                                     </select>
                                 </div>
                                 <div class="col-4">
-                                    <label for="category" class="form-label">Sub Category of Appointment</label>
+                                    <label class="form-label">Sub Category of Appointment</label>
                                     <select class="form-control form-select" disabled>
                                         <option value="">Select sub category</option>
                                         <option>Property viewing (Pay cash to agent)</option>
@@ -48,12 +48,12 @@
 
                                 </div>
                                 <div class="col-4">
-                                    <label for="passport" class="form-label">Time of Appointment</label>
+                                    <label class="form-label">Time of Appointment</label>
                                     <input type="time" class="form-control" value="14:30" />
 
                                 </div>
                                 <div class="col-4">
-                                    <label for="building" class="form-label">Building Name</label>
+                                    <label class="form-label">Building Name</label>
                                     <select class="form-control form-select" disabled>
                                         <option value="">Select building name</option>
                                         <option selected>Paradise Residence</option>
@@ -61,7 +61,7 @@
                                     </select>
                                 </div>
                                 <div class="col-4">
-                                    <label for="unit" class="form-label">Unit no.</label>
+                                    <label  class="form-label">Unit no.</label>
                                     <select class="form-control form-select" disabled>
                                         <option value="">Select unit number</option>
                                         <option selected>B1713</option>
@@ -69,13 +69,13 @@
                                     </select>
                                 </div>
                                 <div class="col-4">
-                                    <label for="location" class="form-label">Location of Building</label>
+                                    <label class="form-label">Location of Building</label>
                                     <input type="text" class="form-control"
                                         value="Jalan Mawar Bukit Tinggi Kuala Lumpur" disabled />
 
                                 </div>
                                 <div class="col-4">
-                                    <label for="pic" class="form-label">Person In Charge</label>
+                                    <label class="form-label">Person In Charge</label>
                                     <input type="text" class="form-control" value="Rudy Hayes" disabled />
                                 </div>
                                 <hr class="my-4">
@@ -85,22 +85,22 @@
                                     </div>
                                     <div class="col-12"> <img src="/assets/img/avatar.svg" width="60px"> </div>
                                     <div class="col-4">
-                                        <label for="username" class="form-label">Username</label>
+                                        <label class="form-label">Username</label>
                                         <input type="text" class="form-control" value="johndoe" disabled />
                                     </div>
 
                                     <div class="col-4">
-                                        <label for="passport" class="form-label">Passport Number</label>
+                                        <label class="form-label">Passport Number</label>
                                         <input type="text" class="form-control" value="B777666" disabled />
                                     </div>
 
                                     <div class="col-4">
-                                        <label for="ic" class="form-label">IC Number</label>
+                                        <label class="form-label">IC Number</label>
                                         <input type="text" class="form-control" value="2352245613311" disabled />
                                     </div>
 
                                     <div class="col-4">
-                                        <label for="Nationality" class="form-label">Nationality</label>
+                                        <label class="form-label">Nationality</label>
                                         <select type="text" list="nation" class="form-control  form-select"
                                             placeholder="eg: Malaysian" disabled>
                                             <datalist>
@@ -399,7 +399,7 @@
                                     </div>
 
                                     <div class="col-4">
-                                        <label for="occupants" class="form-label">Total Occupants</label>
+                                        <label class="form-label">Total Occupants</label>
                                         <input type="number" class="form-control" value="2" disabled />
                                     </div>
 
@@ -553,7 +553,7 @@
                             <hr />
                             <div class="row justify-content-center mt-4">
                                 <div class="col-4">
-                                    <a href="user-appointments.html" class="w-100 btn btn-outline-info">
+                                    <a href="/user-appointments.html" class="w-100 btn btn-outline-info">
                                         <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
                                         Back To Appointments List
                                     </a>
@@ -564,12 +564,12 @@
                 </div>
             </div>
         </section>
-        <div includehtml="footer.html" class="mt-auto"></div>
+        <div includehtml="/footer.html" class="mt-auto"></div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/includefile.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/includefile.js"></script>
     <script>
         includehtml();
     </script>

@@ -11,7 +11,7 @@
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
 
 </head>
 
@@ -30,7 +30,7 @@
                                     src="./assets/img/man.svg" width="70px" alt="..." />
                             </div>
                             <div class="col-5">
-                                <label for="username" class="form-label">Referee Name</label>
+                                <label class="form-label">Referee Name</label>
                                 <input type="text" class="form-control" id="username" value="johndoe" disabled>
                             </div>
                             <div class="col-6">
@@ -124,7 +124,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="align-middle" onclick="location.href='user-details.html'"
+                                    <tr class="align-middle" onclick="location.href='/user-details.html'"
                                         style="cursor: pointer;">
                                         <td>RM 33.33</td>
                                         <td>RM 33.33</td>
@@ -151,7 +151,7 @@
                                 </div>
 
                                 <div class="col-4">
-                                    <label for="building" class="form-label">Building Name</label>
+                                    <label class="form-label">Building Name</label>
                                     <select class="form-control form-select" id="building" disabled>
                                         <option value="">Select building name</option>
                                         <option selected>Paradise Residence</option>
@@ -159,7 +159,7 @@
                                     </select>
                                 </div>
                                 <div class="col-4">
-                                    <label for="unit" class="form-label">Unit no.</label>
+                                    <label  class="form-label">Unit no.</label>
                                     <select class="form-control form-select" id="unit" disabled>
                                         <option value="">Select unit number</option>
                                         <option selected>B1713</option>
@@ -174,7 +174,7 @@
                         <hr class="my-5" />
                         <div class="row justify-content-start mt-5">
                             <div class="col-4">
-                                <a href="user-referandearn.html" class="w-100 btn btn-outline-info">
+                                <a href="/user-referandearn.html" class="w-100 btn btn-outline-info">
                                     <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
                                     Back To Refer and Earn List
                                 </a>
@@ -186,12 +186,12 @@
                 </div>
             </div>
         </section>
-        <div includehtml="footer.html" class="mt-auto"></div>
+        <div includehtml="/footer.html" class="mt-auto"></div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/includefile.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/includefile.js"></script>
     <script>
         includehtml();
     </script>

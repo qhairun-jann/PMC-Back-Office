@@ -11,7 +11,7 @@
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
 
 </head>
 
@@ -29,7 +29,7 @@
                                 <div class="col-md-6">
                                     <div class="avatar-upload d-flex">
                                         <div class="avatar-preview">
-                                            <div id="imagePreview" style="background-image: url(assets/img/avatar.svg);">
+                                            <div id="imagePreview" style="background-image: url(/assets/img/avatar.svg);">
                                             </div>
                                         </div>
                                         <div class="align-self-center ms-5">
@@ -58,38 +58,38 @@
                             <div class="row justify-content-lg-start justify-content-sm-center">
 
                                 <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                    onclick="location.href='user-details.html';">Personal Details</button>
+                                    onclick="location.href='/user-details.html';">Personal Details</button>
 
                                 <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                    onclick="location.href='user-requirements.html';">Requirements</button>
+                                    onclick="location.href='/user-requirements.html';">Requirements</button>
 
                                 <button class="btn btn-primary m-2 fixed-width" type="button"
-                                    onclick="location.href='user-documents.html';">Documents</button>
+                                    onclick="location.href='/user-documents.html';">Documents</button>
 
                                 <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                    onclick="location.href='user-roles.html';">Roles</button>
+                                    onclick="location.href='/user-roles.html';">Roles</button>
 
                                 <button class="btn btn-outline-info m-2 fixed-width"
-                                    onclick="location.href='user-tourrequest.html';" type="button">Tour
+                                    onclick="location.href='/user-tourrequest.html';" type="button">Tour
                                     Requests</button>
 
                                 <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                    onclick="location.href='user-appointments.html';">Appointments</button>
+                                    onclick="location.href='/user-appointments.html';">Appointments</button>
 
                                 <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                    onclick="location.href='user-offers.html';">Offers</button>
+                                    onclick="location.href='/user-offers.html';">Offers</button>
 
                                 <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                    onclick="location.href='user-checkin.html';">TA &amp; Check-In</button>
+                                    onclick="location.href='/user-checkin.html';">TA &amp; Check-In</button>
 
                                 <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                    onclick="location.href='user-payments.html';">Payments</button>
+                                    onclick="location.href='/user-payments.html';">Payments</button>
 
                                 <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                    onclick="location.href='user-referandearn.html';">Refer and Earn</button>
+                                    onclick="location.href='/user-referandearn.html';">Refer and Earn</button>
                             
                                     <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                    onclick="location.href='user-recommended.html';">Recomended Properties</button>
+                                    onclick="location.href='/user-recommended.html';">Recommended Properties</button>
                                 </div>
                             <hr />
                             <div class="row g-3">
@@ -98,7 +98,7 @@
                                         <input type="checkbox" checked class="form-check-input" disabled />
                                         <label class="form-check-label" for="passportcheck">Passport copy</label><br />
 
-                                        <img id="passportImg" src="assets/img/passport-sample.jpg" class="rounded mt-3"
+                                        <img id="passportImg" src="/assets/img/passport-sample.jpg" class="rounded mt-3"
                                             alt="Passport" width="300px" />
                                         <br />
                                     </div>
@@ -109,7 +109,7 @@
                                         <input type="checkbox" checked class="form-check-input" disabled>
                                         <label class="form-check-label" for="studentcheck">Student Visa</label><br />
 
-                                        <img id="studentVisaImg" src="assets/img/visa-sample-canada.jpg"
+                                        <img id="studentVisaImg" src="/assets/img/visa-sample-canada.jpg"
                                             class="rounded mt-3" alt="Student Visa" width="300px" />
                                     </div>
 
@@ -221,15 +221,15 @@
 
                             <hr class="my-4">
 
-                            <div class="row justify-content-center">
-                                <div class="col-4">
-                                    <a href="user-requirements.html" class="w-100 btn btn-outline-info">
+                            <div class="row justify-content-between">
+                                <div class="col-md-4 col-6">
+                                    <a href="/user-requirements.html" class="w-100 btn btn-outline-info">
                                         <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
                                         Back To Requirements Details
                                     </a>
                                 </div>
-                                <div class="col-4">
-                                    <a href="user-roles.html" class="w-100 btn btn-primary">
+                                <div class="col-md-4 col-6">
+                                    <a href="/user-roles.html" class="w-100 btn btn-primary">
                                         Continue To User's Role &nbsp;
                                         <i class="far fa-arrow-alt-circle-right"></i>
                                     </a>
@@ -240,12 +240,12 @@
                 </div>
             </div>
         </section>
-        <div includehtml="footer.html" class="mt-auto"></div>
+        <div includehtml="/footer.html" class="mt-auto"></div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/includefile.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/includefile.js"></script>
     <script>
       includehtml();
     </script>
