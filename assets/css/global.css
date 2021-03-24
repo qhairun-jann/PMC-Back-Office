@@ -106,6 +106,10 @@ a {
     font-weight: 400;
 }
 
+/* star rating */
+.star-rated {
+    color: #ffa500;
+  }
 /* Table 
 =======================================*/
 tfoot, th, thead, tr {
