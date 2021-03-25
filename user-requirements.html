@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Requirements | Users | Rizurf Back Office</title>
+    <title>Requirements | Rizurf Back Office</title>
     <meta name="description" content="A description.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,15 +15,14 @@
 
 </head>
 
-<body class="p-0 bg-dark h-100 text-center bg-dark">
-    <div class="sticky-top" includehtml="navbar.html"></div>
-    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <section class="container mb-5">
+<body class="p-0 bg-dark bg-dark">
+    <div class="sticky-top fixedtop" includehtml="navbar.html"></div>
+    <main class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+        <section class="container my-5">
             <div class="row justify-content-center text-white ">
                 <div class="col-sm-10">
                     <h1 class="mt-5 text-center">Requirements</h1>
                     <hr />
-                    <form class="needs-validation text-start" novalidate>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="avatar-upload d-flex">
@@ -100,11 +99,11 @@
                         </div>
                         <div class="row g-3">
                             <div class="col-sm-6">
-                                <label for="budget" class="form-label">Budget</label>
+                                <label class="form-label">Budget</label>
                                 <input id="budget" type="text" class="form-control" value="RM6,000" disabled>
                             </div>
                             <div class="col-sm-6">
-                                <label for="beds" class="form-label">Beds</label>
+                                <label class="form-label">Beds</label>
                                 <select id="beds" class="form-control form-select" style="cursor: pointer;" list="bed"
                                     disabled>
                                     <option selected>1</option>
@@ -492,7 +491,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <label for="duration" class="form-label">Duration of tenancy</label>
+                                <label class="form-label">Duration of tenancy</label>
                                 <div class="input-group">
                                     <select class="form-control form-select" id="duration" style="cursor: pointer;"
                                         disabled>
@@ -504,7 +503,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <label for="duration" class="form-label">Pet</label>
+                                <label class="form-label">Pet</label>
                                 <div class="input-group">
                                     <select class="form-control form-select">
                                         <option>Yes</option>
@@ -516,7 +515,7 @@
                         <hr class="text-black" />
                         <div class="row g-3 mt-3 justify-content-end">
                             <div class="col-sm-12">
-                                <label for="remarks" class="form-label">Other remarks</label>
+                                <label class="form-label">Other remarks</label>
                                 <textarea class="form-control" style="height: 100px" disabled>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                                 </textarea>
                             </div>
@@ -576,7 +575,6 @@
                                 </a>
                             </div>
                         </div>
-                    </form>
                 </div>
             </div>
         </section>

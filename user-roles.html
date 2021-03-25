@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Roles | Users | Rizurf Back Office</title>
+    <title>Roles | Rizurf Back Office</title>
     <meta name="description" content="A description.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,110 +15,107 @@
 
 </head>
 
-<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
-    <div class="sticky-top" includehtml="navbar.html"></div>
-    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <section class="container mb-5">
+<body class="p-0 bg-dark text-white">
+    <div class="sticky-top fixedtop" includehtml="navbar.html"></div>
+    <main class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+        <section class="container my-5">
             <div class="row justify-content-center">
                 <div class="col-sm-10">
                     <h1 class="mt-5 text-white text-center">Roles</h1>
                     <hr />
-                    <form class="needs-validation text-start" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="avatar-upload d-flex">
-                                    <div class="avatar-preview">
-                                        <div id="imagePreview" style="background-image: url(/assets/img/avatar.svg);">
-                                        </div>
-                                    </div>
-                                    <div class="align-self-center ms-5">
-                                        <h5>John Doe Alexander</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="avatar-upload d-flex">
+                                <div class="avatar-preview">
+                                    <div id="imagePreview" style="background-image: url(/assets/img/avatar.svg);">
                                     </div>
                                 </div>
-                                <p class="m-0 text-muted">Account created on 12-12-2020 by (name)</p>
-                                <p class="text-muted">Last edited 21-12-2020, 12:12 PM by (name) </p>
-                            </div>
-                            <div class="col-md-3">
-                                <label class="form-label">Role</label>
-                                <input type="text" class="form-control" value="Prospect(Tenant)" disabled>
-                                <div class="invalid-feedback">
-                                    Please select one
+                                <div class="align-self-center ms-5">
+                                    <h5>John Doe Alexander</h5>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <label class="form-label">Verification Status</label>
-                                <input type="text" class="form-control" value="Verified" disabled>
-                                <div class="invalid-feedback">
-                                    Please select one
-                                </div>
+                            <p class="m-0 text-muted">Account created on 12-12-2020 by (name)</p>
+                            <p class="text-muted">Last edited 21-12-2020, 12:12 PM by (name) </p>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Role</label>
+                            <input type="text" class="form-control" value="Prospect(Tenant)" disabled>
+                            <div class="invalid-feedback">
+                                Please select one
                             </div>
                         </div>
-                        <hr />
-                        <div class="row justify-content-lg-start justify-content-sm-center">
-
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                onclick="location.href='/user-details.html';">Personal Details</button>
-
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                onclick="location.href='/user-requirements.html';">Requirements</button>
-
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                onclick="location.href='/user-documents.html';">Documents</button>
-
-                            <button class="btn btn-primary m-2 fixed-width" type="button"
-                                onclick="location.href='/user-roles.html';">Roles</button>
-
-                            <button class="btn btn-outline-info m-2 fixed-width"
-                                onclick="location.href='/user-tourrequest.html';" type="button">Tour
-                                Requests</button>
-
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                onclick="location.href='/user-appointments.html';">Appointments</button>
-
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                onclick="location.href='/user-offers.html';">Offers</button>
-
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                onclick="location.href='/user-checkin.html';">TA &amp; Check-In</button>
-
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                onclick="location.href='/user-payments.html';">Payments</button>
-
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                onclick="location.href='/user-referandearn.html';">Refer and Earn</button>
-
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                onclick="location.href='/user-recommended.html';">Recommended Properties</button>
-                        </div>
-                        <hr />
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <label for="role" class="form-label">Role</label>
-                                <input id="roledate" type="text" class="form-control" value="Prospect(tenant)"
-                                    disabled />
-                            </div>
-                            <div class="col-sm-6">
-                                <label for="roledate" class="form-label">Date of role creation</label>
-                                <input id="roledate" type="text" class="form-control" value="21-12-2021" disabled>
+                        <div class="col-md-3">
+                            <label class="form-label">Verification Status</label>
+                            <input type="text" class="form-control" value="Verified" disabled>
+                            <div class="invalid-feedback">
+                                Please select one
                             </div>
                         </div>
+                    </div>
+                    <hr />
+                    <div class="row justify-content-lg-start justify-content-sm-center">
 
-                        <hr class="my-4">
-                        <div class="row justify-content-between">
-                            <div class="col-md-4 col-6">
-                                <a href="/user-documents.html" class="w-100 btn btn-outline-info">
-                                    <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
-                                    Back To Documents Page
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-6">
-                                <a href="/user-tourrequest.html" class="w-100 btn btn-primary">
-                                    Continue To Tour Requests &nbsp;
-                                    <i class="far fa-arrow-alt-circle-right"></i>
-                                </a>
-                            </div>
+                        <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                            onclick="location.href='/user-details.html';">Personal Details</button>
+
+                        <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                            onclick="location.href='/user-requirements.html';">Requirements</button>
+
+                        <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                            onclick="location.href='/user-documents.html';">Documents</button>
+
+                        <button class="btn btn-primary m-2 fixed-width" type="button"
+                            onclick="location.href='/user-roles.html';">Roles</button>
+
+                        <button class="btn btn-outline-info m-2 fixed-width"
+                            onclick="location.href='/user-tourrequest.html';" type="button">Tour
+                            Requests</button>
+
+                        <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                            onclick="location.href='/user-appointments.html';">Appointments</button>
+
+                        <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                            onclick="location.href='/user-offers.html';">Offers</button>
+
+                        <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                            onclick="location.href='/user-checkin.html';">TA &amp; Check-In</button>
+
+                        <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                            onclick="location.href='/user-payments.html';">Payments</button>
+
+                        <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                            onclick="location.href='/user-referandearn.html';">Refer and Earn</button>
+
+                        <button class="btn btn-outline-info m-2 fixed-width" type="button"
+                            onclick="location.href='/user-recommended.html';">Recommended Properties</button>
+                    </div>
+                    <hr />
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="role" class="form-label">Role</label>
+                            <input id="roledate" type="text" class="form-control" value="Prospect(tenant)" disabled />
                         </div>
-                    </form>
+                        <div class="col-sm-6">
+                            <label for="roledate" class="form-label">Date of role creation</label>
+                            <input id="roledate" type="text" class="form-control" value="21-12-2021" disabled>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+                    <div class="row justify-content-between">
+                        <div class="col-md-4 col-6">
+                            <a href="/user-documents.html" class="w-100 btn btn-outline-info">
+                                <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
+                                Back To Documents Page
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <a href="/user-tourrequest.html" class="w-100 btn btn-primary">
+                                Continue To Tour Requests &nbsp;
+                                <i class="far fa-arrow-alt-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
