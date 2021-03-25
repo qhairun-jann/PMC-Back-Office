@@ -47,7 +47,7 @@
                                 <div class="row">
                                     <div class="col-6">
                                         <label for="gender" class="form-label">Role</label>
-                                        <select class="form-select" id="gender">
+                                        <select class="form-select">
                                             <option>Prospect(Tenant)</option>
                                             <option selected>Referrer</option>
                                             <option>Rizurf staff</option>
@@ -59,7 +59,7 @@
                                     </div>
                                     <div class="col-6">
                                         <label for="gender" class="form-label">Verification Status</label>
-                                        <select class="form-select" id="gender">
+                                        <select class="form-select">
                                             <option>Pending</option>
                                             <option selected>Verified</option>
                                             <option>Not Verified</option>
@@ -77,22 +77,6 @@
                                 onclick="location.href='/newuser.html';">Personal Details</button>
                             <button class="btn btn-primary m-2 fixed-width" type="button"
                                 onclick="location.href='/requirement.html';">Requirements</button>
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                onclick="location.href='/documents.html';">Documents</button>
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button" disabled>Roles</button>
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button" disabled>Tour
-                                Requests</button>
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                disabled>Appointments</button>
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button" disabled>Offers</button>
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                disabled>Properties</button>
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button"
-                                disabled>Payments</button>
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button" disabled>Refer and
-                                Earn</button>
-                            <button class="btn btn-outline-info m-2 fixed-width" type="button" disabled>Recommended
-                                Properties</button>
                         </div>
                         <hr />
                         <div class="row g-3">
@@ -481,7 +465,7 @@
                             <div class="col-sm-6">
                                 <label for="gender" class="form-label">Gender</label>
                                 <div class="input-group">
-                                    <select id="gender" class="form-control form-select" style="cursor: pointer;"
+                                    <select class="form-control form-select" style="cursor: pointer;"
                                         list="gender" placeholder="What is your gender?">
                                         <option selected class="text-muted">What is your gender?</option>
                                         <option value="Male">Male</option>
