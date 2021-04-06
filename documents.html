@@ -42,8 +42,8 @@
                             <div class="col-6">
                                 <div class="row">
                                     <div class="col-6">
-                                        <label for="gender" class="form-label">Role</label>
-                                        <select class="form-select" id="gender">
+                                        <label for="ddl_gender" class="form-label">Role</label>
+                                        <select id="ddl_gender" class="form-select">
                                             <option>Prospect(Tenant)</option>
                                             <option selected>Referrer</option>
                                             <option>Rizurf staff</option>
@@ -54,8 +54,8 @@
                                         </div>
                                     </div>
                                     <div class="col-6">
-                                        <label for="gender" class="form-label">Verification Status</label>
-                                        <select class="form-select">
+                                        <label for="ddl_status" class="form-label">Verification Status</label>
+                                        <select id="ddl_form-select">
                                             <option>Pending</option>
                                             <option selected>Verified</option>
                                             <option>Not Verified</option>
@@ -97,13 +97,13 @@
                         <div class="row g-3">
                             <div class="col-sm-6">
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" />
-                                    <label class="form-check-label" for="passportcheck">Passport copy</label><br />
+                                    <input id="cb_passportCopy" type="checkbox" checked class="form-check-input" />
+                                    <label for="cb_passportCopy" class="form-check-label">Passport copy</label><br />
 
                                     <img id="passportImg" src="/assets/img/passport-sample.jpg" class="rounded mt-3"
                                         alt="Passport" width="300" />
                                     <br />
-                                    <label for="passportCopy" class="custom-file-upload btn btn-primary w-300px mt-3">
+                                    <label for="btn_updatePassport" class="custom-file-upload btn btn-primary w-300px mt-3">
                                         <i class="fas fa-cloud-upload-alt"></i> Update
                                     </label>
                                     <input type='file' style="display:none;" />
@@ -112,13 +112,13 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" />
-                                    <label class="form-check-label" for="studentcheck">Student Visa</label><br />
+                                    <input id="cb_studentCheck" type="checkbox" checked class="form-check-input" />
+                                    <label for="cb_studentCheck" class="form-check-label">Student Visa</label><br />
 
                                     <img id="studentVisaImg" src="/assets/img/visa-sample-canada.jpg"
                                         class="rounded mt-3" alt="Student Visa" width="300" />
                                     <br />
-                                    <label for="studentVisa" class="custom-file-upload btn btn-primary w-300px mt-3">
+                                    <label for="btn_uploadVisa" class="custom-file-upload btn btn-primary w-300px mt-3">
                                         <i class="fas fa-cloud-upload-alt"></i> Upload
                                     </label>
                                     <input type='file' style="display:none;" />
@@ -127,13 +127,13 @@
                             </div>
                             <div class="col-12 mt-3">
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" />
-                                    <label class="form-check-label" for="studentId">Student ID</label>
+                                    <input id="cb_studentId" type="checkbox" class="form-check-input" />
+                                    <label for="cb_studentId" class="form-check-label">Student ID</label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" />
-                                    <label class="form-check-label" for="uniOffer">University Offer Letter</label>
+                                    <input id="cb_uniOffer" type="checkbox" class="form-check-input" />
+                                    <label for="cb_uniOffer" class="form-check-label" >University Offer Letter</label>
                                 </div>
                             </div>
 
@@ -144,42 +144,41 @@
                             <div class="col-6">
                                 <h4 class="mb-3">Employee</h4>
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" />
-                                    <label class="form-check-label" for="employeePassport">Passport Copy</label>
+                                    <input id="cb_employeePassport" type="checkbox" class="form-check-input" />
+                                    <label for="cb_employeePassport" class="form-check-label">Passport Copy</label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" />
-                                    <label class="form-check-label" for="employmentLetter">Employment Letter
+                                    <input id="cb_employmentLetter" type="checkbox" class="form-check-input" />
+                                    <label for="cb_employmentLetter" class="form-check-label">Employment Letter
                                     </label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" />
-                                    <label class="form-check-label" for="workPermit">Work Permit</label>
+                                    <input id="cb_workPermit" type="checkbox" class="form-check-input" />
+                                    <label for="cb_workPermit" class="form-check-label">Work Permit</label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" />
-                                    <label class="form-check-label" for="employeeId">Employee ID</label>
+                                    <input id="cb_employeeId" type="checkbox" class="form-check-input" />
+                                    <label for="cb_employeeId" class="form-check-label">Employee ID</label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h4 class="mb-3">Self Employed(freelancer)</h4>
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" />
-                                    <label class="form-check-label" for="freelancerIc">IC Copy</label>
+                                    <input id="cb_icCopy" type="checkbox" class="form-check-input" />
+                                    <label for="cb_icCopy" class="form-check-label">IC Copy</label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" />
-                                    <label class="form-check-label" for="frelancerPassport">Passport Copy
-                                    </label>
+                                    <input id="cb_passportCopy" type="checkbox" class="form-check-input" />
+                                    <label for="cb_passportCopy" class="form-check-label" >Passport Copy</label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" />
-                                    <label class="form-check-label" for="freelancerBizCard">Business Card</label>
+                                    <input id="cb_businessCard" type="checkbox" class="form-check-input" />
+                                    <label for="cb_businessCard" class="form-check-label">Business Card</label>
                                 </div>
                             </div>
                         </div>
@@ -191,37 +190,37 @@
 
                                 <h4 class="mb-3">Self Employed(business)</h4>
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" />
-                                    <label class="form-check-label" for="bizIc">IC Copy</label>
+                                    <input id="cb_bizIc" type="checkbox" class="form-check-input" />
+                                    <label for="cb_bizIc" class="form-check-label" for="bizIc">IC Copy</label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" />
-                                    <label class="form-check-label" for="bizPassport">Passport Copy</label>
+                                    <input id="cb_bizPassport" type="checkbox" class="form-check-input" />
+                                    <label for="cb_bizPassport" class="form-check-label">Passport Copy</label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" />
-                                    <label class="form-check-label" for="bizCard">Business Card</label>
+                                    <input id="cb_bizCard" type="checkbox" class="form-check-input" />
+                                    <label for="cb_bizCard"  class="form-check-label">Business Card</label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" />
-                                    <label class="form-check-label" for="compRegForm">Company Registration
+                                    <input id="cb_compRegForm" type="checkbox" class="form-check-input" />
+                                    <label for="cb_compRegForm" class="form-check-label">Company Registration
                                         Form</label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h4 class="mb-3">Company</h4>
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" />
-                                    <label class="form-check-label" for="bizcompRegForm">Company Registration
+                                    <input id="cb_bizcompRegForm" type="checkbox" class="form-check-input" />
+                                    <label for="cb_bizcompRegForm" class="form-check-label">Company Registration
                                         form</label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" />
-                                    <label class="form-check-label" for="bizListDirector">List of Directors
+                                    <input id="cb_bizListDirector" type="checkbox" class="form-check-input" />
+                                    <label for="cb_bizListDirector" class="form-check-label">List of Directors
                                     </label>
                                 </div>
                             </div>
@@ -448,25 +447,25 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" disabled />
-                                        <label class="form-check-label" for="passportcheck">Passport copy</label>
+                                        <input id="cb_passportCheck" type="checkbox" checked class="form-check-input" disabled />
+                                        <label for="cb_passportCheck" class="form-check-label">Passport copy</label>
                                         <input type='file' style="display:none;" />
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" disabled />
-                                        <label class="form-check-label" for="studentcheck">Student Visa</label><br />
+                                        <input id="cb_studentCheck" type="checkbox" checked class="form-check-input" disabled />
+                                        <label for="cb_studentCheck" class="form-check-label">Student Visa</label><br />
                                         <input type='file' style="display:none;" />
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" disabled />
-                                        <label class="form-check-label" for="studentId">Student ID</label>
+                                        <input id="cb_studentId" type="checkbox" checked class="form-check-input" disabled />
+                                        <label for="cb_studentId"class="form-check-label">Student ID</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" disabled />
-                                        <label class="form-check-label" for="uniOffer">University Offer Letter</label>
+                                        <input id="cn_uniOffer" type="checkbox" checked class="form-check-input" disabled />
+                                        <label for="cn_uniOffer" class="form-check-label">University Offer Letter</label>
                                     </div>
                                 </div>
 
@@ -475,78 +474,78 @@
                                 <div class="col">
                                     <h4 class="mb-3">Employee</h4>
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" disabled />
-                                        <label class="form-check-label" for="employeePassport">Passport Copy</label>
+                                        <input id="cb_employeePassport" type="checkbox" checked class="form-check-input" disabled />
+                                        <label for="cb_employeePassport" class="form-check-label">Passport Copy</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" disabled />
-                                        <label class="form-check-label" for="employmentLetter">Employment Letter
+                                        <input id="cb_employmentLetter" type="checkbox" checked class="form-check-input" disabled />
+                                        <label for="cb_employmentLetter" class="form-check-label">Employment Letter
                                         </label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" disabled />
-                                        <label class="form-check-label" for="workPermit">Work Permit</label>
+                                        <input id="cb_workPermit" type="checkbox" checked class="form-check-input" disabled />
+                                        <label for="cb_workPermit" class="form-check-label">Work Permit</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" disabled />
-                                        <label class="form-check-label" for="employeeId">Employee ID</label>
+                                        <input id="cb_employeeId" type="checkbox" checked class="form-check-input" disabled />
+                                        <label for="cb_employeeId" class="form-check-label">Employee ID</label>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <h4 class="mb-3">Self Employed(freelancer)</h4>
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" disabled />
-                                        <label class="form-check-label" for="freelancerIc">IC Copy</label>
+                                        <input id="cb_freelancerIc" type="checkbox" checked class="form-check-input" disabled />
+                                        <label for="cb_freelancerIc" class="form-check-label">IC Copy</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" disabled />
-                                        <label class="form-check-label" for="frelancerPassport">Passport Copy
+                                        <input id="cb_frelancerPassport" type="checkbox" checked class="form-check-input" disabled />
+                                        <label for="cb_frelancerPassport" class="form-check-label">Passport Copy
                                         </label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" disabled />
-                                        <label class="form-check-label" for="freelancerBizCard">Business Card</label>
+                                        <input id="cb_freelancerBizCard" type="checkbox" checked class="form-check-input" disabled />
+                                        <label for="cb_freelancerBizCard" class="form-check-label">Business Card</label>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <h4 class="mb-3">Self Employed(business)</h4>
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" disabled />
-                                        <label class="form-check-label" for="bizIc">IC Copy</label>
+                                        <input id="cb_bizIc" type="checkbox" checked class="form-check-input" disabled />
+                                        <label for="cb_bizIc" class="form-check-label">IC Copy</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" disabled />
-                                        <label class="form-check-label" for="bizPassport">Passport Copy</label>
+                                        <input id="cb_bizPassport" type="checkbox" checked class="form-check-input" disabled />
+                                        <label for="cb_bizPassport" class="form-check-label">Passport Copy</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" disabled />
-                                        <label class="form-check-label" for="bizCard">Business Card</label>
+                                        <input id="cb_bizCard" type="checkbox" checked class="form-check-input" disabled />
+                                        <label for="cb_bizCard" class="form-check-label">Business Card</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" disabled />
-                                        <label class="form-check-label" for="compRegForm">Company Registration
+                                        <input id="cb_compRegForm" type="checkbox" checked class="form-check-input" disabled />
+                                        <label for="cb_compRegForm" class="form-check-label">Company Registration
                                             Form</label>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <h4 class="mb-3">Company</h4>
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" disabled />
-                                        <label class="form-check-label" for="bizcompRegForm">Company Registration
+                                        <input id="cb_bizcompRegForm" type="checkbox" checked class="form-check-input" disabled />
+                                        <label for="cb_bizcompRegForm" class="form-check-label">Company Registration
                                             form</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" checked class="form-check-input" disabled />
-                                        <label class="form-check-label" for="bizListDirector">List of Directors
+                                        <input id="cb_bizListDirector" type="checkbox" checked class="form-check-input" disabled />
+                                        <label for="cb_bizListDirector" class="form-check-label">List of Directors
                                         </label>
                                     </div>
                                 </div>
