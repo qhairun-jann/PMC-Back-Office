@@ -27,7 +27,7 @@
                         <div class="row g-3 mt-3">
                             <div class="col-md-4 col-6">
                                 <label for="ddl_categoryAppointment" class="form-label">Category of Appointment</label>
-                                <select class="form-select">
+                                <select id="ddl_categoryAppointment" class="form-select">
                                     <option>Property viewing</option>
                                     <option>Pay to the agent</option>
                                 </select>
@@ -42,16 +42,16 @@
                                 </div> -->
                             <div class="col-md-4 col-6">
                                 <label for="date_Appointment" class="form-label">Date of Appointment</label>
-                                <input type="date" class="form-control" />
+                                <input id="date_Appointment" type="date" class="form-control" />
 
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="time_Appointment" class="form-label">Time of Appointment</label>
-                                <input type="time" class="form-control" />
+                                <input id="time_Appointment" type="time" class="form-control" />
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="ddl_buildingName" class="form-label">Building Name</label>
-                                <select class="form-select">
+                                <select id="ddl_buildingName" class="form-select">
                                     <option>Select building name</option>
                                     <option>Paradise Residence</option>
                                     <option>Kingkong Residence</option>
@@ -59,7 +59,7 @@
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="ddl_unitNo" class="form-label">Unit no.</label>
-                                <select class="form-select">
+                                <select id="ddl_unitNo" class="form-select">
                                     <option>Select unit number</option>
                                     <option>B1713</option>
                                     <option>D1811</option>
@@ -67,12 +67,12 @@
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="txt_locationBuilding" class="form-label">Location of Building</label>
-                                <input type="text" class="form-control" />
+                                <input id="txt_locationBuilding" type="text" class="form-control" />
 
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="txt_personInCharge" class="form-label">Person In Charge</label>
-                                <input type="text" class="form-control" />
+                                <input id="txt_personInCharge" type="text" class="form-control" />
                             </div>
                         </div>
                         <hr class="my-4">
@@ -82,8 +82,8 @@
                             </div>
                             <div class="col-12"> <img src="/assets/img/avatar.svg" width="60"> </div>
                             <div class="col-md-4 col-6">
-                                <label for="userName" class="form-label">Username</label>
-                                <input type="text" class="form-select" list="userNameDatalist" id="userName"
+                                <label for="txt_userName" class="form-label">Username</label>
+                                <input id="txt_userName" type="text" class="form-select" list="userNameDatalist" 
                                     placeholder="Type to search username">
                                 <datalist id="userNameDatalist">
                                     <option>Esther Vimala</option>
@@ -95,15 +95,15 @@
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="txt_passportNo" class="form-label">Passport Number</label>
-                                <input type="text" class="form-control" />
+                                <input id="txt_passportNo" type="text" class="form-control" />
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="txt_ICNo" class="form-label">IC Number</label>
-                                <input type="text" class="form-control" />
+                                <input id="txt_ICNo" type="text" class="form-control" />
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="ddl_Nationality" class="form-label">Nationality</label>
-                                <input type="text" list="nation" class="form-control  form-select"
+                                <input id="ddl_Nationality" type="text" list="nation" class="form-control  form-select"
                                     placeholder="eg: Malaysian" />
                                 <datalist id="nation">
                                     <option value="Afghanistan">Afghanistan</option>
@@ -358,7 +358,7 @@
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="txt_Gender" class="form-label">Gender</label>
-                                <select class="form-select">
+                                <select id="txt_Gender" class="form-select">
                                     <option>Select your gender</option>
                                     <option>Male</option>
                                     <option>Female</option>
@@ -366,14 +366,14 @@
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="txt_Age" class="form-label">Age</label>
-                                <input type="number" class="form-control" />
+                                <input id="txt_Age" type="number" class="form-control" />
                             </div>
                         </div>
                         <hr class="my-4" />
                         <div class="row gy-3 mt-0">
                             <div class="col-md-4 col-6">
                                 <label for="txt_statusAppointment" class="form-label">Status Of Appointment</label>
-                                <select class="form-select" id="status">
+                                <select id="txt_statusAppointment" class="form-select" id="status">
                                     <option>Select status</option>
                                     <option>Scheduled</option>
                                     <option>Completed</option>

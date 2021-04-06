@@ -44,7 +44,7 @@
                             <div class="col-md-6">
                                 <div class="row">
                                     <div class="col-6">
-                                        <label class="form-label">Role</label>
+                                        <label for="" class="form-label">Role</label>
                                         <select class="form-select" required>
                                             <option>Select role</option>
                                             <option>Prospect(Tenant)</option>
@@ -55,7 +55,7 @@
                                         </div>
                                     </div>
                                     <div class="col-6">
-                                        <label class="form-label">Verification Status</label>
+                                        <label for="" class="form-label">Verification Status</label>
                                         <select class="form-select" required>
                                             <option>Select status</option>
                                             <option>Pending</option>
@@ -86,7 +86,7 @@
                                 <label for="txt_userName" class="form-label">Username</label>
                                 <div class="input-group">
                                     <span class="input-group-text">@</span>
-                                    <input type="text" class="form-control bdr-radius-right" id="username"
+                                    <input type="text" class="form-control bdr-radius-right" id="txt_userName"
                                         placeholder="Username" required>
                                     <div class="invalid-feedback">
                                         Your username is required.
@@ -95,36 +95,33 @@
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label for="familyName" class="form-label">Family / Surname (Optional) </label>
-                                <input type="text" class="form-control" placeholder="Family Name" />
+                                <label for="txt_familyName" class="form-label">Family / Surname (Optional) </label>
+                                <input id="txt_familyName" type="text" class="form-control" placeholder="Family Name" />
 
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Email</label>
-                                <input type="email" class="form-control" placeholder="you@example.com">
+                                <label for="txt_Email" class="form-label">Email</label>
+                                <input id="txt_Email" type="email" class="form-control" placeholder="you@example.com">
 
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Passport No.</label>
-                                <input type="number" class="form-control" placeholder="eg: A00000000" />
+                                <label for="txt_passportNo" class="form-label">Passport No.</label>
+                                <input id="txt_passportNo" type="number" class="form-control" placeholder="eg: A00000000" />
 
                             </div>
                             <div class="col-md-4 col-6">
-                                <label for="id-no" class="form-label">NRIC No.</label>
-                                <input type="number" class="form-control" id="id-no" placeholder="eg: 901025037890" />
+                                <label for="txt_nricNo" class="form-label">NRIC No.</label>
+                                <input id="txt_nricNo" type="number" class="form-control" placeholder="eg: 901025037890" />
 
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Contact Number</label>
-                                <input type="number" class="form-control" id="phone-no" placeholder="eg: 6012-223 5678"
+                                <label for="txt_contactNo" class="form-label">Contact Number</label>
+                                <input id="txt_contactNo" type="number" class="form-control" id="phone-no" placeholder="eg: 6012-223 5678"
                                     required />
-                                <div class="invalid-feedback">
-                                    Please enter a valid phone number.
-                                </div>
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="txt_Gender" class="form-label">Gender</label>
-                                <select class="form-select">
+                                <select id="txt_Gender" class="form-select">
                                     <option>Select your gender</option>
                                     <option>Male</option>
                                     <option>Female</option>
@@ -132,7 +129,7 @@
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="ddl_Nationality" class="form-label">Nationality</label>
-                                <input type="text" list="nation" class="form-control  form-select"
+                                <input id="ddl_Nationality" type="text" list="nation" class="form-control  form-select"
                                     placeholder="eg: Malaysian" />
                                 <datalist id="nation">
                                     <option value="Afghanistan">Afghanistan</option>
@@ -386,24 +383,24 @@
 
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Date of birth</label>
-                                <input type="date" class="form-control" />
+                                <label for="date_DOB" class="form-label">Date of birth</label>
+                                <input id="date_DOB" type="date" class="form-control" />
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="txt_Age" class="form-label">Age</label>
-                                <input type="number" class="form-control" value="24" />
+                                <input id="txt_Age" type="number" class="form-control" value="24" />
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="txt_Occupation" class="form-label">Occupation</label>
-                                <input type="text" class="form-control" />
+                                <input id="txt_Occupation" type="text" class="form-control" />
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Company Name</label>
-                                <input type="text" class="form-control" />
+                                <label for="txt_companyName" class="form-label">Company Name</label>
+                                <input id="txt_companyName" type="text" class="form-control" />
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="additionalRole" class="form-label">Additional Role</label>
-                                <select class="form-select" id="additionalRole">
+                                <select id="additionalRole" class="form-select">
                                     <option>Select your additional role</option>
                                     <option>Student</option>
                                     <option>Employee</option>
@@ -423,64 +420,64 @@
                                 <h3>Corresponding address</h3>
                             </div>
                             <div class="col-md-3 col-6">
-                                <label class="form-label">Block</label>
-                                <input type="text" class="form-control" />
+                                <label for="txt_Block" class="form-label">Block</label>
+                                <input id="txt_Block" type="text" class="form-control" />
 
                             </div>
 
                             <div class="col-md-3 col-6">
-                                <label class="form-label">Level</label>
-                                <input type="number" class="form-control" />
+                                <label for="txt_Level" class="form-label">Level</label>
+                                <input id="txt_Level" type="number" class="form-control" />
 
                             </div>
 
                             <div class="col-md-3 col-6">
-                                <label class="form-label">Unit</label>
-                                <input type="text" class="form-control" />
+                                <label for="txt_Unit" class="form-label">Unit</label>
+                                <input id="txt_Unit" type="text" class="form-control" />
 
                             </div>
 
                             <div class="col-md-3 col-6">
                                 <label for="ddl_buildingName" class="form-label">Building Name</label>
-                                <input type="text" class="form-control" />
+                                <input id="ddl_buildingName" type="text" class="form-control" />
 
                             </div>
 
                             <div class="col-md-3 col-6">
-                                <label class="form-label">Lot / Unit number</label>
-                                <input type="number" class="form-control" />
+                                <label for="txt_lotUnitNo" class="form-label">Lot / Unit number</label>
+                                <input id="txt_lotUnitNo" type="number" class="form-control" />
 
                             </div>
                             <div class="col-md-3 col-6">
-                                <label class="form-label">Street name</label>
-                                <input type="text" class="form-control" />
-
-                            </div>
-
-                            <div class="col-md-3 col-6">
-                                <label class="form-label">Residential area</label>
-                                <input type="text" class="form-control" />
-                            </div>
-
-                            <div class="col-md-3 col-6">
-                                <label for="postcode" class="form-label">Post code</label>
-                                <input type="number" class="form-control" />
+                                <label for="txt_streetName" class="form-label">Street Name</label>
+                                <input id="txt_streetName" type="text" class="form-control" />
 
                             </div>
 
                             <div class="col-md-3 col-6">
-                                <label class="form-label">City</label>
-                                <input type="text" class="form-control" />
+                                <label for="txt_residentialArea" class="form-label">Residential area</label>
+                                <input id="txt_residentialArea" type="text" class="form-control" />
+                            </div>
+
+                            <div class="col-md-3 col-6">
+                                <label for="txt_Postcode" class="form-label">Post code</label>
+                                <input id="txt_Postcode" type="number" class="form-control" />
+
+                            </div>
+
+                            <div class="col-md-3 col-6">
+                                <label for="txt_City" class="form-label">City</label>
+                                <input id="txt_City" type="text" class="form-control" />
 
                             </div>
                             <div class="col-md-3 col-6">
-                                <label class="form-label">State</label>
-                                <input type="text" class="form-control" />
+                                <label for="txt_State" class="form-label">State</label>
+                                <input id="txt_State" type="text" class="form-control" />
 
                             </div>
                             <div class="col-md-3 col-6">
-                                <label for="world" class="form-label">Country</label>
-                                <input type="text" list="country" class="form-select" />
+                                <label for="txt_Country" class="form-label">Country</label>
+                                <input id="txt_Country" type="text" list="country" class="form-select" />
                                 <datalist id="country">
                                     <option value="Afghanistan">Afghanistan</option>
                                     <option value="Albania">Albania</option>
@@ -742,14 +739,14 @@
                             </div>
 
                             <div class="col-md-3 col-6">
-                                <label class="form-label">Bank name</label>
-                                <input type="text" class="form-control" placeholder="eg: Maybank" />
+                                <label for="txt_bankName" class="form-label">Bank Name</label>
+                                <input id="txt_bankName" type="text" class="form-control" placeholder="eg: Maybank" />
 
                             </div>
 
                             <div class="col-md-3 col-6">
-                                <label class="form-label">Bank account NR.</label>
-                                <input type="text" class="form-control" placeholder="eg: 123456789012" />
+                                <label for="txt_bankAccNo" class="form-label">Bank Account NR.</label>
+                                <input id="txt_bankAccNo"type="text" class="form-control" placeholder="eg: 123456789012" />
 
                             </div>
                         </div>

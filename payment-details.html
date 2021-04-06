@@ -44,7 +44,7 @@
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="ddl_buildingName" class="form-label">Building Name</label>
-                                <select class="form-select" id="building" disabled>
+                                <select id="ddl_buildingName"class="form-select" disabled>
                                     <option>Select building name</option>
                                     <option selected>Paradise Residence</option>
                                     <option>Kingkong Residence</option>
@@ -53,7 +53,7 @@
 
                             <div class="col-md-4 col-6">
                                 <label for="ddl_unitNo" class="form-label">Unit no.</label>
-                                <select class="form-select" id="unit" disabled>
+                                <select id="ddl_unitNo" class="form-select" disabled>
                                     <option>Select unit number</option>
                                     <option selected>B1713</option>
                                     <option>D1811</option>
@@ -62,7 +62,7 @@
 
                             <div class="col-md-4 col-6">
                                 <label for="txt_locationBuilding" class="form-label">Location of Building</label>
-                                <input type="text" class="form-control" value="Jalan Mawar Bukit Tinggi Kuala Lumpur"
+                                <input id="txt_locationBuilding" type="text" class="form-control" value="Jalan Mawar Bukit Tinggi Kuala Lumpur"
                                     disabled />
                             </div>
                         </div>
@@ -75,26 +75,26 @@
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Due Date</label>
-                                <input type="date" class="form-control" value="2021-07-22" disabled />
+                                <label for="txt_dueDate" class="form-label">Due Date</label>
+                                <input id="txt_dueDate" type="date" class="form-control" value="2021-07-22" disabled />
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Date of Payment</label>
-                                <input type="date" class="form-control" value="2021-07-22" disabled />
+                                <label for="date_datePayment" class="form-label">Date of Payment</label>
+                                <input id="date_datePayment" type="date" class="form-control" value="2021-07-22" disabled />
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Status of Payemnt</label>
-                                <select class="form-select" id="status" disabled>
+                                <label for="ddl_statusPayment" class="form-label">Status of Payemnt</label>
+                                <select id="ddl_statusPayment" class="form-select" disabled>
                                     <option>Select status</option>
                                     <option selected>Paid</option>
                                     <option>Unpaid</option>
                                 </select>
                             </div>
                             <div class="col-md-4 col-6">
-                                <label  class="form-label">Mode of Payment</label>
-                                <select class="form-select" id="paymentmode" disabled>
+                                <label for="ddl_modePayment" class="form-label">Mode of Payment</label>
+                                <select id="ddl_modePayment" class="form-select" disabled>
                                     <option>Select payment mode</option>
                                     <option>Paid online</option>
                                     <option selected>Paid cash to agent</option>
@@ -104,7 +104,7 @@
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="txt_personInCharge" class="form-label">Person In Charge</label>
-                                <input type="text" class="form-control" value="Rudy Hayes" disabled />
+                                <input id="txt_personInCharge" type="text" class="form-control" value="Rudy Hayes" disabled />
                             </div>
                         </div>
                         <hr class="my-4" />
