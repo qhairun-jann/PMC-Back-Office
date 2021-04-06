@@ -38,15 +38,15 @@
                                 <p class="text-muted">Last edited 21-12-2020, 12:12 PM by (name) </p>
                             </div>
                             <div class="col-md-3">
-                                <label for="" class="form-label">Role</label>
-                                <input id="" type="text" class="form-control" value="Prospect(Tenant)" disabled>
+                                <label for="ddl_role" class="form-label">Role</label>
+                                <input id="ddl_role" type="text" class="form-control" value="Prospect(Tenant)" disabled>
                                 <div class="invalid-feedback">
                                     Please select one
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <label for="" class="form-label">Verification Status</label>
-                                <input id="" type="text" class="form-control" value="Verified" disabled>
+                                <label for="ddl_verificationStatus" class="form-label">Verification Status</label>
+                                <input id="ddl_verificationStatus" type="text" class="form-control" value="Verified" disabled>
                                 <div class="invalid-feedback">
                                     Please select one
                                 </div>
@@ -101,11 +101,11 @@
                         <div class="row g-3">
                             <div class="col-sm-6">
                                 <label for="txt_Budget" class="form-label">Budget</label>
-                                <input id="budget" type="text" class="form-control" value="RM6,000" disabled>
+                                <input id="txt_Budget" type="text" class="form-control" value="RM6,000" disabled>
                             </div>
                             <div class="col-sm-6">
                                 <label for="txt_Beds" class="form-label">Budget</label>
-                                <select id="beds" class="form-select" style="cursor: pointer;" list="bed"
+                                <select id="txt_Beds" class="form-select" style="cursor: pointer;" list="bed"
                                     disabled>
                                     <option selected>1</option>
                                     <option>2</option>
@@ -115,27 +115,27 @@
                                 </select>
                             </div>
                             <div class="col-sm-6">
-                                <label for="furnishing" class="form-label">Furnishing</label>
-                                <select id="furnishing" class="form-select" style="cursor: pointer;"
+                                <label for="txt_furnishing" class="form-label">Furnishing</label>
+                                <select id="txt_furnishing" class="form-select" style="cursor: pointer;"
                                     list="furnishing" disabled>
                                     <option selected>Fully furnished</option>
                                     <option>Partially furnished</option>
                                 </select>
                             </div>
                             <div class="col-sm-6">
-                                <label for="move-in" class="form-label">Preferred move in date</label>
-                                <input type="text" id="move-in" class="form-control" id="exampleFormControlInput1"
+                                <label for="date_preferredMoveIn" class="form-label">Preferred move in date</label>
+                                <input type="date_preferredMoveIn" id="move-in" class="form-control" id="exampleFormControlInput1"
                                     value="12-07-2021" disabled>
                             </div>
 
 
                             <div class="col-sm-6">
                                 <label for="txt_totalOccupants" class="form-label">Total Occupants</label>
-                                <input type="number" id="occupants" class="form-control" value="2" disabled>
+                                <input id="txt_totalOccupants" type="number" class="form-control" value="2" disabled>
                             </div>
                             <div class="col-sm-6">
-                                <label for="occupations" class="form-label">Occupation</label>
-                                <select type="text" id="occupations" class="form-control"
+                                <label for="ddl_occupations" class="form-label">Occupation</label>
+                                <select id="ddl_occupations" type="text" class="form-control"
                                     placeholder="What is your occupation?" disabled>
                                     <datalist id="occupation">
                                         <option>Chiropractor</option>
@@ -228,7 +228,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <label for="ddl_Nationality" class="form-label">Nationality</label>
-                                <select type="text" id="nationality" class="form-select"
+                                <select id="ddl_Nationality" type="text" class="form-select"
                                     style="cursor: pointer;" list="country" disabled>
                                     <datalist id="country">
                                         <option value="Afghanistan">Afghanistan</option>
@@ -484,7 +484,7 @@
                             <div class="col-sm-6">
                                 <label for="ddl_Gender" class="form-label">Gender</label>
                                 <div class="input-group">
-                                    <select id="gender" class="form-select" style="cursor: pointer;"
+                                    <select id="ddl_Gender" class="form-select" style="cursor: pointer;"
                                         list="gender" disabled>
                                         <option value="Male" selected>Male</option>
                                         <option value="Female">Female</option>
@@ -494,8 +494,8 @@
                             <div class="col-sm-6">
                                 <label for="txt_durationTenancy" class="form-label">Duration of Tenancy</label>
                                 <div class="input-group">
-                                    <select class="form-select" id="duration" style="cursor: pointer;"
-                                        disabled>
+                                    <select id="txt_durationTenancy" class="form-select" style="cursor: pointer;"
+                                        disabled> 
                                         <option>3 months</option>
                                         <option>6 months</option>
                                         <option>9 months</option>
@@ -504,9 +504,9 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <label for="" class="form-label">Pet</label>
+                                <label for="ddl_Pet" class="form-label">Pet</label>
                                 <div class="input-group">
-                                    <select class="form-select">
+                                    <select id="ddl_Pet" class="form-select">
                                         <option>Yes</option>
                                         <option selected>No</option>
                                     </select>
