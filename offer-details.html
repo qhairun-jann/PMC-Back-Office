@@ -42,19 +42,19 @@
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="txt_userName" class="form-label">Username</label>
-                                <input type="text" class="form-control" value="johndoe" disabled />
+                                <input id="txt_userName" type="text" class="form-control" value="johndoe" disabled />
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="txt_passportNo" class="form-label">Passport Number</label>
-                                <input type="text" class="form-control" value="B777666" disabled />
+                                <input id="txt_passportNo" type="text" class="form-control" value="B777666" disabled />
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="txt_ICNo" class="form-label">IC Number</label>
-                                <input type="text" class="form-control" value="2352245613311" disabled />
+                                <input id="txt_ICNo" type="text" class="form-control" value="2352245613311" disabled />
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="ddl_Nationality" class="form-label">Nationality</label>
-                                <select type="text" list="nation" class="form-control  form-select" id="nationality"
+                                <select id="ddl_Nationality" type="text" list="nation" class="form-control  form-select" id="nationality"
                                     placeholder="eg: Malaysian" disabled>
                                     <datalist id="nation">
                                         <option value="Afghanistan">Afghanistan</option>
@@ -314,14 +314,14 @@
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="ddl_Gender" class="form-label">Gender</label>
-                                <select class="form-select form-control" id="gender" disabled>
+                                <select id="ddl_Gender" class="form-select form-control" id="gender" disabled>
                                     <option>Select your gender</option>
                                     <option selected>Male</option>
                                     <option>Female</option>
                                 </select>
                             </div>
                             <div class="col-md-4 col-6">
-                                <label for="age" class="form-label">Age</label>
+                                <label for="txt_Age" class="form-label">Age</label>
                                 <input id="txt_Age" type="number" class="form-control" value="33" disabled />
                             </div>
                             <div class="col-md-4 col-6">
@@ -336,7 +336,7 @@
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="ddl_buildingName" class="form-label">Building Name</label>
-                                <select class="form-select" id="building" disabled>
+                                <select id="ddl_buildingName" class="form-select" id="building" disabled>
                                     <option>Select building name</option>
                                     <option selected>Paradise Residence</option>
                                     <option>Kingkong Residence</option>
@@ -345,7 +345,7 @@
 
                             <div class="col-md-4 col-6">
                                 <label for="ddl_unitNo" class="form-label">Unit no.</label>
-                                <select class="form-select" id="unit" disabled>
+                                <select id="ddl_unitNo" class="form-select" id="unit" disabled>
                                     <option>Select unit number</option>
                                     <option selected>B1713</option>
                                     <option>D1811</option>
@@ -354,31 +354,31 @@
 
                             <div class="col-md-4 col-6">
                                 <label for="txt_locationBuilding" class="form-label">Location of Building</label>
-                                <input type="text" class="form-control" value="Jalan Mawar Bukit Tinggi Kuala Lumpur"
+                                <input id="txt_locationBuilding" type="text" class="form-control" value="Jalan Mawar Bukit Tinggi Kuala Lumpur"
                                     disabled />
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label for="proprent" class="form-label">Proposed Rent</label>
+                                <label for="txt_proprent" class="form-label">Proposed Rent</label>
                                 <div class="input-group">
                                     <span class="input-group-text">RM</span>
-                                    <input type="number" class="form-control" value="4000" />
+                                    <input id="txt_proprent" type="number" class="form-control" value="4000" />
                                 </div>
                             </div>
 
                             <div class="col-md-4 col-6">
                                 <label for="txt_totalOccupants" class="form-label">Total Occupants</label>
-                                <input type="number" class="form-control" value="2" />
+                                <input id="txt_totalOccupants" type="number" class="form-control" value="2" />
                             </div>
 
                             <div class="col-md-4 col-6">
                                 <label for="txt_preferredMoveInDate" class="form-label">Preferred Move In Date</label>
-                                <input type="date" class="form-control" value="2021-03-12" />
+                                <input id="txt_preferredMoveInDate" type="date" class="form-control" value="2021-03-12" />
                             </div>
 
                             <div class="col-md-4 col-6">
                                 <label for="txt_durationTenancy" class="form-label">Duration of Tenancy</label>
-                                <input type="text" class="form-control" value="2 years" />
+                                <input id="txt_durationTenancy" type="text" class="form-control" value="2 years" />
                             </div>
 
                             <div class="col-md-4 col-6">
@@ -391,13 +391,13 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Date of Offer</label>
-                                <input type="date" id="date_Appointment" class="form-control" value="2018-07-22" disabled />
+                                <label id="date_Appointment" class="form-label">Date of Offer</label>
+                                <input id="date_Appointment" type="date" class="form-control" value="2018-07-22" disabled />
 
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Status of Offer</label>
-                                <select class="form-select" id="status">
+                                <label for="ddl_status" class="form-label">Status of Offer</label>
+                                <select id="ddl_status" class="form-select">
                                     <option>Select status</option>
                                     <option>Offer pending</option>
                                     <option selected>Offer accepted</option>
@@ -406,8 +406,8 @@
                                 </select>
                             </div>
                             <div class="col-md-4 col-6">
-                                <label for="negotiated" class="form-label">Negotiated</label>
-                                <select class="form-select" id="negotiated">
+                                <label for="ddl_negotiated" class="form-label">Negotiated</label>
+                                <select id="ddl_negotiated" class="form-select">
                                     <option>Select status</option>
                                     <option>Yes</option>
                                     <option selected>No</option>
