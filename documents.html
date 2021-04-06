@@ -55,7 +55,7 @@
                                     </div>
                                     <div class="col-6">
                                         <label for="ddl_status" class="form-label">Verification Status</label>
-                                        <select id="ddl_form-select">
+                                        <select id="ddl_status" class="form-select">
                                             <option>Pending</option>
                                             <option selected>Verified</option>
                                             <option>Not Verified</option>
@@ -106,7 +106,6 @@
                                     <label for="btn_updatePassport" class="custom-file-upload btn btn-primary w-300px mt-3">
                                         <i class="fas fa-cloud-upload-alt"></i> Update
                                     </label>
-                                    <input type='file' style="display:none;" />
                                 </div>
 
                             </div>
@@ -121,7 +120,6 @@
                                     <label for="btn_uploadVisa" class="custom-file-upload btn btn-primary w-300px mt-3">
                                         <i class="fas fa-cloud-upload-alt"></i> Upload
                                     </label>
-                                    <input type='file' style="display:none;" />
                                 </div>
 
                             </div>
@@ -191,7 +189,7 @@
                                 <h4 class="mb-3">Self Employed(business)</h4>
                                 <div class="form-check">
                                     <input id="cb_bizIc" type="checkbox" class="form-check-input" />
-                                    <label for="cb_bizIc" class="form-check-label" for="bizIc">IC Copy</label>
+                                    <label for="cb_bizIc" class="form-check-label">IC Copy</label>
                                 </div>
 
                                 <div class="form-check">
@@ -449,13 +447,12 @@
                                     <div class="form-check">
                                         <input id="cb_passportCheck" type="checkbox" checked class="form-check-input" disabled />
                                         <label for="cb_passportCheck" class="form-check-label">Passport copy</label>
-                                        <input type='file' style="display:none;" />
+                                        
                                     </div>
-
+                                    
                                     <div class="form-check">
                                         <input id="cb_studentCheck" type="checkbox" checked class="form-check-input" disabled />
                                         <label for="cb_studentCheck" class="form-check-label">Student Visa</label><br />
-                                        <input type='file' style="display:none;" />
                                     </div>
 
                                     <div class="form-check">
