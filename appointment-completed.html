@@ -26,81 +26,81 @@
                     <form class="needs-validation text-start">
                         <div class="row g-3 mt-3">
                             <div class="col-4">
-                                <label class="form-label">Category of Appointment</label>
-                                <select class="form-control form-select" disabled>
+                                <label for="ddl_categoryAppointment" class="form-label">Category of Appointment</label>
+                                <select id="ddl_categoryAppointment" class="form-select" disabled>
                                     <option>Select category</option>
                                     <option selected>Property viewing (Pay cash to agent)</option>
                                     <option>Property viewing (Pay cash by CDM)</option>
                                 </select>
                             </div>
                             <div class="col-4">
-                                <label class="form-label">Sub Category of Appointment</label>
-                                <select class="form-control form-select" disabled>
+                                <label for="ddl_subCategoryAppointment" class="form-label">Sub Category of Appointment</label>
+                                <select id="ddl_subCategoryAppointment" class="form-select" disabled>
                                     <option>Select sub category</option>
                                     <option>Property viewing (Pay cash to agent)</option>
                                     <option selected>Property viewing (Pay cash by CDM)</option>
                                 </select>
                             </div>
                             <div class="col-4">
-                                <label class="form-label">Date of Appointment</label>
-                                <input type="date" class="form-control" value="2018-07-22" disabled />
+                                <label for="date_Appointment" class="form-label">Date of Appointment</label>
+                                <input type="date" id="date_Appointment" class="form-control" value="2018-07-22" disabled />
 
                             </div>
                             <div class="col-4">
-                                <label class="form-label">Time of Appointment</label>
-                                <input type="time" class="form-control" value="14:30" />
+                                <label for="time_Appointment" class="form-label">Time of Appointment</label>
+                                <input type="time" id="time_Appointment" class="form-control" placeholder=" eg: 14:30" />
 
                             </div>
                             <div class="col-4">
-                                <label class="form-label">Building Name</label>
-                                <select class="form-control form-select" disabled>
+                                <label for="ddl_buildingName" class="form-label">Building Name</label>
+                                <select id="ddl_buildingName" class="form-select" disabled>
                                     <option>Select building name</option>
                                     <option selected>Paradise Residence</option>
                                     <option>Kingkong Residence</option>
                                 </select>
                             </div>
                             <div class="col-4">
-                                <label class="form-label">Unit no.</label>
-                                <select class="form-control form-select" disabled>
+                                <label for="ddl_unitNo" class="form-label">Unit no.</label>
+                                <select id="ddl_unitNo" class="form-select" disabled>
                                     <option>Select unit number</option>
                                     <option selected>B1713</option>
                                     <option>D1811</option>
                                 </select>
                             </div>
                             <div class="col-4">
-                                <label class="form-label">Location of Building</label>
-                                <input type="text" class="form-control" value="Jalan Mawar Bukit Tinggi Kuala Lumpur"
+                                <label for="txt_locationBuilding" class="form-label">Location of Building</label>
+                                <input id="txt_locationBuilding" type="text" class="form-control" value="Jalan Mawar Bukit Tinggi Kuala Lumpur"
                                     disabled />
 
                             </div>
                             <div class="col-4">
-                                <label class="form-label">Person In Charge</label>
-                                <input type="text" class="form-control" value="Rudy Hayes" disabled />
+                                <label for="txt_personInCharge" class="form-label">Person In Charge</label>
+                                <input id="txt_personInCharge" type="text" class="form-control" value="Rudy Hayes" disabled />
                             </div>
                             <hr class="my-4">
                             <div class="row g-3 mt-0">
                                 <div class="col-12">
                                     <h3>User Details</h3>
                                 </div>
-                                <div class="col-12"> <img src="/assets/img/avatar.svg" width="60px"> </div>
+                                <div class="col-12"> <img src="/assets/img/avatar.svg" width="60"> </div>
                                 <div class="col-4">
-                                    <label class="form-label">Username</label>
-                                    <input type="text" class="form-control" value="johndoe" disabled />
+                                    <label for="txt_userName" class="form-label">Username</label>
+                                    <input id="txt_userName" type="text" class="form-control" value="johndoe" disabled />
                                 </div>
 
                                 <div class="col-4">
-                                    <label class="form-label">Passport Number</label>
-                                    <input type="text" class="form-control" value="B777666" disabled />
+                                    <label for="txt_passportNo" class="form-label">Passport Number</label>
+                                    <input id="txt_passportNo" type="text" class="form-control" value="B777666" disabled />
                                 </div>
 
                                 <div class="col-4">
-                                    <label class="form-label">IC Number</label>
-                                    <input type="text" class="form-control" value="2352245613311" disabled />
+                                    <label for="txt_ICNo" class="form-label">IC Number</label>
+                                    <input id="txt_ICNo" type="text" class="form-control" value="2352245613311" disabled />
                                 </div>
 
                                 <div class="col-4">
-                                    <label class="form-label">Nationality</label>
-                                    <select type="text" list="nation" class="form-control  form-select"
+                                    <label for="ddl_Nationality" class="form-label">Nationality</label>
+                                    <select id="ddl_Nationality" type="text" list="nation" class="form-control  form-select"
                                         placeholder="eg: Malaysian" disabled>
                                         <datalist>
                                             <option value="Afghanistan">Afghanistan</option>
@@ -360,8 +360,8 @@
                                 </div>
 
                                 <div class="col-4">
-                                    <label for="gender" class="form-label">Gender</label>
-                                    <select class="form-select form-control" disabled>
+                                    <label for="ddl_Gender" class="form-label">Gender</label>
+                                    <select id="ddl_Gender" class="form-select">
                                         <option>Select your gender</option>
                                         <option selected>Male</option>
                                         <option>Female</option>
@@ -369,8 +369,8 @@
                                 </div>
 
                                 <div class="col-4">
-                                    <label for="age" class="form-label">Age</label>
-                                    <input type="number" class="form-control" value="33" disabled />
+                                    <label for="txt_Age" class="form-label">Age</label>
+                                    <input id="txt_Age" type="number" class="form-control" value="33" disabled />
                                 </div>
                             </div>
                             <hr class="my-4" />
@@ -380,50 +380,50 @@
                                 </div>
 
                                 <div class="col-4">
-                                    <label class="form-label">Budget</label>
+                                    <label for="txt_Budget" class="form-label">Budget</label>
                                     <div class="input-group">
                                         <span class="input-group-text">RM</span>
-                                        <input type="number" class="form-control" value="4000" disabled />
+                                        <input id="txt_Budget" type="number" class="form-control" value="4000" disabled />
                                     </div>
                                 </div>
 
                                 <div class="col-4">
-                                    <label class="form-label">Beds</label>
-                                    <input type="number" class="form-control" value="2" disabled />
+                                    <label for="txt_Beds" class="form-label">Budget</label>
+                                    <input id="txt_Beds" type="number" class="form-control" value="2" disabled />
                                 </div>
 
                                 <div class="col-4">
-                                    <label class="form-label">Preferred Move In Date</label>
-                                    <input type="date" class="form-control" value="2021-03-12" disabled />
+                                    <label for="txt_preferredMoveInDate" class="form-label">Preferred Move In Date</label>
+                                    <input id="txt_preferredMoveInDate" type="date" class="form-control" value="2021-03-12" disabled />
                                 </div>
 
                                 <div class="col-4">
-                                    <label class="form-label">Total Occupants</label>
-                                    <input type="number" class="form-control" value="2" disabled />
+                                    <label for="txt_totalOccupants" class="form-label">Total Occupants</label>
+                                    <input id="txt_totalOccupants"type="number" class="form-control" value="2" disabled />
                                 </div>
 
                                 <div class="col-4">
-                                    <label class="form-label">Occupation</label>
-                                    <input type="text" class="form-control" value="Doctor" disabled />
+                                    <label for="txt_Occupation" class="form-label">Occupation</label>
+                                    <input id="txt_Occupation" type="text" class="form-control" value="Doctor" disabled />
                                 </div>
 
                                 <div class="col-4">
-                                    <label class="form-label">Duration of Tenancy</label>
-                                    <input type="text" class="form-control" value="2 years" disabled />
+                                    <label for="txt_durationTenancy" class="form-label">Duration of Tenancy</label>
+                                    <input for="txt_durationTenancy" type="text" class="form-control" value="2 years" disabled />
                                 </div>
 
                                 <div class="row g-3 mt-3">
                                     <div class="col-sm-12">
-                                        <label class="form-label">Other remarks</label>
-                                        <textarea class="form-control" style="height: 100px"
+                                        <label for="txt_otherRemarks" class="form-label">Other remarks</label>
+                                        <textarea id="txt_otherRemarks" class="form-control" style="height: 100px"
                                             disabled>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</textarea>
                                     </div>
                                 </div>
                             </div>
                             <hr class="my-4" />
                             <div class="col-4">
-                                <label class="form-label">Status</label>
-                                <select class="form-control form-select" disabled>
+                                <label for="txt_Status" class="form-label">Status</label>
+                                <select id="txt_Status" class="form-select" disabled>
                                     <option>Select status</option>
                                     <option>Scheduled</option>
                                     <option selected>Completed</option>
@@ -437,8 +437,8 @@
                                 <h3>Feedback Form</h3>
                             </div>
                             <div class="col-12">
-                                <label class="form-label">User Notes Regarding the Unit</label>
-                                <textarea class="form-control" style="height: 100px"
+                                <label for="txt_userNotesUnit" class="form-label">User Notes Regarding the Unit</label>
+                                <textarea id="txt_userNotesUnit" class="form-control" style="height: 100px"
                                     placeholder="Leave a remarks here"></textarea>
                             </div>
                             <div class="col-12 mt-5">
@@ -452,17 +452,17 @@
                                         </td>
                                         <td>
                                             <p class="rate m-0">
-                                                <input type="radio" id="1star5" name="rate1" value="5" checked
+                                                <input type="radio" id="rb_1star5" name="rate1" value="5" checked
                                                     disabled />
-                                                <label for="2star5" title="5 Stars">5 stars</label>
-                                                <input type="radio" id="1star4" name="rate1" value="4" disabled />
-                                                <label for="2star4" title="4 Stars">4 stars</label>
-                                                <input type="radio" id="1star3" name="rate1" value="3" disabled />
-                                                <label for="2star3" title="3 Stars">3 stars</label>
-                                                <input type="radio" id="1star2" name="rate1" value="2" disabled />
-                                                <label for="2star2" title="2 Stars">2 stars</label>
-                                                <input type="radio" id="1star1" name="rate1" value="1" disabled />
-                                                <label for="2star1" title="1 Star">1 star</label>
+                                                <label for="rb_1star5" title="5 Stars">5 stars</label>
+                                                <input type="radio" id="rb_1star4" name="rate1" value="4" disabled />
+                                                <label for="rb_1star4" title="4 Stars">4 stars</label>
+                                                <input type="radio" id="rb_1star3" name="rate1" value="3" disabled />
+                                                <label for="rb_1star3" title="3 Stars">3 stars</label>
+                                                <input type="radio" id="rb_1star2" name="rate1" value="2" disabled />
+                                                <label for="rb_1star2" title="2 Stars">2 stars</label>
+                                                <input type="radio" id="rb_1star1" name="rate1" value="1" disabled />
+                                                <label for="rb_1star1" title="1 Star">1 star</label>
                                             </p>
                                         </td>
                                     </tr>
@@ -472,17 +472,17 @@
                                         </td>
                                         <td>
                                             <p class="rate m-0">
-                                                <input type="radio" id="2star5" name="rate2" value="5" disabled />
-                                                <label for="2star5" title="5 Stars">5 stars</label>
-                                                <input type="radio" id="2star4" name="rate2" value="4" disabled />
-                                                <label for="2star4" title="4 Stars">4 stars</label>
-                                                <input type="radio" id="2star3" name="rate2" value="3" checked
+                                                <input type="radio" id="rb_2star5" name="rate2" value="5" disabled />
+                                                <label for="rb_2star5" title="5 Stars">5 stars</label>
+                                                <input type="radio" id="rb_2star4" name="rate2" value="4" disabled />
+                                                <label for="rb_2star4" title="4 Stars">4 stars</label>
+                                                <input type="radio" id="rb_2star3" name="rate2" value="3" checked
                                                     disabled />
-                                                <label for="2star3" title="3 Stars">3 stars</label>
-                                                <input type="radio" id="2star2" name="rate2" value="2" disabled />
-                                                <label for="2star2" title="2 Stars">2 stars</label>
-                                                <input type="radio" id="2star1" name="rate2" value="1" disabled />
-                                                <label for="2star1" title="1 Star">1 star</label>
+                                                <label for="rb_2star3" title="3 Stars">3 stars</label>
+                                                <input type="radio" id="rb_2star2" name="rate2" value="2" disabled />
+                                                <label for="rb_2star2" title="2 Stars">2 stars</label>
+                                                <input type="radio" id="rb_2star1" name="rate2" value="1" disabled />
+                                                <label for="rb_2star1" title="1 Star">1 star</label>
                                             </p>
                                         </td>
                                     </tr>
@@ -492,17 +492,17 @@
                                         </td>
                                         <td>
                                             <p class="rate m-0">
-                                                <input type="radio" id="3star5" name="rate3" value="5" checked
+                                                <input type="radio" id="rb_3star5" name="rate3" value="5" checked
                                                     disabled />
-                                                <label for="2star5" title="5 Stars">5 stars</label>
-                                                <input type="radio" id="3star4" name="rate3" value="4" disabled />
-                                                <label for="2star4" title="4 Stars">4 stars</label>
-                                                <input type="radio" id="3star3" name="rate3" value="3" disabled />
-                                                <label for="2star3" title="3 Stars">3 stars</label>
-                                                <input type="radio" id="3star2" name="rate3" value="2" disabled />
-                                                <label for="2star2" title="2 Stars">2 stars</label>
-                                                <input type="radio" id="3star1" name="rate3" value="1" disabled />
-                                                <label for="2star1" title="1 Star">1 star</label>
+                                                <label for="rb_3star5" title="5 Stars">5 stars</label>
+                                                <input type="radio" id="rb_3star4" name="rate3" value="4" disabled />
+                                                <label for="rb_3star4" title="4 Stars">4 stars</label>
+                                                <input type="radio" id="rb_3star3" name="rate3" value="3" disabled />
+                                                <label for="rb_3star3" title="3 Stars">3 stars</label>
+                                                <input type="radio" id="rb_3star2" name="rate3" value="2" disabled />
+                                                <label for="rb_3star2" title="2 Stars">2 stars</label>
+                                                <input type="radio" id="rb_3star1" name="rate3" value="1" disabled />
+                                                <label for="rb_3star1" title="1 Star">1 star</label>
                                             </p>
                                         </td>
                                     </tr>
@@ -512,17 +512,17 @@
                                         </td>
                                         <td>
                                             <p class="rate m-0">
-                                                <input type="radio" id="4star5" name="rate4" value="5" disabled />
-                                                <label for="2star5" title="5 Stars">5 stars</label>
-                                                <input type="radio" id="4star4" name="rate4" value="4" disabled />
-                                                <label for="2star4" title="4 Stars">4 stars</label>
-                                                <input type="radio" id="4star3" name="rate4" value="3" disabled />
-                                                <label for="2star3" title="3 Stars">3 stars</label>
-                                                <input type="radio" id="4star2" name="rate4" value="2" checked
+                                                <input type="radio" id="rb_4star5" name="rate4" value="5" disabled />
+                                                <label for="rb_4star5" title="5 Stars">5 stars</label>
+                                                <input type="radio" id="rb_4star4" name="rate4" value="4" disabled />
+                                                <label for="rb_4star4" title="4 Stars">4 stars</label>
+                                                <input type="radio" id="rb_4star3" name="rate4" value="3" disabled />
+                                                <label for="rb_4star3" title="3 Stars">3 stars</label>
+                                                <input type="radio" id="rb_4star2" name="rate4" value="2" checked
                                                     disabled />
-                                                <label for="2star2" title="2 Stars">2 stars</label>
-                                                <input type="radio" id="4star1" name="rate4" value="1" disabled />
-                                                <label for="2star1" title="1 Star">1 star</label>
+                                                <label for="rb_4star2" title="2 Stars">2 stars</label>
+                                                <input type="radio" id="rb_4star1" name="rate4" value="1" disabled />
+                                                <label for="rb_4star1" title="1 Star">1 star</label>
                                             </p>
                                         </td>
                                     </tr>
@@ -532,17 +532,17 @@
                                         </td>
                                         <td>
                                             <p class="rate m-0">
-                                                <input type="radio" id="5star5" name="rate5" value="5" disabled />
-                                                <label for="2star5" title="5 Stars">5 stars</label>
-                                                <input type="radio" id="5star4" name="rate5" value="4" checked
+                                                <input type="radio" id="rb_5star5" name="rate5" value="5" disabled />
+                                                <label for="rb_5star5" title="5 Stars">5 stars</label>
+                                                <input type="radio" id="rb_5star4" name="rate5" value="4" checked
                                                     disabled />
-                                                <label for="2star4" title="4 Stars">4 stars</label>
-                                                <input type="radio" id="5star3" name="rate5" value="3" disabled />
-                                                <label for="2star3" title="3 Stars">3 stars</label>
-                                                <input type="radio" id="5star2" name="rate5" value="2" disabled />
-                                                <label for="2star2" title="2 Stars">2 stars</label>
-                                                <input type="radio" id="5star1" name="rate5" value="1" disabled />
-                                                <label for="2star1" title="1 Star">1 star</label>
+                                                <label for="rb_5star4" title="4 Stars">4 stars</label>
+                                                <input type="radio" id="rb_5star3" name="rate5" value="3" disabled />
+                                                <label for="rb_5star3" title="3 Stars">3 stars</label>
+                                                <input type="radio" id="rb_5star2" name="rate5" value="2" disabled />
+                                                <label for="rb_5star2" title="2 Stars">2 stars</label>
+                                                <input type="radio" id="rb_5star1" name="rate5" value="1" disabled />
+                                                <label for="rb_5star1" title="1 Star">1 star</label>
                                             </p>
                                         </td>
                                     </tr>
